@@ -1,0 +1,24 @@
+/* At least 1 media query */
+
+body{
+    margin: 0;
+    min-width: 100vw;
+}
+
+/* CSS VARIABLES*/
+:root{
+    --nav-width: 5vw;
+}
+
+.page-body{
+    display: flex;
+
+}
+
+.navbar{
+    max-width: var(--nav-width);
+}
+
+.main-doc{
+    max-width: calc(100vw - var(--nav-width));
+}
