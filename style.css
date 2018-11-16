@@ -1,24 +1,186 @@
 /* At least 1 media query */
 
-body{
-    margin: 0;
-    min-width: 100vw;
-}
-
 /* CSS VARIABLES*/
 :root{
-    --nav-width: 5vw;
+    /*--m-shad: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
+    --wbg1: #FFFFFF;
+    --wbg2: #FAFAFA;
+    --lbg1: #FFAB91;
+    --gbg1: #7CB342;
+    --gbg2: #558B2F;
+    --fcl1: white;
+    --m-shad: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    --nav-border-rad: 3px;
+    --con-border-rad: 3px;
+}
+
+body{
+    margin: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+    font-family:open_sans_regular;
+    background: var(--wbg2);
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0vh 0;
+}
+
+h1{
+    font-size: 2em;
+}
+
+.page-header{
+    max-height: 11vh;
+    min-height: 11vh;
+    box-shadow: var(--m-shad);
+    background: var(--gbg2);
+    color: var(--fcl1);
+    padding: 1vh 1vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.page-header-left{
+}
+
+.page-header-right{
+    height: 100%;
+}
+
+.page-header-ffc-logo{
+    max-height: 50px !important;
+    display: block;
+    width: auto;
 }
 
 .page-body{
     display: flex;
-
+    flex-direction: row;
+    padding: 2vh 1vw;
 }
 
 .navbar{
-    max-width: var(--nav-width);
+    position: relative;
+    flex-basis: 300px;
+    flex-grow: 1;
+    width: 30vw;
+    background: var(--wbg1);
+    box-shadow: var(--m-shad);
+    margin-right:0.5vw;
+    border-radius:var(--nav-border-rad);
+    -webkit-border-radius:var(--nav-border-rad);
+    -moz-border-radius:var(--nav-border-rad);
+    -ms-border-radius:var(--nav-border-rad);
+    -o-border-radius:var(--nav-border-rad);
+    max-height: 83vh;
+    height: 83vh;
+    overflow: hidden;
 }
 
+
+.nav-header{
+    padding: 15px 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navbar-links-scroll-container {
+    height: 88%;
+    overflow-y: scroll;
+}
+
+.navbar-links{
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: var(--nav-border-rad);
+    border-bottom-right-radius: var(--nav-border-rad);
+}
+
+.nav-link{
+    color: black;
+    text-decoration: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    padding: 10px 5px 10px 25px;
+    /* FOR ADDED FA ICON*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-chev{
+    height: 1em;
+    width: 1em;
+}
+
+.nav-link:first-child{
+    border-top:none;
+}
+
+.nav-link:last-child{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-link:hover{
+    background: #E0E0E0;
+}
+
+/*
+.nav-link:focus{
+    color: #FAFAFA;
+    background:#424242
+
+}*/
+
 .main-doc{
-    max-width: calc(100vw - var(--nav-width));
+    /*max-width: calc(100vw - var(--nav-width));
+    */background: var(--wbg1);
+    flex-grow: 13;
+    width: 70vw;
+    padding: 2vh 2vw;
+    box-shadow: var(--m-shad);
+    border-radius:var(--con-border-rad);
+    -webkit-border-radius:var(--con-border-rad);
+    -moz-border-radius:var(--con-border-rad);
+    -ms-border-radius:var(--con-border-rad);
+    -o-border-radius:var(--con-border-rad);
+    min-height: 79vh;
+    max-height: 79vh;
+    overflow-y: scroll;
+}
+
+.content-paragraph {
+    text-align: justify;
+    padding-left: 1vw;
+}
+
+i:has(){
+    background: #A5D6A7;
+}
+
+.paper{
+    display: flex;
+    padding: 2vh 0 2vh 2vw;
+    box-shadow: var(--m-shad);
+    margin-right:0.5vw;
+    border-radius:var(--nav-border-rad);
+    -webkit-border-radius:var(--nav-border-rad);
+    -moz-border-radius:var(--nav-border-rad);
+    -ms-border-radius:var(--nav-border-rad);
+    -o-border-radius:var(--nav-border-rad);
+}
+
+.question{
+    font-size: 1.1em;
+    border-left: 5px solid #2E7D32;
+    background: rgba(46, 125, 50, 0.5);
+}
+
+.q-svg{
+    height: 20px;
+    width: 20px;
 }
