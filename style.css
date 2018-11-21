@@ -164,7 +164,7 @@ i:has(){
 
 .paper{
     display: flex;
-    padding: 2vh 0 2vh 2vw;
+    padding: 2vh 2vw 2vh 2vw;
     box-shadow: var(--m-shad);
     margin-right:0.5vw;
     border-radius:var(--nav-border-rad);
@@ -180,7 +180,33 @@ i:has(){
     background: rgba(46, 125, 50, 0.5);
 }
 
+.objective{
+    display: flex;
+    flex-direction: column;
+    background: #BDBDBD;
+}
+
+.note{
+    border-left: 5px solid  #616161;
+}
+
+.note-start{
+    margin-right: 5px;
+}
+
 .q-svg{
     height: 20px;
     width: 20px;
+}
+
+.demo-database-step-1{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.demo-database-snippet{
+    height: 2vh;
+    width: 2vh;
+    background: black;
 }
