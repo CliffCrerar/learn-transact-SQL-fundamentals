@@ -1,0 +1,19 @@
+{
+  "name": "ffc_technical_doc",
+  "version": "1.0.0",
+  "description": "freeCodeCamp project as well as a document for ST product team to leverage off for SQL.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CliffCrerar/ffc_technical_document.git"
+  },
+  "author": "Cliff Crerar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CliffCrerar/ffc_technical_document/issues"
+  },
+  "homepage": "https://github.com/CliffCrerar/ffc_technical_document#readme"
+}
