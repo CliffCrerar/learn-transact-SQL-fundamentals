@@ -405,3 +405,7 @@ i:has(){
     flex-basis: 50px;
     flex-grow: 0.5;
 }
+
+.sub-heading{
+    padding-left: 1vw;
+}
