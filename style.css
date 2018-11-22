@@ -287,7 +287,6 @@ i:has(){
     box-shadow: var(--m-shad-4);
 }
 
-
 .column-headings{
     font-weight: bold;
 }
@@ -310,9 +309,18 @@ i:has(){
     border-bottom: var(--m-bord-color);
 }
 
+.business-case{
+    width: 70%;
+    margin: 1em auto;
+    background: #FFF9C4
+}
+
 .user-stories{
-    width: 80%;
+    text-align: justify;
     font-weight: bolder;
     font-size: 1.1em;
-    margin: auto;
+}
+
+.ol-concepts-semantics{
+    margin-bottom: 1vh
 }
