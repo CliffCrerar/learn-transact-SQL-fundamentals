@@ -3,7 +3,7 @@
  * @summary This script populates the main section with its content
  * @author Cliff Crerar
  * Created at     : 2018-11-13 23:27:13
- * Last modified  : 2018-11-22 21:55:59
+ * Last modified  : 2018-11-22 04:50:56
  */
 
 const demoSqlStr = demoSqlArr.join().replace(/>,</g, '><');

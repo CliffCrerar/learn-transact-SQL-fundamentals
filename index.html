@@ -52,22 +52,30 @@
                             Creating the demo database
                         </a>
 
+<<<<<<< HEAD
                         <a href="#Concepts_and_Semantics" class="nav-link">
                             Concepts and Semantics
                         </a>
 
                         <a href="#Database_objects" class="nav-link">
                             Database objects
+=======
+                        <a href="#RDBMS_Concepts_and_Semantics" class="nav-link">
+                            RDBMS Concepts and Semantics
+>>>>>>> f8bb848dc771d59de20d4a4ccf535bc3e79785a2
                         </a>
 
                         <a href="#Data_types" class="nav-link">
                             Data types
                         </a>
 
+<<<<<<< HEAD
                         <a href="#Data_query_language" class="nav-link">
                             Data query language
                         </a>
 
+=======
+>>>>>>> f8bb848dc771d59de20d4a4ccf535bc3e79785a2
                         <a href="#Data_definition_language" class="nav-link">
                             Data definition language
                         </a>
@@ -137,7 +145,11 @@
                 contain at least 5 code elements
                 contain at least 5 li elements
             -->
+<<<<<<< HEAD
                 <section id="Introduction" class="main-section drafted">
+=======
+                <section id="Introduction" class="main-section">
+>>>>>>> f8bb848dc771d59de20d4a4ccf535bc3e79785a2
                     <header>
                         <h1>Introduction</h1>
                     </header>
@@ -187,10 +199,16 @@
                         </p>
                         <p class="content-paragraph"><i>DQL</i> is used for data retrieval used for display in
                             application or in a database client. <i>DDL</i> is used to define the database and is used
+<<<<<<< HEAD
                             to implement database objects such as tables, t1-columns, relationships and constraints. <i>DML</i>
                             is used to create data initiated by business transactions as well as updating or deleting
                             data, <i>DML</i> is also used to alter database objects such modifying tables or
                             t1-columns.
+=======
+                            to implement database objects such as tables, columns, relationships and constraints. <i>DML</i>
+                            is used to create data initiated by business transactions as well as updating or deleting
+                            data, <i>DML</i> is also used to alter database objects such modifying tables or columns.
+>>>>>>> f8bb848dc771d59de20d4a4ccf535bc3e79785a2
                             <i>DTL</i> is used to control the way the database processes transactions and <i>DCL</i> is
                             mostly related to users and access rights.</p>
                         <p class="content-paragraph">SQL can also be described as a <a id="decLang" href="https://en.wikipedia.org/wiki/Declarative_programming"
@@ -203,7 +221,11 @@
                     </article>
                 </section>
 
+<<<<<<< HEAD
                 <section id="About_this_document" class="main-section drafted">
+=======
+                <section id="About_this_document" class="main-section">
+>>>>>>> f8bb848dc771d59de20d4a4ccf535bc3e79785a2
                     <header>
                         <h1>About this document</h1>
                     </header>
@@ -285,7 +307,11 @@
                     </article>
                 </section>
 
+<<<<<<< HEAD
                 <section id="Getting_started" class="main-section drafted">
+=======
+                <section id="Getting_started" class="main-section">
+>>>>>>> f8bb848dc771d59de20d4a4ccf535bc3e79785a2
                     <header>
                         <h1>Getting started</h1>
                     </header>
@@ -344,7 +370,11 @@
                     </article>
                 </section>
 
+<<<<<<< HEAD
                 <section id="Creating_the_demo_database" class="main-section drafted">
+=======
+                <section id="Creating_the_demo_database" class="main-section">
+>>>>>>> f8bb848dc771d59de20d4a4ccf535bc3e79785a2
                     <header>
                         <h1>Creating the demo database</h1>
                     </header>
@@ -382,7 +412,11 @@
                             part of SSMS is called the <a id="objexp" href="https://docs.microsoft.com/en-us/sql/ssms/object/object-explorer?view=sql-server-2017"
                                 target="_blank">Object
                                 Explorer</a> and allows you to explore all the objects created in your SQL Server but
+<<<<<<< HEAD
                             more on this in the next section <a href="#Concepts_and_Semantics">Concepts
+=======
+                            more on this in the next section <a href="#RDBMS_Concepts_and_Semantics">RDBMS Concepts
+>>>>>>> f8bb848dc771d59de20d4a4ccf535bc3e79785a2
                                 Semantics</a>.</p>
 
                         <div class="paper note">
@@ -443,6 +477,7 @@
                     </article>
                 </section>
 
+<<<<<<< HEAD
                 <section id="Concepts_and_Semantics" class="main-section drafted">
                     <header>
                         <h1>Concepts and Semantics</h1>
@@ -1219,6 +1254,421 @@
                         <h1>*Additional resources</h1>
                     </header>
                 </section>
+=======
+                <section id="RDBMS_Concepts_&_Semantics" class="main-section">
+                    <section id="RDBMS_Concepts_and_Semantics" class="main-section">
+                        <header>
+                            <h1>*RDBMS Concepts and Semantics</h1>
+                        </header>
+                        <article class="RDBMS_Concepts_and_Semantics">
+                            <p class="content-paragraph">
+                                The purpose of is to briefly familiarise yourself with some of the <i>database jargon</i>
+                                that is
+                                used when talking about SQL and databases, and are usually the terms used by database
+                                designers.
+                            </p>
+                            <p class="content-paragraph">
+                                For example, when we normally speak about data in a tabular form, like the data stored
+                                in
+                                excel we usually refer to fields and records. Fields being the columns and records
+                                being
+                                the rows.
+                            </p>
+                            <p class="content-paragraph">
+                                Also in this section we will very briefly discuss how databases are modelled using
+                                business
+                                cases or use cases.
+                            </p>
+                            <p class="content-paragraph">
+                                The table below will show the accepted terms used by everyone in the work place to what
+                                they could be referred to when speaking in terms of relation databases.
+                            </p>
+                            <div class="table concepts-semantics">
+                                <div class="columns">
+                                    <div class="column-headings col1">Familiar Term / Description</div>
+                                    <div class="column-headings col2">Database Term</div>
+                                </div>
+                                <div class="rows">
+                                    <div class="cells col1">Worksheets, Group of tables</div>
+                                    <div class="cells col2">Tablespace, Schema</div>
+                                </div>
+                                <div class="rows">
+                                    <div class="cells col1">Table, File</div>
+                                    <div class="cells col2">Entity, Table, Relation (not to be confused with
+                                        relationship)</div>
+                                </div>
+                                <div class="rows">
+                                    <div class="cells col1">Extraction ,Sampled records</div>
+                                    <div class="cells col2">Page (Section of a table's whole)</div>
+                                </div>
+                                <div class="rows">
+                                    <div class="cells col1">Field, Column</div>
+                                    <div class="cells col2">Column, Attribute</div>
+                                </div>
+                                <div class="rows">
+                                    <div class="cells col1">Facts about a certain topic</div>
+                                    <div class="cells col2">Data elements</div>
+                                </div>
+                                <div class="rows">
+                                    <div class="cells col1">Range of values</div>
+                                    <div class="cells col2">Domain</div>
+                                </div>
+                                <div class="rows">
+                                    <div class="cells col1">Character field or Numeric Field</div>
+                                    <div class="cells col2">Data type</div>
+                                </div>
+                                <div class="rows">
+                                    <div class="cells col1">Unique numbering</div>
+                                    <div class="cells col2">Primary key</div>
+                                </div>
+                                <div class="rows">
+                                    <div class="cells col1">Records, Rows</div>
+                                    <div class="cells col2">Rows, Tuples</div>
+                                </div>
+                                <div class="rows">
+                                    <div class="cells col1">Amount of unique values compared to row count</div>
+                                    <div class="cells col2">Cardinality</div>
+                                </div>
+                                <div class="rows">
+                                    <div class="cells col1">Column A is before column B</div>
+                                    <div class="cells col2">Ordinal Position</div>
+                                </div>
+                                <div class="rows">
+                                    <div class="cells col1">Field 1 combined with Field 2 to become unique not related
+                                        to another source</div>
+                                    <div class="cells col2">Candidate Key</div>
+                                </div>
+                                <div class="rows">
+                                    <div class="cells col1">Field 1 combined with Field 2 to become unique but related
+                                        to
+                                        another source</div>
+                                    <div class="cells col2">Compound / Composite Key</div>
+                                </div>
+                                <div class="rows">
+                                    <div class="cells col1">A unique number that exist in the real world</div>
+                                    <div class="cells col2">Natural Key (Number plates of cars, barcodes on products)
+                                    </div>
+                                </div>
+                                <div class="rows">
+                                    <div class="cells col1">Value that cannot be split any further </div>
+                                    <div class="cells col2">Atomic value</div>
+                                </div>
+                                <div class="rows">
+                                    <div class="cells col1">Row 1 Col 1</div>
+                                    <div class="cells col2">Row 1 Col 2</div>
+                                </div>
+                            </div>
+                            <h3>Data modelling and table Relationships</h3>
+                            <p class="content-paragraph">These technique described here will be a basic demonstration
+                                of how the relational model
+                                is
+                                conceptualised.
+                            </p>
+                            <p class="content-paragraph">
+                                Although data modelling is no part of this document scope, it will be used to give you
+                                an
+                                understanding of how relationships are formed between tables.
+                            </p>
+                            <p class="content-paragraph">
+                                These type of relationships are important to understand for <a href="#Joining_tables">Joining
+                                    tables</a>.
+                            </p>
+                            <p class="content-paragraph">
+                                There are 3 main types of table relationships:
+                                <ul>
+                                    <li>1 to 1</li>
+                                    <li>1 to many</li>
+                                    <li>many to many</li>
+                                </ul>
+                            </p>
+                            <p class="content-paragraph">
+                                There is also a 4th type of relationship, it is the recursive relationship and the
+                                reason
+                                it is not part of the main 3 is because these 3 are usually between different tables
+                                and
+                                the recursive relationship occurs when a table has a relationship with itself in a kind
+                                of
+                                parent child configuration.
+                            </p>
+                            <p class="content-paragraph">
+                                We will use some stories from a used car sales business.
+                            </p>
+                            <div class="paper business-case">
+                                <p class="user-stories">
+                                    A used car sales business named 123 Sold (pty) ltd, has many departments. Each
+                                    department is managed by one person, this person appointed as manager can only be
+                                    in charge of
+                                    one department.
+                                </p>
+                                <p class="user-stories">
+                                    In the sales department, a salesman can advertise and market any car. Any car may
+                                    also be advertised by any salesman.
+                                </p>
+                                <p class="user-stories">
+                                    123 Sold is the holding company of a body shop next door named So Custom Body and
+                                    Aftermarket Parts (pty) Ltd. The body shop uses many different colours and shades,
+                                    in many cases cars are painted with different colours.
+                                </p>
+                                <p class="user-stories">
+                                    A car always will have a base color, but its panels can be painted in different
+                                    colors, for example. The bonnet car be yellow,
+                                    the roof can be green and trunk lid can be orange.
+                                </p>
+                                <p class="user-stories">
+                                    So Custom Body and Aftermarket Parts must keep track of which colors are associated
+                                    with which cars.
+                                </p>
+                            </div>
+                            <p class="content-paragraph">
+                                These user stories are what set the requirements for a data structure. But how do you
+                                create a data structure from the above?
+                            </p>
+                            <p class="content-paragraph">
+                                Without diving too deep looking at the above. Nouns and verbs translate into tables or
+                                entities and characteristic's normally translate into columns. But what about the
+                                relationships?
+                            </p>
+                            <p class="content-paragraph">
+                                To identify the relationships you must first identify the entities, the players this
+                                can be either a person, an asset or an action. Entities are almost always something
+                                that can be represented in the real world.
+                            </p>
+                            <h4 class="content-paragraph">
+                                <i>Referring back to the user story:</i>
+                            </h4>
+                            <ol class="relationship-block">
+                                <li class="ol-concepts-semantics">
+                                    A <b>used car sales business</b> named 123 Sold (pty) ltd, has many <b>departments</b>.
+                                </li>
+                                <ul>
+                                    <li>
+                                        <b>Sales business</b> and <b>departments</b> are the entities, Company and
+                                        Departments.
+                                    </li>
+                                    <li>
+                                        Company has an attribute of <b>name</b>, and we can assume that departments
+                                        would
+                                        have a name as well.
+                                    </li>
+                                    <li>
+                                        <b>Has many</b> indicates the interaction and if you have experience working
+                                        you
+                                        will know that a company has many departments.
+                                    </li>
+                                </ul>
+                                <p>From this we can model this business case:</p>
+                                <img alt="1 to many relatioship example">
+                                <p>
+                                    So this is what a data structurer would look like for this business case. It is a 1
+                                    to many relationship because a company can have many departments but a department
+                                    can only belong to 1 company.
+                                </p>
+                                <p>
+                                    In the image above, crows foot notation was used for modeling the business case. To
+                                    find out more for about erd modelling notation
+                                    <a href="https://www.icloud.com/pages/0HtS5LAx3a6nYSvbfooFIlwDw#RDBMS_Concepts_%26_Semantics">follow
+                                        this link</a>.
+                                </p>
+                                <li class="ol-concepts-semantics">
+                                    Each <b>department</b> is managed by <b>one person</b>, this person appointed as
+                                    manager can only be in charge of one <b>department</b>.
+                                </li>
+                                <ul>
+                                    <li>
+                                        Entities are manager and department.
+                                    </li>
+                                    <li>
+                                        Once again the assumption is made that department and manager has a name.
+                                    </li>
+                                    <li>
+                                        And the interaction is a 1 to 1 relationship.
+                                    </li>
+                                </ul>
+                                <p>
+                                    From this we can model this business case:
+                                </p>
+                                <img alt="1 to 1 relatioship example">
+                                <p>
+                                    This business case is a 1 to 1 relationship between.
+                                </p>
+                                <li class="ol-concepts-semantics">
+                                    In the sales department, a <b>salesman</b> can advertise and market any <b>car</b>.
+                                    Any car may
+                                    also be advertised and marketed by any <b>salesman</b>.
+                                </li>
+                                <ul>
+                                    <li>
+                                        The entities are salesman and car.
+                                    </li>
+                                    <li>
+                                        Although sales department is mentioned, this will just be to link to the
+                                        department entity modeled above, but we will not model this just yet.
+                                    </li>
+                                    <li>
+                                        The interaction is a salesmen can market any car and any car can be marketed by
+                                        any
+                                        salesman.
+                                    </li>
+                                </ul>
+                                <p>
+                                    This is a many to many relationship:
+                                </p>
+                                <img alt="many to many relationship">
+                                <p>
+                                    You can see that the crows foot is on both sides. Although we are able to model a
+                                    many to many relationship, physically implementing implementing a many to many
+                                    relationship is not a good idea. Many to many relationships are mostly theoretical
+                                    and should be avoided.
+                                </p>
+                                <p>
+                                    To diffuse this situation implementing a <a href="http://databasemanagement.wikia.com/wiki/Database_Entities_in_E/R_Modeling">composite
+                                        entity</a> is usually the order of the day as below:
+                                </p>
+                                <img alt="composite entity">
+                                <p>
+                                    By creating the composite entity Advertisments the many to many relationship is
+                                    resolved and it is possible to know exactly which salesmen placed what add and for
+                                    which cars adds have been placed.
+                                </p>
+                                <li class="ol-concepts-semantics">
+                                    A <b>car</b> always will have a <b>base color</b>, but <b>it's panels</b> can be
+                                    painted in <b>different
+                                        colors</b>.
+                                </li>
+                                <p>
+                                    <i>There are various ways to model this problem, but the aim here is to
+                                        demonstrate a recursive relationship.</i>
+                                </p>
+                                <ul>
+                                    <li>
+                                        There is only 1 entity, color. But will include, the car entity for this
+                                        example.
+                                    </li>
+                                </ul>
+                                <img alt="recursive relationship">
+                                <p>
+                                    Instead of trying to capture each panel as a column in Car, which is not a good
+                                    idea to start off with because each car would not have the same number of panels.
+                                    How would you know how many columns to create and furthermore what to name the
+                                    columns as each car might not have the same type of panels.
+                                </p>
+                                <p>
+                                    With this design each panel can be named assigned to a car, a car can be assigned
+                                    with as many panels as reburied and the solution is not an architectural conundrum.
+                                </p>
+                                <p>
+                                    But the point here is that you can see that the color table has a relationship with
+                                    itself. This is what is known as a recursive relationship. The requirement states
+                                    that a car must have a base color and then all other panel colors must be linked to
+                                    this base color.
+                                </p>
+                                <p>
+                                    hence for a specific car, it would have a base color, and all the panels that are
+                                    related to that car would be children of this base color.
+                                </p>
+                                <p>
+                                    From this we can also see that a fair amount of assumption is also required when
+                                    doing
+                                    data modeling.
+                                </p>
+                                <p>
+                                    Database designers are highly trained and experienced professionals, and are intune
+                                    with what is required by a client. All applications start here.
+                                </p>
+                            </ol>
+                        </article>
+                    </section>
+
+                    <section id="Data_types" class="main-section">
+                        <header>
+                            <h1>*Data types</h1>
+                        </header>
+                    </section>
+
+                    <section id="Data_definition_language" class="main-section">
+                        <header>
+                            <h1>*Data definition language</h1>
+                        </header>
+                    </section>
+
+                    <section id="Data_manipulation_language" class="main-section">
+                        <header>
+                            <h1>*Data manipulation language</h1>
+                        </header>
+                    </section>
+
+                    <section id="Logical_operators" class="main-section">
+                        <header>
+                            <h1>*Logical Operators</h1>
+                        </header>
+                    </section>
+
+                    <section id="Joining_tables" class="main-section">
+                        <header>
+                            <h1>*Joining tables</h1>
+                        </header>
+                    </section>
+
+                    <section id="Functions" class="main-section">
+                        <header>
+                            <h1>*Functions</h1>
+                        </header>
+                    </section>
+
+                    <section id="Sub-queries" class="main-section">
+                        <header>
+                            <h1>*Sub-queries</h1>
+                        </header>
+                    </section>
+
+                    <section id="Transaction_concurrency" class="main-section">
+                        <header>
+                            <h1>*Transaction concurrency</h1>
+                        </header>
+                    </section>
+
+                    <section id="Transaction_Control_Language" class="main-section">
+                        <header>
+                            <h1>*Transaction control language</h1>
+                        </header>
+                    </section>
+
+                    <section id="Database_views" class="main-section">
+                        <header>
+                            <h1>*Database views</h1>
+                        </header>
+                    </section>
+
+                    <section id="Importing_data" class="main-section">
+                        <header>
+                            <h1>*Importing Data</h1>
+                        </header>
+                    </section>
+
+                    <section id="Exporting_data" class="main-section">
+                        <header>
+                            <h1>*Exporting data</h1>
+                        </header>
+                    </section>
+
+                    <section id="Using_backups" class="main-section">
+                        <header>
+                            <h1>*Using backups</h1>
+                        </header>
+                    </section>
+
+                    <section id="Advanced_topics" class="main-section">
+                        <header>
+                            <h1>*Advanced topics</h1>
+                        </header>
+                    </section>
+
+                    <section id="Additional_resources" class="main-section">
+                        <header>
+                            <h1>*Additional resources</h1>
+                        </header>
+                    </section>
+>>>>>>> f8bb848dc771d59de20d4a4ccf535bc3e79785a2
 
             </main>
 
