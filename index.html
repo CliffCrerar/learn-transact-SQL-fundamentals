@@ -52,8 +52,12 @@
                             Creating the demo database
                         </a>
 
-                        <a href="#RDBMS_Concepts_and_Semantics" class="nav-link">
-                            RDBMS Concepts and Semantics
+                        <a href="#Concepts_and_Semantics" class="nav-link">
+                            Concepts and Semantics
+                        </a>
+
+                        <a href="#Database_objects" class="nav-link">
+                            Database objects
                         </a>
 
                         <a href="#Data_types" class="nav-link">
@@ -129,7 +133,7 @@
                 contain at least 5 code elements
                 contain at least 5 li elements
             -->
-                <section id="Introduction" class="main-section">
+                <section id="Introduction" class="main-section drafted">
                     <header>
                         <h1>Introduction</h1>
                     </header>
@@ -179,9 +183,10 @@
                         </p>
                         <p class="content-paragraph"><i>DQL</i> is used for data retrieval used for display in
                             application or in a database client. <i>DDL</i> is used to define the database and is used
-                            to implement database objects such as tables, columns, relationships and constraints. <i>DML</i>
+                            to implement database objects such as tables, t1-columns, relationships and constraints. <i>DML</i>
                             is used to create data initiated by business transactions as well as updating or deleting
-                            data, <i>DML</i> is also used to alter database objects such modifying tables or columns.
+                            data, <i>DML</i> is also used to alter database objects such modifying tables or
+                            t1-columns.
                             <i>DTL</i> is used to control the way the database processes transactions and <i>DCL</i> is
                             mostly related to users and access rights.</p>
                         <p class="content-paragraph">SQL can also be described as a <a id="decLang" href="https://en.wikipedia.org/wiki/Declarative_programming"
@@ -194,7 +199,7 @@
                     </article>
                 </section>
 
-                <section id="About_this_document" class="main-section">
+                <section id="About_this_document" class="main-section drafted">
                     <header>
                         <h1>About this document</h1>
                     </header>
@@ -276,7 +281,7 @@
                     </article>
                 </section>
 
-                <section id="Getting_started" class="main-section">
+                <section id="Getting_started" class="main-section drafted">
                     <header>
                         <h1>Getting started</h1>
                     </header>
@@ -335,7 +340,7 @@
                     </article>
                 </section>
 
-                <section id="Creating_the_demo_database" class="main-section">
+                <section id="Creating_the_demo_database" class="main-section drafted">
                     <header>
                         <h1>Creating the demo database</h1>
                     </header>
@@ -373,7 +378,7 @@
                             part of SSMS is called the <a id="objexp" href="https://docs.microsoft.com/en-us/sql/ssms/object/object-explorer?view=sql-server-2017"
                                 target="_blank">Object
                                 Explorer</a> and allows you to explore all the objects created in your SQL Server but
-                            more on this in the next section <a href="#RDBMS_Concepts_and_Semantics">RDBMS Concepts
+                            more on this in the next section <a href="#Concepts_and_Semantics">Concepts
                                 Semantics</a>.</p>
 
                         <div class="paper note">
@@ -434,11 +439,11 @@
                     </article>
                 </section>
 
-                <section id="RDBMS_Concepts_and_Semantics" class="main-section">
+                <section id="Concepts_and_Semantics" class="main-section drafted">
                     <header>
-                        <h1>*RDBMS Concepts and Semantics</h1>
+                        <h1>Concepts and Semantics</h1>
                     </header>
-                    <article class="RDBMS_Concepts_and_Semantics">
+                    <article class="Concepts_and_Semantics">
                         <p class="content-paragraph">
                             The purpose of is to briefly familiarise yourself with some of the <i>database jargon</i>
                             that is
@@ -446,12 +451,15 @@
                             designers.
                         </p>
                         <p class="content-paragraph">
-                            For example, when we normally speak about data in a tabular form, like the data stored in
-                            excel we usually refer to fields and records. Fields being the columns and records being
+                            For example, when we normally speak about data in a tabular form, like the data stored
+                            in
+                            excel we usually refer to fields and records. Fields being the columns and records
+                            being
                             the rows.
                         </p>
                         <p class="content-paragraph">
-                            Also in this section we will very briefly discuss how databases are modelled using business
+                            Also in this section we will very briefly discuss how databases are modelled using
+                            business
                             cases or use cases.
                         </p>
                         <p class="content-paragraph">
@@ -459,91 +467,98 @@
                             they could be referred to when speaking in terms of relation databases.
                         </p>
                         <div class="table concepts-semantics">
-                            <div class="columns">
-                                <div class="column-headings col1">Familiar Term / Description</div>
-                                <div class="column-headings col2">Database Term</div>
+                            <div class="t1-columns">
+                                <div class="t1-column-headings t1-col1">Familiar Term / Description</div>
+                                <div class="t1-column-headings t1-col2">Database Term</div>
                             </div>
-                            <div class="rows">
-                                <div class="cells col1">Worksheets, Group of tables</div>
-                                <div class="cells col2">Tablespace, Schema</div>
+                            <div class="t1-rows">
+                                <div class="t1-cells t1-col1">Worksheets, Group of tables</div>
+                                <div class="t1-cells t1-col2">Tablespace, Schema</div>
                             </div>
-                            <div class="rows">
-                                <div class="cells col1">Table, File</div>
-                                <div class="cells col2">Entity, Table, Relation (not to be confused with relationship)</div>
+                            <div class="t1-rows">
+                                <div class="t1-cells t1-col1">Table, File</div>
+                                <div class="t1-cells t1-col2">Entity, Table, Relation (not to be confused with
+                                    relationship)</div>
                             </div>
-                            <div class="rows">
-                                <div class="cells col1">Extraction ,Sampled records</div>
-                                <div class="cells col2">Page (Section of a table's whole)</div>
+                            <div class="t1-rows">
+                                <div class="t1-cells t1-col1">Extraction ,Sampled records</div>
+                                <div class="t1-cells t1-col2">Page (Section of a table's whole)</div>
                             </div>
-                            <div class="rows">
-                                <div class="cells col1">Field, Column</div>
-                                <div class="cells col2">Column, Attribute</div>
+                            <div class="t1-rows">
+                                <div class="t1-cells t1-col1">Field, t1-column</div>
+                                <div class="t1-cells t1-col2">t1-column, Attribute</div>
                             </div>
-                            <div class="rows">
-                                <div class="cells col1">Facts about a certain topic</div>
-                                <div class="cells col2">Data elements</div>
+                            <div class="t1-rows">
+                                <div class="t1-cells t1-col1">Facts about a certain topic</div>
+                                <div class="t1-cells t1-col2">Data elements</div>
                             </div>
-                            <div class="rows">
-                                <div class="cells col1">Range of values</div>
-                                <div class="cells col2">Domain</div>
+                            <div class="t1-rows">
+                                <div class="t1-cells t1-col1">Range of values</div>
+                                <div class="t1-cells t1-col2">Domain</div>
                             </div>
-                            <div class="rows">
-                                <div class="cells col1">Character field or Numeric Field</div>
-                                <div class="cells col2">Data type</div>
+                            <div class="t1-rows">
+                                <div class="t1-cells t1-col1">Character field or Numeric Field</div>
+                                <div class="t1-cells t1-col2">Data type</div>
                             </div>
-                            <div class="rows">
-                                <div class="cells col1">Unique numbering</div>
-                                <div class="cells col2">Primary key</div>
+                            <div class="t1-rows">
+                                <div class="t1-cells t1-col1">Unique numbering</div>
+                                <div class="t1-cells t1-col2">Primary key</div>
                             </div>
-                            <div class="rows">
-                                <div class="cells col1">Records, Rows</div>
-                                <div class="cells col2">Rows, Tuples</div>
+                            <div class="t1-rows">
+                                <div class="t1-cells t1-col1">Records, t1-rows</div>
+                                <div class="t1-cells t1-col2">t1-rows, Tuples</div>
                             </div>
-                            <div class="rows">
-                                <div class="cells col1">Amount of unique values compared to row count</div>
-                                <div class="cells col2">Cardinality</div>
+                            <div class="t1-rows">
+                                <div class="t1-cells t1-col1">Amount of unique values compared to row count</div>
+                                <div class="t1-cells t1-col2">Cardinality</div>
                             </div>
-                            <div class="rows">
-                                <div class="cells col1">Column A is before column B</div>
-                                <div class="cells col2">Ordinal Position</div>
+                            <div class="t1-rows">
+                                <div class="t1-cells t1-col1">t1-column A is before t1-column B</div>
+                                <div class="t1-cells t1-col2">Ordinal Position</div>
                             </div>
-                            <div class="rows">
-                                <div class="cells col1">Field 1 combined with Field 2 to become unique not related to
+                            <div class="t1-rows">
+                                <div class="t1-cells t1-col1">Field 1 combined with Field 2 to become unique not
+                                    related
+                                    to another source</div>
+                                <div class="t1-cells t1-col2">Candidate Key</div>
+                            </div>
+                            <div class="t1-rows">
+                                <div class="t1-cells t1-col1">Field 1 combined with Field 2 to become unique but
+                                    related
+                                    to
                                     another source</div>
-                                <div class="cells col2">Candidate Key</div>
+                                <div class="t1-cells t1-col2">Compound / Composite Key</div>
                             </div>
-                            <div class="rows">
-                                <div class="cells col1">Field 1 combined with Field 2 to become unique but related to
-                                    another source</div>
-                                <div class="cells col2">Compound / Composite Key</div>
-                            </div>
-                            <div class="rows">
-                                <div class="cells col1">A unique number that exist in the real world</div>
-                                <div class="cells col2">Natural Key (Number plates of cars, barcodes on products)
+                            <div class="t1-rows">
+                                <div class="t1-cells t1-col1">A unique number that exist in the real world</div>
+                                <div class="t1-cells t1-col2">Natural Key (Number plates of cars, barcodes on products)
                                 </div>
                             </div>
-                            <div class="rows">
-                                <div class="cells col1">Value that cannot be split any further </div>
-                                <div class="cells col2">Atomic value</div>
+                            <div class="t1-rows">
+                                <div class="t1-cells t1-col1">Value that cannot be split any further </div>
+                                <div class="t1-cells t1-col2">Atomic value</div>
                             </div>
-                            <div class="rows">
-                                <div class="cells col1">Row 1 Col 1</div>
-                                <div class="cells col2">Row 1 Col 2</div>
+                            <div class="t1-rows">
+                                <div class="t1-cells t1-col1">Row 1 t1-col 1</div>
+                                <div class="t1-cells t1-col2">Row 1 t1-col 2</div>
                             </div>
                         </div>
                         <h3>Data modelling and table Relationships</h3>
-                        <p>These technique described here will be a basic demonstration of how the relational model is
+                        <p class="content-paragraph">These technique described here will be a basic demonstration
+                            of how the relational model
+                            is
                             conceptualised.
                         </p>
-                        <p>
-                            Although data modelling is no part of this document scope, it will be used to give you an
+                        <p class="content-paragraph">
+                            Although data modelling is no part of this document scope, it will be used to give you
+                            an
                             understanding of how relationships are formed between tables.
                         </p>
-                        <p>
+                        <p class="content-paragraph">
                             These type of relationships are important to understand for <a href="#Joining_tables">Joining
                                 tables</a>.
                         </p>
-                        <p>
+                        <p class="content-paragraph">
                             There are 3 main types of table relationships:
                             <ul>
                                 <li>1 to 1</li>
@@ -551,43 +566,556 @@
                                 <li>many to many</li>
                             </ul>
                         </p>
-                        <p>
-                            There is also a 4th type of relationship, it is the recursive relationship and the reason
-                            it is not part of the main 3 is because these 3 are usually between different tables and
-                            the recursive relationship occurs when a table has a relationship with itself in a kind of
+                        <p class="content-paragraph">
+                            There is also a 4th type of relationship, it is the recursive relationship and the
+                            reason
+                            it is not part of the main 3 is because these 3 are usually between different tables
+                            and
+                            the recursive relationship occurs when a table has a relationship with itself in a kind
+                            of
                             parent child configuration.
                         </p>
-                        <p>
+                        <p class="content-paragraph">
                             We will use some stories from a used car sales business.
                         </p>
-                        <p class="user-stories">
-                            A used car sales business named 123 Sold (pty) ltd, has many departments. Each department
-                            is managed by one person, this person appointed as manager can only be in charge of one
-                            department.
+                        <div class="paper business-case">
+                            <p class="user-stories">
+                                A used car sales business named 123 Sold (pty) ltd, has many departments. Each
+                                department is managed by one person, this person appointed as manager can only be
+                                in charge of
+                                one department.
+                            </p>
+                            <p class="user-stories">
+                                In the sales department, a salesman can advertise and market any car. Any car may
+                                also be advertised by any salesman.
+                            </p>
+                            <p class="user-stories">
+                                123 Sold is the holding company of a body shop next door named So Custom Body and
+                                Aftermarket Parts (pty) Ltd. The body shop uses many different t1-colours and shades,
+                                in many cases cars are painted with different t1-colours.
+                            </p>
+                            <p class="user-stories">
+                                A car always will have a base t1-color, but its panels can be painted in different
+                                t1-colors, for example. The bonnet car be yellow,
+                                the roof can be green and trunk lid can be orange.
+                            </p>
+                            <p class="user-stories">
+                                So Custom Body and Aftermarket Parts must keep track of which t1-colors are associated
+                                with which cars.
+                            </p>
+                        </div>
+                        <p class="content-paragraph">
+                            These user stories are what set the requirements for a data structure. But how do you
+                            create a data structure from the above?
                         </p>
-                        <p class="user-stories">
-                            In the sales department, a salesman can advertise and market any car. Any car may also be
-                            advertised by any salesman.
+                        <p class="content-paragraph">
+                            Without diving too deep looking at the above. Nouns and verbs translate into tables or
+                            entities and characteristic's normally translate into t1-columns. But what about the
+                            relationships?
                         </p>
-                        <p class="user-stories">
-                            123 Sold is the holding company of a body shop next door named So Custom Body and
-                            Aftermarket Parts (pty) Ltd. The body shop uses many different colours and shades, in many
-                            cases cars are painted with different colours. A car always will have a base color, but its
-                            panels can be painted in different colors, for example. The bonnet car be yellow, the roof
-                            can be green and trunk lid can be orange.
+                        <p class="content-paragraph">
+                            To identify the relationships you must first identify the entities, the players this
+                            can be either a person, an asset or an action. Entities are almost always something
+                            that can be represented in the real world.
                         </p>
-                        <p class="user-stories">
-                            So Custom Body and Aftermarket Parts must keep track of which colors are associated with
-                            which cars.
-                        </p>
+                        <h4 class="content-paragraph">
+                            <i>Referring back to the user story:</i>
+                        </h4>
+                        <ol class="relationship-block">
+                            <li class="ol-concepts-semantics">
+                                A <b>used car sales business</b> named 123 Sold (pty) ltd, has many <b>departments</b>.
+                            </li>
+                            <ul class="rel-breakdown">
+                                <li>
+                                    <b>Sales business</b> and <b>departments</b> are the entities, Company and
+                                    Departments.
+                                </li>
+                                <li>
+                                    Company has an attribute of <b>name</b>, and we can assume that departments
+                                    would
+                                    have a name as well.
+                                </li>
+                                <li>
+                                    <b>Has many</b> indicates the interaction and if you have experience working
+                                    you
+                                    will know that a company has many departments.
+                                </li>
+                            </ul>
+                            <p class="rel-sec-par">From this we can model this business case:</p>
+                            <img src="./r_one_to_many.png" class="rel-diagram" alt="1 to many relatioship example">
+                            <p class="rel-sec-par">
+                                So this is what a data structurer would look like for this business case. It is a 1
+                                to many relationship because a company can have many departments but a department
+                                can only belong to 1 company.
+                            </p>
+                            <p class="rel-sec-par">
+                                In the image above, ct1-rows foot notation was used for modeling the business case. To
+                                find out more for about erd modelling notation
+                                <a href="https://www.icloud.com/pages/0HtS5LAx3a6nYSvbfooFIlwDw#RDBMS_Concepts_%26_Semantics">follow
+                                    this link</a>.
+                            </p>
+                            <li class="ol-concepts-semantics">
+                                Each <b>department</b> is managed by <b>one person</b>, this person appointed as
+                                manager can only be in charge of one <b>department</b>.
+                            </li>
+                            <ul class="rel-breakdown">
+                                <li>
+                                    Entities are manager and department.
+                                </li>
+                                <li>
+                                    Once again the assumption is made that department and manager has a name.
+                                </li>
+                                <li>
+                                    And the interaction is a 1 to 1 relationship.
+                                </li>
+                            </ul>
+                            <p class="rel-sec-par">
+                                From this we can model this business case:
+                            </p>
+                            <img src="./r_one_to_one.png" class="rel-diagram" alt="1 to 1 relatioship example">
+                            <p class="rel-sec-par">
+                                This business case is a 1 to 1 relationship between.
+                            </p>
+                            <li class="ol-concepts-semantics">
+                                In the sales department, a <b>salesman</b> can advertise and market any <b>car</b>.
+                                Any car may
+                                also be advertised and marketed by any <b>salesman</b>.
+                            </li>
+                            <ul class="rel-breakdown">
+                                <li>
+                                    The entities are salesman and car.
+                                </li>
+                                <li>
+                                    Although sales department is mentioned, this will just be to link to the
+                                    department entity modeled above, but we will not model this just yet.
+                                </li>
+                                <li>
+                                    The interaction is a salesmen can market any car and any car can be marketed by
+                                    any
+                                    salesman.
+                                </li>
+                            </ul>
+                            <p class="rel-sec-par">
+                                This is a many to many relationship:
+                            </p>
+                            <img src="./r_many_to_many.png" class="rel-diagram" alt="many to many relationship">
+                            <p class="rel-sec-par">
+                                You can see that the ct1-rows foot is on both sides. Although we are able to model a
+                                many to many relationship, physically implementing implementing a many to many
+                                relationship is not a good idea. Many to many relationships are mostly theoretical
+                                and should be avoided.
+                            </p>
+                            <p class="rel-sec-par">
+                                To diffuse this situation implementing a <a href="http://databasemanagement.wikia.com/wiki/Database_Entities_in_E/R_Modeling">composite
+                                    entity</a> is usually the order of the day as below:
+                            </p>
+                            <img src="./r_composite.png" class="rel-diagram" alt="composite entity">
+                            <p class="rel-sec-par">
+                                By creating the composite entity Advertisments the many to many relationship is
+                                resolved and it is possible to know exactly which salesmen placed what add and for
+                                which cars adds have been placed.
+                            </p>
+                            <li class="ol-concepts-semantics">
+                                A <b>car</b> always will have a <b>base t1-color</b>, but <b>it's panels</b> can be
+                                painted in <b>different
+                                    t1-colors</b>.
+                            </li>
+                            <p class="rel-sec-par">
+                                <i>There are various ways to model this problem, but the aim here is to
+                                    demonstrate a recursive relationship.</i>
+                            </p>
+                            <ul class="rel-breakdown">
+                                <li>
+                                    There is only 1 entity, t1-color. But will include, the car entity for this
+                                    example.
+                                </li>
+                            </ul>
+                            <img src="./r_recursive.png" class="rel-diagram" alt="recursive relationship">
+                            <p class="rel-sec-par">
+                                Instead of trying to capture each panel as a t1-column in Car, which is not a good
+                                idea to start off with because each car would not have the same number of panels.
+                                How would you know how many t1-columns to create and furthermore what to name the
+                                t1-columns as each car might not have the same type of panels.
+                            </p>
+                            <p class="rel-sec-par">
+                                With this design each panel can be named assigned to a car, a car can be assigned
+                                with as many panels as reburied and the solution is not an architectural conundrum.
+                            </p>
+                            <p class="rel-sec-par">
+                                But the point here is that you can see that the t1-color table has a relationship with
+                                itself. This is what is known as a recursive relationship. The requirement states
+                                that a car must have a base t1-color and then all other panel t1-colors must be linked
+                                to
+                                this base t1-color.
+                            </p>
+                            <p class="rel-sec-par">
+                                hence for a specific car, it would have a base t1-color, and all the panels that are
+                                related to that car would be children of this base t1-color.
+                            </p>
+                            <p class="rel-sec-par">
+                                From this we can also see that a fair amount of assumption is also required when
+                                doing
+                                data modeling.
+                            </p>
+                            <p class="rel-sec-par">
+                                Database designers are highly trained and experienced professionals, and are intune
+                                with what is required by a client. All applications start here.
+                            </p>
+                        </ol>
                     </article>
                 </section>
 
-                <section id="
-                                Data_types" class="main-section">
+                <section id="Database_objects" class="main-section drafted">
                     <header>
-                        <h1>*Data types</h1>
+                        <h1>Database objects</h1>
                     </header>
+                    <article class="Data_types">
+                        <p class="content-paragraph">
+                            A <a href="https://www.techopedia.com/definition/24081/database-object">database object</a>
+                            is
+                            basically anything that can exist within a RDBMS environment. So it can be a lot of things
+                            like:
+                            <ul>
+                                <li>Table</li>
+                                <li>t1-column</li>
+                                <li>Data Type</li>
+                                <li>Domain</li>
+                                <li>Index</li>
+                                <li>Relationship</li>
+                                <li>View</li>
+                                <li>Stored procedure</li>
+                                <li>Built in function</li>
+                            </ul>
+                        </p>
+                        <h3><i>ANYTHING that can be created inside a RDBMS.</i></h3>
+                    </article>
+                </section>
+
+                <section id="Data_types" class="main-section drafted">
+                    <header>
+                        <h1>Data types</h1>
+                    </header>
+                    <arcticle class="Data-types">
+
+                        <p class="content-paragraph">
+                            A <b>Data type</b> is an <b>attribute</b> of a <b>database object</b>, like a t1-column or
+                            local variable, that
+                            determines what type of data the object can hold. In this section we will look at the data
+                            types that are most relevant to you.
+                        </p>
+
+                        <h2 class="dt-sub-headings">Exact numbers:</h2>
+
+                        <div class="table data-types-table">
+                            <div class="t2-columns">
+                                <div class="t2-column-headings t2-col1">Data type</div>
+                                <div class="t2-column-headings t2-col2">Description</div>
+                                <div class="t2-column-headings t2-col3">Range/Precision</div>
+                                <div class="t2-column-headings t2-col4">Storage</div>
+                            </div>
+                            <div class="t2-rows">
+                                <div class="t2-cells t2-col1">
+                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql?view=sql-server-2017">Tinyint</a>
+                                </div>
+                                <div class="t2-cells t2-col2">Exact-number data types that use integer data. To save
+                                    space in the database, use the smallest data type that can reliably contain all
+                                    possible values. </div>
+                                <div class="t2-cells t2-col3">0 to 255</div>
+                                <div class="t2-cells t2-col4">1 byte</div>
+                            </div>
+                            <div class="t2-rows">
+                                <div class="t2-cells t2-col1">
+                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql?view=sql-server-2017">Smallint</a>
+                                </div>
+                                <div class="t2-cells t2-col2">"</div>
+                                <div class="t2-cells t2-col3">-2^15 (-32,768) to 2^15-1 (32,767)</div>
+                                <div class="t2-cells t2-col4">2 bytes</div>
+                            </div>
+                            <div class="t2-rows">
+                                <div class="t2-cells t2-col1">
+                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql?view=sql-server-2017">Int</a>
+                                </div>
+                                <div class="t2-cells t2-col2">" </div>
+                                <div class="t2-cells t2-col3">-2^31 (-2,147,483,648) to 2^31-1 (2,147,483,647)</div>
+                                <div class="t2-cells t2-col4">4 bytes</div>
+                            </div>
+                            <div class="t2-rows">
+                                <div class="t2-cells t2-col1">
+                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql?view=sql-server-2017">Bigint</a>
+                                </div>
+                                <div class="t2-cells t2-col2">" </div>
+                                <div class="t2-cells t2-col3">-2^63 (-9,223,372,036,854,775,808) to 2^63-1
+                                    (9,223,372,036,854,775,807)</div>
+                                <div class="t2-cells t2-col4">8 bytes</div>
+                            </div>
+
+                            <div class="t2-rows">
+                                <div class="t2-cells t2-col1">
+                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/decimal-and-numeric-transact-sql?view=sql-server-2017">Numeric</a>
+                                </div>
+                                <div class="t2-cells t2-col2">Numeric data types that have fixed precision and scale.
+                                    Decimal and numeric are synonyms and can be used interchangeably.</div>
+                                <div class="t2-cells t2-col3">1-9</div>
+                                <div class="t2-cells t2-col4">5 bytes</div>
+                            </div>
+
+                            <div class="t2-rows">
+                                <div class="t2-cells t2-col1">
+                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/decimal-and-numeric-transact-sql?view=sql-server-2017">Decimal</a>
+                                </div>
+
+                                <div class="t2-cells t2-col2">
+                                    Fixed precision and scale numbers. When maximum precision
+                                    is used, valid values are from - 10^38 +1 through 10^38 - 1. The ISO synonyms for
+                                    decimal are dec and dec(p, s). numeric is functionally equivalent to decimal.
+                                </div>
+                                <div class="t2-cells t2-col3">29-38</div>
+                                <div class="t2-cells t2-col4">17 bytes</div>
+                            </div>
+
+                            <div class="t2-rows">
+                                <div class="t2-cells t2-col1">
+                                    <a target="_blank" href="">Money</a>
+                                </div>
+                                <div class="t2-cells t2-col2">The money and smallmoney data types are accurate to a
+                                    ten-thousandth of the monetary units that they represent. For Informatica, the
+                                    money and smallmoney data types are accurate to a one-hundredth of the monetary
+                                    units that they represent.</div>
+                                <div class="t2-cells t2-col3">-922,337,203,685,477.5808 to 922,337,203,685,477.5807
+                                    (-922,337,203,685,477.58
+                                    to 922,337,203,685,477.58 for Informatica. Informatica only supports two decimals,
+                                    not four.)</div>
+                                <div class="t2-cells t2-col4">8 bytes</div>
+                            </div>
+
+                            <div class="t2-rows">
+                                <div class="t2-cells t2-col1">
+                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/bit-transact-sql?view=sql-server-2017">Bit</a>
+                                </div>
+                                <div class="t2-cells t2-col2">The SQL Server Database Engine optimizes storage of bit
+                                    columns.
+
+                                    The string values TRUE and FALSE can be converted to bit values: TRUE is converted
+                                    to 1 and FALSE is converted to 0. </div>
+                                <div class="t2-cells t2-col3">1, 0, or NULL.</div>
+                                <div class="t2-cells t2-col4">2 bytes</div>
+                            </div>
+
+                        </div>
+
+                        <h2 class="dt-sub-headings">Approximite numbers:</h2>
+                        <p class="content-paragraph">
+                            Approximate-number data types for use with floating point
+                            numeric data. Floating point data is approximate; therefore, not all values in the
+                            data type range can be represented exactly.
+                        </p>
+                        <div class="table data-types-table">
+                            <div class="t2-columns">
+                                <div class="t2-column-headings t2-col1">Data type</div>
+                                <div class="t2-column-headings t2-col2">Description</div>
+                                <div class="t2-column-headings t2-col3">Range/Precision</div>
+                                <div class="t2-column-headings t2-col4">Storage</div>
+                            </div>
+                            <div class="t2-rows">
+                                <div class="t2-cells t2-col1">
+                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/float-and-real-transact-sql?view=sql-server-2017">Float</a>
+                                </div>
+                                <div class="t2-cells t2-col2">
+                                    The ISO synonym for real is float(24).
+                                </div>
+                                <div class="t2-cells t2-col3">7 digits</div>
+                                <div class="t2-cells t2-col4">4 Bytes</div>
+                            </div>
+                            <div class="t2-rows">
+                                <div class="t2-cells t2-col1">
+                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/float-and-real-transact-sql?view=sql-server-2017">Real</a>
+                                </div>
+                                <div class="t2-cells t2-col2">
+                                    float [ (n) ] Where n is the number of bits that are used to store the mantissa of
+                                    the float number in scientific notation and, therefore, dictates the precision and
+                                    storage size. If n is specified, it must be a value between 1 and 53. The default
+                                    value of n is 53.
+                                </div>
+                                <div class="t2-cells t2-col3">15 digits</div>
+                                <div class="t2-cells t2-col4">8 Bytes</div>
+                            </div>
+                        </div>
+
+                        <h2 class="dt-sub-headings">Character strings:</h2>
+                        <p class="content-paragraph">
+                            Character data types that are either fixed-length, char, or variable-length, varchar.
+                            Starting with SQL Server 2019 preview, when a UTF-8 enabled collation is used, these data
+                            types store the full range of Unicode character data and use the UTF-8 character encoding.
+                            If a non-UTF-8 collation is specified, then these data types store only a subset of
+                            characters supported by the corresponding code page of that collation.
+                        </p>
+                        <div class="table data-types-table">
+                            <div class="t2-columns">
+                                <div class="t2-column-headings t2-col1">Data type</div>
+                                <div class="t2-column-headings t2-col2">Description</div>
+                                <div class="t2-column-headings t2-col3">Range/Precision</div>
+                                <div class="t2-column-headings t2-col4">Storage</div>
+                            </div>
+
+                            <div class="t2-rows">
+                                <div class="t2-cells t2-col1">
+                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/char-and-varchar-transact-sql?view=sql-server-2017">Char</a>
+                                </div>
+                                <div class="t2-cells t2-col2">
+                                    char [ ( n ) ] Fixed-length string data. n defines the
+                                    string length in bytes</div>
+                                <div class="t2-cells t2-col3">1-80000</div>
+                                <div class="t2-cells t2-col4">8 MB</div>
+                            </div>
+
+                            <div class="t2-rows">
+                                <div class="t2-cells t2-col1">
+                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/char-and-varchar-transact-sql?view=sql-server-2017">varchar</a>
+                                </div>
+                                <div class="t2-cells t2-col2">Varchar [ ( n | max ) ] Variable-length string data n
+                                    defines the string length in bytes.</div>
+                                <div class="t2-cells t2-col3">1 to max</div>
+                                <div class="t2-cells t2-col4">2 GB</div>
+                            </div>
+
+                            <div class="t2-rows">
+                                <div class="t2-cells t2-col1">
+                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/ntext-text-and-image-transact-sql?view=sql-server-2017">Text</a>
+                                </div>
+                                <div class="t2-cells t2-col2">Variable-length non-Unicode data in the code page of the
+                                    server</div>
+                                <div class="t2-cells t2-col3">2^31-1 (2,147,483,647)</div>
+                                <div class="t2-cells t2-col4">2.1 MB</div>
+                            </div>
+                        </div>
+
+                        <h2 class="dt-sub-headings">Unicode character strings:</h2>
+                        <p class="content-paragraph">
+                            Character data types that are either fixed-length, nchar, or variable-length, nvarchar.
+                            Starting with SQL Server 2012 (11.x), when a Supplementary Character (SC) enabled collation
+                            is used, these data types store the full range of Unicode character data and use the UTF-16
+                            character encoding. If a non-SC collation is specified, then these data types store only
+                            the subset of character data supported by the UCS-2 character encoding.
+                        </p>
+                        <div class="table data-types-table">
+                            <div class="t2-columns">
+                                <div class="t2-column-headings t2-col1">Data type</div>
+                                <div class="t2-column-headings t2-col2">Description</div>
+                                <div class="t2-column-headings t2-col3">Range/Precision</div>
+                                <div class="t2-column-headings t2-col4">Storage</div>
+                            </div>
+
+                            <div class="t2-rows">
+                                <div class="t2-cells t2-col1">
+                                    <a target="_blank" href="">Nchar</a>
+                                </div>
+                                <div class="t2-cells t2-col2">Fixed-length string data. n defines the string length in
+                                    byte-pairs </div>
+                                <div class="t2-cells t2-col3">1 through 4,000</div>
+                                <div class="t2-cells t2-col4">2 * n</div>
+                            </div>
+
+                            <div class="t2-rows">
+                                <div class="t2-cells t2-col1">
+                                    <a target="_blank" href="">Nvarchar</a>
+                                </div>
+                                <div class="t2-cells t2-col2">Variable-length string data. n defines the string length
+                                    in byte-pairs</div>
+                                <div class="t2-cells t2-col3">1 through 4,000, max</div>
+                                <div class="t2-cells t2-col4">2 GB</div>
+                            </div>
+
+                            <div class="t2-rows">
+                                <div class="t2-cells t2-col1">
+                                    <a target="_blank" href="">Ntext</a>
+                                </div>
+                                <div class="t2-cells t2-col2">Variable-length Unicode</div>
+                                <div class="t2-cells t2-col3">2^30 - 1 (1,073,741,823)</div>
+                                <div class="t2-cells t2-col4">1 MB</div>
+                            </div>
+                        </div>
+
+                        <h2 class="dt-sub-headings">Date and time:</h2>
+                        <div class="table data-types-table">
+                            <div class="t2-columns">
+                                <div class="t2-column-headings t2-col1">Data type</div>
+                                <div class="t2-column-headings t2-col2">Description</div>
+                                <div class="t2-column-headings t2-col3">Range/Precision</div>
+                                <div class="t2-column-headings t2-col4">Storage</div>
+                            </div>
+
+                            <div class="t2-rows">
+                                <div class="t2-cells t2-col1">
+                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/date-transact-sql?view=sql-server-2017">Date</a>
+                                </div>
+                                <div class="t2-cells t2-col2">
+                                    Defines a date in SQL Server.
+                                    Default string literal format YYYY-MM-DD
+                                </div>
+                                <div class="t2-cells t2-col3">0001-01-01 through 9999-12-31 (1582-10-15 through
+                                    9999-12-31 for Informatica)</div>
+                                <div class="t2-cells t2-col4">3 bytes, fixed</div>
+                            </div>
+
+                            <div class="t2-rows">
+                                <div class="t2-cells t2-col1">
+                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/datetime2-transact-sql?view=sql-server-2017">Datetime2</a>
+                                </div>
+                                <div class="t2-cells t2-col2">
+                                    Defines a date that is combined with a time of day that
+                                    is based on 24-hour clock
+                                </div>
+                                <div class="t2-cells t2-col3">0001-01-01 through 9999-12-31, 00:00:00 through
+                                    23:59:59.9999999</div>
+                                <div class="t2-cells t2-col4">3 - 7 bytes</div>
+                            </div>
+
+                            <div class="t2-rows">
+                                <div class="t2-cells t2-col1">
+                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/datetime-transact-sql?view=sql-server-2017">datetime</a>
+                                </div>
+                                <div class="t2-cells t2-col2">Defines a date that is combined with a time of day with
+                                    fractional seconds that is based on a 24-hour clock.</div>
+                                <div class="t2-cells t2-col3">January 1, 1753, through December 31, 9999</div>
+                                <div class="t2-cells t2-col4">8 Bytes</div>
+                            </div>
+
+                            <div class="t2-rows">
+                                <div class="t2-cells t2-col1">
+                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/datetimeoffset-transact-sql?view=sql-server-2017">datetimeoffset</a>
+                                </div>
+                                <div class="t2-cells t2-col2">Defines a date that is combined with a time of a day that
+                                    has time zone awareness and is based on a 24-hour clock.
+                                </div>
+                                <div class="t2-cells t2-col3">0001-01-01 through 9999-12-31</div>
+                                <div class="t2-cells t2-col4">10 Bytes fixed</div>
+                            </div>
+
+                            <div class="t2-rows">
+                                <div class="t2-cells t2-col1">
+                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/smalldatetime-transact-sql?view=sql-server-2017">smalldatetime</a>
+                                </div>
+                                <div class="t2-cells t2-col2">Defines a date that is combined with a time of day. The
+                                    time is based on a 24-hour day, with seconds always zero (:00) and without
+                                    fractional seconds.</div>
+                                <div class="t2-cells t2-col3">1900-01-01 through 2079-06-06</div>
+                                <div class="t2-cells t2-col4">4 Bytes</div>
+                            </div>
+
+                            <div class="t2-rows">
+                                <div class="t2-cells t2-col1">
+                                    <a target="_blank" href="">time</a>
+                                </div>
+                                <div class="t2-cells t2-col2">Defines a time of a day. The time is without time zone
+                                    awareness and is based on a 24-hour clock.</div>
+                                <div class="t2-cells t2-col3">00:00:00.0000000 through 23:59:59.9999999 (00:00:00.000
+                                    through 23:59:59.999 for Informatica)</div>
+                                <div class="t2-cells t2-col4">5 bytes fixed</div>
+                            </div>
+                        </div>
+
+
+                    </arcticle>
                 </section>
 
                 <section id="Data_definition_language" class="main-section">
