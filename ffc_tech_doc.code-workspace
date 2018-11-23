@@ -5,12 +5,14 @@
 		}
 	],
 	"settings": {
+		"editor.wordWrap": "on",
 		"mssql.connections": [
 			{
 				"server": "tech-doc-test.ctx3bk1vdule.eu-west-1.rds.amazonaws.com,1433",
 				"user": "sa",
 				"password": "73CH-d0c-t3s7"
 			}
-		]
+		],
+		"editor.wordWrapColumn": 120
 	}
 }

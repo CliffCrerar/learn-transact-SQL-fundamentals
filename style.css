@@ -1,7 +1,7 @@
 /* At least 1 media query */
 
 .drafted{
-
+    display: none;
 }
 
 /* CSS VARIABLES*/
