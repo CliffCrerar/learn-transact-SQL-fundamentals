@@ -196,9 +196,13 @@ h1{
     overflow-y: scroll;
 }
 
+.section-article{
+    padding-left: 1vw;
+}
+
 .content-paragraph {
     text-align: justify;
-    padding-left: 1vw;
+
 }
 
 i:has(){
@@ -346,7 +350,7 @@ i:has(){
 }
 
 .dt-sub-headings{
-    padding: 1vw;
+    /*padding: 1vw;*/
 }
 
 .data-types-table{
@@ -407,5 +411,10 @@ i:has(){
 }
 
 .sub-heading{
+    padding-left: 1vw;
+    margin-top: 3vh;
+}
+
+.dql-p{
     padding-left: 1vw;
 }

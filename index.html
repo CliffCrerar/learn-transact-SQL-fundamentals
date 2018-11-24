@@ -14,8 +14,8 @@
     <body>
         <header class="page-header">
             <div class="page-header-left">
-                <h1>T-SQL Definition & Manipulation</h1>
-                <h3>Basics of Relational database Implementation & Administration</h3>
+                <h1>T-SQL Fundamentals</h1>
+                <h3>Basic relational database implementation & administration</h3>
             </div>
             <div class="page-header-right">
                 <img class="page-header-ffc-logo" src="./freeCodeCamp.png" alt="freeCodeCamp logo">
@@ -87,8 +87,8 @@
                             Joining tables
                         </a>
 
-                        <a href="#Functions" class="nav-link">
-                            Functions
+                        <a href="#Computation_and_Functions" class="nav-link">
+                            Computation andFunctions
                         </a>
 
                         <a href="#Sub-queries" class="nav-link">
@@ -96,15 +96,15 @@
                         </a>
 
                         <a href="#Transaction_concurrency" class="nav-link">
-                            Transaction Concurrency
+                            <s>Transaction concurrency</s>
                         </a>
 
                         <a href="#Transaction_control_language" class="nav-link">
-                            Transaction Control Language
+                            <s>Transaction Control Language</s>
                         </a>
 
                         <a href="#Database_views" class="nav-link">
-                            Database Views
+                            Database views
                         </a>
 
                         <a href="#Importing_data" class="nav-link">
@@ -144,7 +144,7 @@
                     <header>
                         <h1>Introduction</h1>
                     </header>
-                    <article class="Introduction">
+                    <article class="Introduction section-article">
                         <p class="content-paragraph">Structured query language (SQL) is a <a id="dsfl" href="https://en.wikipedia.org/wiki/Domain-specific_language">domain-specific
                                 language</a> used to program, design and administer <a id="rdbms" href="https://en.wikipedia.org/wiki/Relational_database_management_system"
                                 target="_blank">relational-database-management
@@ -228,7 +228,7 @@
                     <header>
                         <h1>About this document</h1>
                     </header>
-                    <article class="About_this_document">
+                    <article class="About_this_document section-article">
                         <p class="content-paragraph">As mentioned in the introduction section; there are many
                             brands of
                             relational database, enterprise and open source. However; as per the document title
@@ -327,7 +327,7 @@
                     <header>
                         <h1>Getting started</h1>
                     </header>
-                    <article class="Getting_started">
+                    <article class="Getting_started section-article">
                         <p class="content-paragraph">The previous sections of this document was just to
                             give you some
                             history of RDBMS, different types of RDBMS and why they are important. There
@@ -401,7 +401,7 @@
                     <header>
                         <h1>Creating the demo database</h1>
                     </header>
-                    <article class="Creating_the_demo_database">
+                    <article class="Creating_the_demo_database section-article">
                         <p class="content-paragraph">In this section define the steps to create a demo
                             database named
                             <b>Northwind</b>. Having this database created on your on computer, will
@@ -527,7 +527,7 @@
                     <header>
                         <h1>Concepts and Semantics</h1>
                     </header>
-                    <article class="Concepts_and_Semantics">
+                    <article class="Concepts_and_Semantics section-article">
                         <p class="content-paragraph">
                             The purpose of is to briefly familiarise yourself with some of the <i>database
                                 jargon</i>
@@ -912,7 +912,7 @@
                     <header>
                         <h1>Database objects</h1>
                     </header>
-                    <article class="Data_types">
+                    <article class="Data_types section-article">
                         <p class="content-paragraph">
                             A <a href="https://www.techopedia.com/definition/24081/database-object">database
                                 object</a>
@@ -940,7 +940,7 @@
                     <header>
                         <h1>Data types</h1>
                     </header>
-                    <arcticle class="Data-types">
+                    <article class="Data-types section-article">
 
                         <p class="content-paragraph">
                             A <b>Data type</b> is an <b>attribute</b> of a <b>database object</b>, like
@@ -1298,24 +1298,60 @@
                                     through 23:59:59.999 for Informatica)</div>
                                 <div class="t2-cells t2-col4">5 bytes fixed</div>
                             </div>
+
                         </div>
 
-
-                    </arcticle>
+                    </article>
                 </section>
 
-                <section id="Data_query_language" class="main-section">
+                <section id="Data_query_language" class="main-section ">
                     <header>
-                        <h1>*Data query language</h1>
+                        <h1>Data query language</h1>
                     </header>
-                    <h2 id="sql_dql_select" class="sub-heading dql-sh">SELECT</h2>
-                    <h2 id="sql_dql_from" class="sub-heading dql-sh">FROM</h2>
-                    <h2 id="sql_dql_where" class="sub-heading dql-sh">WHERE</h2>
-                    <h2 id="sql_dql_top" class="sub-heading dql-sh">TOP</h2>
-                    <h2 id="sql_dql_columns" class="sub-heading dql-sh">COLUMNS</h2>
-                    <h2 id="sql_dql_aliases" class="sub-heading dql-sh">ALIASES</h2>
-                    <h2 id="sql_dql_distinct" class="sub-heading dql-sh">Distinct</h2>
-                    <h2 id="sql_dql_order_by" class="sub-heading dql-sh">Order By</h2>
+                    <article class="section-article">
+
+                        <h2 id="sql_dql_select" class="sub-heading dql-sh">SELECT Statement</h2>
+                        <p class="content-paragraph dql-p">
+                            Data query language is, for instance, like where data definition language is a subset of
+                            structured query language, DQL is a subset of data manipulation language that is still to
+                            come later in this document. In some instances, you might find that the SELECT statement is
+                            still allocated under DML. Data query language is all about retrieving data from a
+                            database, it is not bothered with updating or modifying and only makes use of the SELECT
+                            statement. Although only the SELECT statement is used result sets can be extensively
+                            modified by combining the select statement with the following clauses:
+                            <ul>
+                                <li>SELECT</li>
+                                <li>FROM</li>
+                                <li>WHERE</li>
+                                <li>TOP</li>
+                                <li>ORDER BY</li>
+                            </ul>
+                        </p>
+
+                        <p class="content-paragraph dql-p">
+                            The use of these clauses to modify result sets will also be demonstrated through example
+                            queries that will be run on our demo database.
+                        </p>
+
+                        <p class="content-paragraph dql-p">
+                            Make sure that you are logged into SSMS, open a new query window.
+                        </p>
+
+
+                        <h2 id="sql_dql_from" class="sub-heading dql-sh">FROM Clause</h2>
+
+                        <h2 id="sql_dql_where" class="sub-heading dql-sh">WHERE Clause</h2>
+
+                        <h2 id="sql_dql_top" class="sub-heading dql-sh">TOP Clause</h2>
+
+                        <h2 id="sql_dql_columns" class="sub-heading dql-sh">COLUMNS</h2>
+
+                        <h2 id="sql_dql_aliases" class="sub-heading dql-sh">ALIASING</h2>
+
+                        <h2 id="sql_dql_order_by" class="sub-heading dql-sh">ORDER BY Clause</h2>
+
+                    </article>
+
                 </section>
 
                 <section id="Data_manipulation_language" class="main-section">
@@ -1342,10 +1378,12 @@
                     </header>
                 </section>
 
-                <section id="Functions" class="main-section">
+                <section id="Computation_and_Functions" class="main-section">
                     <header>
-                        <h1>*Functions</h1>
+                        <h1>*Computation and Functions</h1>
                     </header>
+                    <h2 id="sql_dql_distinct" class="sub-heading dql-sh">DISTINCT</h2>
+
                 </section>
 
                 <section id="Sub-queries" class="main-section">
@@ -1360,7 +1398,7 @@
                     </header>
                 </section>
 
-                <section id="Transaction_Control_Language" class="main-section">
+                <section id="Transaction_control_language" class="main-section">
                     <header>
                         <h1>*Transaction control language</h1>
                     </header>
@@ -1374,7 +1412,7 @@
 
                 <section id="Importing_data" class="main-section">
                     <header>
-                        <h1>*Importing Data</h1>
+                        <h1>*Importing data</h1>
                     </header>
                 </section>
 
