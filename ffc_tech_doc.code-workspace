@@ -17,7 +17,6 @@
 		"mssql.format.datatypeCasing": "lowercase",
 		"mssql.format.keywordCasing": "uppercase",
 		"mssql.logDebugInfo": true,
-		"editor.folding": false,
 		"mssql.format.placeSelectStatementReferencesOnNewLine": false,
 		"mssql.format.alignColumnDefinitionsInColumns": false,
 		"mssql.format.placeCommasBeforeNextStatement": false,
