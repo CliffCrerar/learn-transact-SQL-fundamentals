@@ -1,25 +1,28 @@
 USE Northwind
 
-SELECT *
+DECLARE @nwtb int = 2;
+
+/* 1 */
+IF @nwtb = 1 SELECT *
 FROM categories;
-
-SELECT *
+/* 2 */
+IF @nwtb = 2 SELECT *
 FROM customers;
-
-SELECT *
+/* 3 */
+IF @nwtb = 3 SELECT *
 FROM employees;
-
-SELECT *
+/* 4 */
+IF @nwtb = 4 SELECT *
 FROM order_details;
-
-SELECT *
+/* 5 */
+IF @nwtb = 5 SELECT *
 FROM orders;
-
-SELECT *
+/* 6 */
+IF @nwtb = 6 SELECT *
 FROM products;
-
-SELECT *
+/* 7 */
+IF @nwtb = 7 SELECT *
 FROM shippers;
-
-SELECT *
+/* 8 */
+IF @nwtb = 8 SELECT *
 FROM suppliers;
