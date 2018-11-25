@@ -1,37 +1,6 @@
+-- Added for insert select scenario
+
 USE Northwind;
-/*
-SELECT *
-FROM categories;
-
-INSERT INTO CATEGORIES
-    (CategoryName,Description)
-VALUES('Tinned Foods', 'These are all types of food that are preserved in a can');
-
-
-
-SELECT len('Alcoholic Beverages');
-
-SELECT len('Tinned foods');
-
-SELECT len('alcahol drinks');
-
-
-
-DELETE FROM categories WHERE CategoryID IN (9,10);
-
-INSERT INTO CATEGORIES
-VALUES
-    (10, 'Alcohol Drinks', 'These beverages require a special license to trade'),
-    (9, 'Tinned Foods', 'These are all types of food that are preserved in a can');
-
-INSERT INTO CATEGORIES
-    (CategoryID, CategoryName, Description)
-VALUES
-    (10, 'Alcohol Drinks', 'These beverages require a special license to trade'),
-    (9, 'Tinned Foods', 'These are all types of food that are preserved in a can');
-
-
-
 
 CREATE TABLE customer_applications
 (
@@ -46,11 +15,10 @@ CREATE TABLE customer_applications
     Country varchar(15),
     Phone varchar(24),
     Fax varchar(24)
-)
-
+);
 INSERT INTO customer_applications
 VALUES
-    ('ANT1N', 'Antonioson Moreno Taquer', 'Antonio Morenoreno', 'Owner', 'Mataderos  2312', 'M', NULL, '5023', 'Mexico', '(5) 555-3932', NULL),
+    ('ANT1N', 'Antonioson Moreno Taquer', 'Antonio Morenoreno', 'Owner', 'Mataderos 2312', 'M', NULL, '5023', 'Mexico', '(5) 555-3932', NULL),
     ('CACT1', 'Cactus Comidas para llevars', 'Patrick Simpson', 'Sales Agent', 'Cerrito 333', 'Buenos Aires', NULL, '1010', 'Argentina', '(1) 135-5555', '(1) 135-4892'),
     ('D1MON', 'Du mondelero entier', 'Jan Labrune', 'Owner', '67, rue des Cinquante Otages', 'Nantes', NULL, '44000', 'France', '40.67.88.88', '40.67.89.89'),
     ('F1LKO', 'Folk och fokkerin', 'Maria Ulricj', 'Owner', '', 'Br', NULL, 'S-844 67', 'Sweden', '0695-34 67 21', NULL),
@@ -64,80 +32,19 @@ VALUES
     ('SE1ES', 'Even Seven Seas Imports', 'Peter Kumar', 'Sales Manager', '90 Wadhurst Rd.', 'London', NULL, 'OX15 4NB', 'UK', '(171) 555-1717', '(171) 555-5646'),
     ('T1ECR', 'The Crack Box', 'Liu Ka', 'Marketing Assistant', '55 Grizzly Peak Rd.', 'Butte', 'MT', '59801', 'USA', '(406) 555-5834', '(406) 555-8083'),
     ('VI1TE', 'What the Victuailles en stock', 'Mary Saveme', 'Sales Agent', '2, rue du Commerce', 'Lyon', NULL, '69004', 'France', '78.32.54.86', '78.32.54.87'),
-    ('W1LMK', 'Wilman Kalalapappa', 'Mathew Karttunen', 'Owner/Marketing Assistant', 'Keskuskatu 45', 'Helsinki', NULL, '21240', 'Finland', '90-224 8858', '90-224 8858')
+    ('W1LMK', 'Wilman Kalalapappa', 'Mathew Karttunen', 'Owner/Marketing Assistant', 'Keskuskatu 45', 'Helsinki', NULL, '21240', 'Finland', '90-224 8858', '90-224 8858');
 
-DROP TABLE customer_applications
+ALTER TABLE customer_applications ADD [status] varchar(16);
 
+UPDATE customer_applications SET [status] = 'approved' WHERE CompanyName LIKE '%a%' AND CompanyName LIKE '%e%' AND CompanyName LIKE '%u%';
 
+SELECT *
+FROM customer_applications;
 
-INSERT INTO Customers(CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax)
+--DROP TABLE customer_applications;
+
+INSERT INTO Customers
+    (CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax)
 SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax
 FROM customer_applications
 WHERE status = 'approved';
-
-
-SELECT *
-FROM customers;
-
-
-
-DROP TABLE ProductsHighStock;
-
-SELECT TOP 5
-    ProductName AS Product, UnitsInStock AS [Stock Level]
---INTO ProductsHighStock
-FROM Products
-WHERE UnitsOnOrder = 0
-ORDER BY UnitsInStock DESC
-GO
-
-SELECT *
-FROM ProductsHighStock;
-
-
---DROP TABLE ProductsHighStock;
-
-
-SELECT *
-FROM INFORMATION_SCHEMA.columns
-WHERE TABLE_NAME = 'suppliers'
-
-UPDATE Suppliers SET Region = 'Kongers' WHERE SupplierID = 21;
-
-
-SELECT *
-FROM Employees
-WHERE TitleOfCourtesy = 'Ms.';
-
-SELECT *
-INTO
-
-SELECT *
-INTO employees_bu
-FROM Employees;
-SELECT *
-INTO products_bu
-FROM Products;
-*/
-
---DELETE FROM Employees WHERE Country = 'USA';
-
---TRUNCATE TABLE Products;
-
-/*
-DELETE FROM Employees;
-SELECT *
-FROM Employees;
-*/
-INSERT INTO Employees
-SELECT *
-FROM employees_bu;
-INSERT INTO Products
-SELECT *
-FROM Products_bu;
-
-SELECT *
-FROM Products;
-
-SELECT *
-FROM Employees;

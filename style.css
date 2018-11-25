@@ -411,10 +411,55 @@ i:has(){
 }
 
 .sub-heading{
-    padding-left: 1vw;
     margin-top: 3vh;
 }
 
 .dql-p{
-    padding-left: 1vw;
+
+}
+
+.sql-example-code{
+    width: 70%;
+    margin: auto;
+    background: #FFE0B2;
+    pointer-events: none;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+}
+
+.sql-example-code-line{
+    font-size: 1.2em;
+    width: 100%;
+}
+
+code span{
+    color: #3F51B5   ;
+}
+
+code b{
+    color: #E64A19  ;
+    font-weight: 100
+}
+
+code i{
+    color: #43A047;
+    font-style: normal;
+}
+
+.mat-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    box-shadow: var(--m-shad-2);
+    border-radius: var(--box-border-rad-1);
+    -webkit-border-radius: var(--box-border-rad-1);
+    -moz-border-radius: var(--box-border-rad-1);
+    -ms-border-radius: var(--box-border-rad-1);
+    -o-border-radius: var(--box-border-rad-1);
+}
+
+.dml-p{
+
 }

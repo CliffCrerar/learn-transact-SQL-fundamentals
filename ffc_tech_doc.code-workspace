@@ -17,8 +17,10 @@
 		"mssql.format.datatypeCasing": "lowercase",
 		"mssql.format.keywordCasing": "uppercase",
 		"mssql.logDebugInfo": true,
-		"plsql-language.pldoc.enable": false,
-		"plsql-language.signatureHelp.enable": false,
-		"plsql-language.snippets.enable": false
+		"editor.folding": false,
+		"mssql.format.placeSelectStatementReferencesOnNewLine": false,
+		"mssql.format.alignColumnDefinitionsInColumns": false,
+		"mssql.format.placeCommasBeforeNextStatement": false,
+		"mssql.applyLocalization": false
 	}
 }
