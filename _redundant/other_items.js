@@ -13,9 +13,8 @@ const questionSvg = '<svg class="q-svg" xmlns="http://www.w3.org/2000/svg" viewB
 
 let demoDbSnippet = createTable1();
 
-
-const createTable1 = () => {
-    const divEl = document.createElement('div');
+function createTable1() {
+    const divEl = document.createElement( 'div' );
 
     // Create all elements
     const tableFrame = divEl.cloneNode;

@@ -6,8 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>ffc Technical Document</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="./open_sans.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
+        <link rel="stylesheet" type="text/css" href="./css/open_sans.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
 
     </head>
 
@@ -18,7 +18,8 @@
                 <h3>Basic relational database implementation & administration</h3>
             </div>
             <div class="page-header-right">
-                <img class="page-header-ffc-logo" src="./freeCodeCamp.png" alt="freeCodeCamp logo">
+                <img id="ffc.img.logo" class="page-header-ffc-logo" src="./images/freeCodeCamp.png"
+                    alt="freeCodeCamp logo">
             </div>
         </header>
 
@@ -36,8 +37,10 @@
                     <div class="navbar-links">
                         <a href="#Introduction" class="nav-link">
                             Introduction
-                            <svg class="fa-chev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                <path d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z" /></svg>
+                            <!-- <svg class="fa-chev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path
+                                    d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z" />
+                            </svg> -->
                         </a>
 
                         <a href="#About_this_document" class="nav-link">
@@ -149,13 +152,15 @@
                 contain at least 5 code elements
                 contain at least 5 li elements
             -->
-                <section id="Introduction" class="main-section drafted">
-                    <header>2
+                <section id="Introduction" class="main-section">
+                    <header>
                         <h1>Introduction</h1>
                     </header>
                     <article class="Introduction section-article">
-                        <p class="content-paragraph">Structured query language (SQL) is a <a id="dsfl" href="https://en.wikipedia.org/wiki/Domain-specific_language">domain-specific
-                                language</a> used to program, design and administer <a id="rdbms" href="https://en.wikipedia.org/wiki/Relational_database_management_system"
+                        <p class="content-paragraph">Structured query language (SQL) is a <a id="dsfl"
+                                href="https://en.wikipedia.org/wiki/Domain-specific_language">domain-specific
+                                language</a> used to program, design and administer <a id="rdbms"
+                                href="https://en.wikipedia.org/wiki/Relational_database_management_system"
                                 target="_blank">relational-database-management
                                 systems</a>(RDBMS).</p>
                         <p class="content-paragraph">The language is used by many types of users including software
@@ -172,7 +177,8 @@
                             must store day to day transactions generated under normal operating conditions. These
                             types
                             of database is also referred to as
-                            <a id="oltp" href="https://en.wikipedia.org/wiki/Online_transaction_processing" target="_blank">online
+                            <a id="oltp" href="https://en.wikipedia.org/wiki/Online_transaction_processing"
+                                target="_blank">online
                                 transaction processing</a> or OLTP.</p>
                         <p class="content-paragraph">These OLTP database are optimised to process many single or
                             small
@@ -180,7 +186,8 @@
                             or
                             even globally while always maintaining consistency of data.</p>
                         <p class="content-paragraph">The other general type of RDBMS is
-                            <a id="olap" href="https://en.wikipedia.org/wiki/Online_analytical_processing" target="_blank">on-line
+                            <a id="olap" href="https://en.wikipedia.org/wiki/Online_analytical_processing"
+                                target="_blank">on-line
                                 analytical processing</a> or OLAP database. This type of database is optimised to
                             process vast amounts of transactions normally generated by an OLTP database, and OLTP
                             is
@@ -193,9 +200,10 @@
                             Most notable enterprise RDBMS is Oracle database and Microsoft SQL server. PostgreSQL,
                             MySQL and SQLite are most notable open-source RDBMS.</p>
                         <p class="content-paragraph">SQL is a language that is based on
-                            <a id="relAlg" href="https://en.wikipedia.org/wiki/Relational_algebra" target="_blank">relational
-                                algebra</a> and <a id="tupCalc" href="https://en.wikipedia.org/wiki/Tuple_relational_calculus"
-                                target="_blank">tuple
+                            <a id="relAlg" href="https://en.wikipedia.org/wiki/Relational_algebra"
+                                target="_blank">relational
+                                algebra</a> and <a id="tupCalc"
+                                href="https://en.wikipedia.org/wiki/Tuple_relational_calculus" target="_blank">tuple
                                 calculus</a>. It consists of a subset of languages and are listed as follows:<br>
                             <ul class="intro-ul">
                                 <li>Data Query Language (DQL)</li>
@@ -223,17 +231,18 @@
                             <i>DTL</i> is used to control the way the database processes transactions and <i>DCL</i>
                             is
                             mostly related to users and access rights.</p>
-                        <p class="content-paragraph">SQL can also be described as a <a id="decLang" href="https://en.wikipedia.org/wiki/Declarative_programming"
-                                target="_blank">declarative
-                                language</a> (<a id="fourGl" href="https://www.techopedia.com/definition/24308/fourth-generation-programming-language-4gl"
+                        <p class="content-paragraph">SQL can also be described as a <a id="decLang"
+                                href="https://en.wikipedia.org/wiki/Declarative_programming" target="_blank">declarative
+                                language</a> (<a id="fourGl"
+                                href="https://www.techopedia.com/definition/24308/fourth-generation-programming-language-4gl"
                                 target="_blank">4GL</a>)
-                            language and includes some elements of a <a id="procLang" href="https://en.wikipedia.org/wiki/Procedural_programming"
-                                target="_blank">procedural
+                            language and includes some elements of a <a id="procLang"
+                                href="https://en.wikipedia.org/wiki/Procedural_programming" target="_blank">procedural
                                 language</a>.</p>
                     </article>
                 </section>
 
-                <section id="About_this_document" class="main-section drafted">
+                <section id="About_this_document" class="main-section">
                     <header>
                         <h1>About this document</h1>
                     </header>
@@ -244,9 +253,11 @@
                             this
                             document will cover the basics of </p>
 
-                        <div class="paper question"><b>What is T-SQL</b><svg class="q-svg" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 384 512">
-                                <path d="M202.021 0C122.202 0 70.503 32.703 29.914 91.026c-7.363 10.58-5.093 25.086 5.178 32.874l43.138 32.709c10.373 7.865 25.132 6.026 33.253-4.148 25.049-31.381 43.63-49.449 82.757-49.449 30.764 0 68.816 19.799 68.816 49.631 0 22.552-18.617 34.134-48.993 51.164-35.423 19.86-82.299 44.576-82.299 106.405V320c0 13.255 10.745 24 24 24h72.471c13.255 0 24-10.745 24-24v-5.773c0-42.86 125.268-44.645 125.268-160.627C377.504 66.256 286.902 0 202.021 0zM192 373.459c-38.196 0-69.271 31.075-69.271 69.271 0 38.195 31.075 69.27 69.271 69.27s69.271-31.075 69.271-69.271-31.075-69.27-69.271-69.27z"></path>
+                        <div class="paper question"><b>What is T-SQL</b><svg class="q-svg"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M202.021 0C122.202 0 70.503 32.703 29.914 91.026c-7.363 10.58-5.093 25.086 5.178 32.874l43.138 32.709c10.373 7.865 25.132 6.026 33.253-4.148 25.049-31.381 43.63-49.449 82.757-49.449 30.764 0 68.816 19.799 68.816 49.631 0 22.552-18.617 34.134-48.993 51.164-35.423 19.86-82.299 44.576-82.299 106.405V320c0 13.255 10.745 24 24 24h72.471c13.255 0 24-10.745 24-24v-5.773c0-42.86 125.268-44.645 125.268-160.627C377.504 66.256 286.902 0 202.021 0zM192 373.459c-38.196 0-69.271 31.075-69.271 69.271 0 38.195 31.075 69.27 69.271 69.27s69.271-31.075 69.271-69.271-31.075-69.27-69.271-69.27z">
+                                </path>
                             </svg>
                         </div>
 
@@ -256,8 +267,11 @@
                                 target="_blank">Microsoft
                                 SQL Server</a>.</p>
                         <div class="paper question"><b>Microsoft SQL Server is a enterprise RDBMS. Is that not
-                                overkill for this</b><svg class="q-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path d="M202.021 0C122.202 0 70.503 32.703 29.914 91.026c-7.363 10.58-5.093 25.086 5.178 32.874l43.138 32.709c10.373 7.865 25.132 6.026 33.253-4.148 25.049-31.381 43.63-49.449 82.757-49.449 30.764 0 68.816 19.799 68.816 49.631 0 22.552-18.617 34.134-48.993 51.164-35.423 19.86-82.299 44.576-82.299 106.405V320c0 13.255 10.745 24 24 24h72.471c13.255 0 24-10.745 24-24v-5.773c0-42.86 125.268-44.645 125.268-160.627C377.504 66.256 286.902 0 202.021 0zM192 373.459c-38.196 0-69.271 31.075-69.271 69.271 0 38.195 31.075 69.27 69.271 69.27s69.271-31.075 69.271-69.271-31.075-69.27-69.271-69.27z"></path>
+                                overkill for this</b><svg class="q-svg" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512">
+                                <path
+                                    d="M202.021 0C122.202 0 70.503 32.703 29.914 91.026c-7.363 10.58-5.093 25.086 5.178 32.874l43.138 32.709c10.373 7.865 25.132 6.026 33.253-4.148 25.049-31.381 43.63-49.449 82.757-49.449 30.764 0 68.816 19.799 68.816 49.631 0 22.552-18.617 34.134-48.993 51.164-35.423 19.86-82.299 44.576-82.299 106.405V320c0 13.255 10.745 24 24 24h72.471c13.255 0 24-10.745 24-24v-5.773c0-42.86 125.268-44.645 125.268-160.627C377.504 66.256 286.902 0 202.021 0zM192 373.459c-38.196 0-69.271 31.075-69.271 69.271 0 38.195 31.075 69.27 69.271 69.27s69.271-31.075 69.271-69.271-31.075-69.27-69.271-69.27z">
+                                </path>
                             </svg>
                         </div>
                         <p class="content-paragraph">Indeed way overkill, Microsoft have a scaled down version
@@ -273,7 +287,9 @@
                             instructions on installation thereof.</p>
                         <div class="paper question"><b>What are "The Basics"</b>
                             <svg class="q-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path d="M202.021 0C122.202 0 70.503 32.703 29.914 91.026c-7.363 10.58-5.093 25.086 5.178 32.874l43.138 32.709c10.373 7.865 25.132 6.026 33.253-4.148 25.049-31.381 43.63-49.449 82.757-49.449 30.764 0 68.816 19.799 68.816 49.631 0 22.552-18.617 34.134-48.993 51.164-35.423 19.86-82.299 44.576-82.299 106.405V320c0 13.255 10.745 24 24 24h72.471c13.255 0 24-10.745 24-24v-5.773c0-42.86 125.268-44.645 125.268-160.627C377.504 66.256 286.902 0 202.021 0zM192 373.459c-38.196 0-69.271 31.075-69.271 69.271 0 38.195 31.075 69.27 69.271 69.27s69.271-31.075 69.271-69.271-31.075-69.27-69.271-69.27z"></path>
+                                <path
+                                    d="M202.021 0C122.202 0 70.503 32.703 29.914 91.026c-7.363 10.58-5.093 25.086 5.178 32.874l43.138 32.709c10.373 7.865 25.132 6.026 33.253-4.148 25.049-31.381 43.63-49.449 82.757-49.449 30.764 0 68.816 19.799 68.816 49.631 0 22.552-18.617 34.134-48.993 51.164-35.423 19.86-82.299 44.576-82.299 106.405V320c0 13.255 10.745 24 24 24h72.471c13.255 0 24-10.745 24-24v-5.773c0-42.86 125.268-44.645 125.268-160.627C377.504 66.256 286.902 0 202.021 0zM192 373.459c-38.196 0-69.271 31.075-69.271 69.271 0 38.195 31.075 69.27 69.271 69.27s69.271-31.075 69.271-69.271-31.075-69.27-69.271-69.27z">
+                                </path>
                             </svg>
                         </div>
                         <p class="content-paragraph">The great thing about SQL is that knowing the basics can
@@ -291,9 +307,11 @@
                             administer data using the power of Microsofts Powerful Database engine without
                             having to
                             acquire an expensive more efficient alternative to Excel.</p>
-                        <div class="paper question"><b>What is covered in this document</b><svg class="q-svg" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 384 512">
-                                <path d="M202.021 0C122.202 0 70.503 32.703 29.914 91.026c-7.363 10.58-5.093 25.086 5.178 32.874l43.138 32.709c10.373 7.865 25.132 6.026 33.253-4.148 25.049-31.381 43.63-49.449 82.757-49.449 30.764 0 68.816 19.799 68.816 49.631 0 22.552-18.617 34.134-48.993 51.164-35.423 19.86-82.299 44.576-82.299 106.405V320c0 13.255 10.745 24 24 24h72.471c13.255 0 24-10.745 24-24v-5.773c0-42.86 125.268-44.645 125.268-160.627C377.504 66.256 286.902 0 202.021 0zM192 373.459c-38.196 0-69.271 31.075-69.271 69.271 0 38.195 31.075 69.27 69.271 69.27s69.271-31.075 69.271-69.271-31.075-69.27-69.271-69.27z"></path>
+                        <div class="paper question"><b>What is covered in this document</b><svg class="q-svg"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M202.021 0C122.202 0 70.503 32.703 29.914 91.026c-7.363 10.58-5.093 25.086 5.178 32.874l43.138 32.709c10.373 7.865 25.132 6.026 33.253-4.148 25.049-31.381 43.63-49.449 82.757-49.449 30.764 0 68.816 19.799 68.816 49.631 0 22.552-18.617 34.134-48.993 51.164-35.423 19.86-82.299 44.576-82.299 106.405V320c0 13.255 10.745 24 24 24h72.471c13.255 0 24-10.745 24-24v-5.773c0-42.86 125.268-44.645 125.268-160.627C377.504 66.256 286.902 0 202.021 0zM192 373.459c-38.196 0-69.271 31.075-69.271 69.271 0 38.195 31.075 69.27 69.271 69.27s69.271-31.075 69.271-69.271-31.075-69.27-69.271-69.27z">
+                                </path>
                             </svg>
                         </div>
                         <p class="content-paragraph">Even though the basics can take you a long way, the road
@@ -332,7 +350,7 @@
                     </article>
                 </section>
 
-                <section id="Getting_started" class="main-section drafted">
+                <section id="Getting_started" class="main-section">
                     <header>
                         <h1>Getting started</h1>
                     </header>
@@ -353,21 +371,25 @@
                         <div class="paper note">
                             <p><b class="note-start">NOTE:</b>if you already have SQL Server running and
                                 can access
-                                it with SQL Server Management Studio, you may skip to <a href="#Creating_the_demo_database">Creating
+                                it with SQL Server Management Studio, you may skip to <a
+                                    href="#Creating_the_demo_database">Creating
                                     the demo database</a> that create the demo database and proceed to.</p>
                         </div>
                         <p class="content-paragraph">So let’s start doing this, head over to Microsoft’s
-                            site and <a id="dnldsqlexp" href="https://www.microsoft.com/en-us/sql-server/sql-server-editions-express"
+                            site and <a id="dnldsqlexp"
+                                href="https://www.microsoft.com/en-us/sql-server/sql-server-editions-express"
                                 target="_blank">download
                                 MS SQL Express</a>.</p>
                         <p class="content-paragraph">While you are waiting for the download, you can head
                             over to this
-                            <a id="instsqlexp" href="https://za.godaddy.com/help/install-microsoft-sql-server-express-16624"
+                            <a id="instsqlexp"
+                                href="https://za.godaddy.com/help/install-microsoft-sql-server-express-16624"
                                 target="_blank">GoDaddy
                                 article</a> and start familiarising yourself with the steps to follow for
                             installing MS
                             SQL Express.</p>
-                        <p class="content-paragraph">MS SQL Express should also install <a id="mssqlinfo" href="https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms?view=sql-server-2017"
+                        <p class="content-paragraph">MS SQL Express should also install <a id="mssqlinfo"
+                                href="https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms?view=sql-server-2017"
                                 target="_blank">Microsoft
                                 SQL Server Management Studio</a>, which is recommended application to use
                             when
@@ -375,11 +397,13 @@
                                 href="https://en.wikipedia.org/wiki/Database_connection" target="_blank">Database
                                 Client</a>.</p>
                         <p class="content-paragraph">This is because all RDBMS is built on
-                            <a id="clntsrv" href="https://en.wikipedia.org/wiki/Client%E2%80%93server_model" target="_blank">client-server
+                            <a id="clntsrv" href="https://en.wikipedia.org/wiki/Client%E2%80%93server_model"
+                                target="_blank">client-server
                                 architecture</a>. This is also the architecture of most corporate
                             applications where
                             many users use the same application for productivity. It is also the definitive
-                            architecture of <a id="website" href="https://en.wikipedia.org/wiki/Website" target="_blank">web
+                            architecture of <a id="website" href="https://en.wikipedia.org/wiki/Website"
+                                target="_blank">web
                                 sites</a>
                             and <a id="webapp" href="https://en.wikipedia.org/wiki/Web_application" target="_blank">web
                                 applications</a>.</p>
@@ -390,8 +414,8 @@
                             interacting
                             with multiple brands of RDBMS, for instance a single database client can
                             connect to a
-                            PosgreSQL server as well as a MySQL server. An example of this is <a id="teamsql" href="https://teamsql.io"
-                                target="_blank">TeamSQL</a>.</p>
+                            PosgreSQL server as well as a MySQL server. An example of this is <a id="teamsql"
+                                href="https://teamsql.io" target="_blank">TeamSQL</a>.</p>
                         <p class="content-paragraph">But for this document we will only use Microsoft SQL
                             Server
                             Management Studio and will be referred to as SSMS in the rest of this document.</p>
@@ -400,13 +424,14 @@
                             of Microsoft SQL Server Express and you are able to access this by means of
                             SSMS, otherwise
                             you will not be able to proceed.</p>
-                        <p class="content-paragraph">If you need to <a id="readsearchask" href="https://medium.freecodecamp.org/read-search-dont-be-afraid-to-ask-743a23c411b4"
+                        <p class="content-paragraph">If you need to <a id="readsearchask"
+                                href="https://medium.freecodecamp.org/read-search-dont-be-afraid-to-ask-743a23c411b4"
                                 target="_blank">Read,
                                 Search, Ask</a>.</p>
                     </article>
                 </section>
 
-                <section id="Creating_the_demo_database" class="main-section drafted">
+                <section id="Creating_the_demo_database" class="main-section">
                     <header>
                         <h1>Creating the demo database</h1>
                     </header>
@@ -454,7 +479,8 @@
                             Server. If you have
                             done this you should see the following:<br>
                             <img class="demo-database-step-1" src="./ssms.png"><br>
-                            This part of SSMS is called the <a id="objexp" href="https://docs.microsoft.com/en-us/sql/ssms/object/object-explorer?view=sql-server-2017"
+                            This part of SSMS is called the <a id="objexp"
+                                href="https://docs.microsoft.com/en-us/sql/ssms/object/object-explorer?view=sql-server-2017"
                                 target="_blank">Object
                                 Explorer</a> and allows you to explore all the objects created in your
                             SQL Server but more on this in the next section <a href="#Concepts_and_Semantics">Concepts
@@ -515,7 +541,8 @@
                             key which is the shortcut for run.</p>
                         <p class="content-paragraph">If you encounter an error, read what the error
                             says. Use
-                            <a id="readsearchask_1" href="https://medium.freecodecamp.org/read-search-dont-be-afraid-to-ask-743a23c411b4"
+                            <a id="readsearchask_1"
+                                href="https://medium.freecodecamp.org/read-search-dont-be-afraid-to-ask-743a23c411b4"
                                 target="_blank"> Read, Search, Ask
                             </a> to attempt to resolve this error.</p>
                         <p class="content-paragraph">If there is no error, a message will appear in the
@@ -532,7 +559,7 @@
                     </article>
                 </section>
 
-                <section id="Concepts_and_Semantics" class="main-section drafted">
+                <section id="Concepts_and_Semantics" class="main-section">
                     <header>
                         <h1>Concepts and Semantics</h1>
                     </header>
@@ -663,7 +690,8 @@
                             understanding of how relationships are formed between tables.
                         </p>
                         <p class="content-paragraph">
-                            These type of relationships are important to understand for <a href="#Joining_tables">Joining
+                            These type of relationships are important to understand for <a
+                                href="#Joining_tables">Joining
                                 tables</a>.
                         </p>
                         <p class="content-paragraph">
@@ -779,7 +807,8 @@
                             <p class="rel-sec-par">
                                 In the image above, ct1-rows foot notation was used for modeling the business case.
                                 To find out more for about erd modelling notation
-                                <a href="https://www.icloud.com/pages/0HtS5LAx3a6nYSvbfooFIlwDw#RDBMS_Concepts_%26_Semantics">follow
+                                <a
+                                    href="https://www.icloud.com/pages/0HtS5LAx3a6nYSvbfooFIlwDw#RDBMS_Concepts_%26_Semantics">follow
                                     this link</a>.
                             </p>
                             <li class="ol-concepts-semantics">
@@ -843,7 +872,8 @@
                                 and should be avoided.
                             </p>
                             <p class="rel-sec-par">
-                                To diffuse this situation implementing a <a href="http://databasemanagement.wikia.com/wiki/Database_Entities_in_E/R_Modeling">composite
+                                To diffuse this situation implementing a <a
+                                    href="http://databasemanagement.wikia.com/wiki/Database_Entities_in_E/R_Modeling">composite
                                     entity</a> is usually the order of the day as below:
                             </p>
                             <img src="./r_composite.png" class="rel-diagram" alt="composite entity">
@@ -917,7 +947,7 @@
                     </article>
                 </section>
 
-                <section id="Database_objects" class="main-section drafted">
+                <section id="Database_objects" class="main-section">
                     <header>
                         <h1>Database objects</h1>
                     </header>
@@ -945,7 +975,7 @@
                     </article>
                 </section>
 
-                <section id="Data_types" class="main-section drafted">
+                <section id="Data_types" class="main-section">
                     <header>
                         <h1>Data types</h1>
                     </header>
@@ -971,7 +1001,8 @@
                             </div>
                             <div class="t2-rows">
                                 <div class="t2-cells t2-col1">
-                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql?view=sql-server-2017">Tinyint</a>
+                                    <a target="_blank"
+                                        href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql?view=sql-server-2017">Tinyint</a>
                                 </div>
                                 <div class="t2-cells t2-col2">Exact-number data types that use integer
                                     data. To save
@@ -983,7 +1014,8 @@
                             </div>
                             <div class="t2-rows">
                                 <div class="t2-cells t2-col1">
-                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql?view=sql-server-2017">Smallint</a>
+                                    <a target="_blank"
+                                        href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql?view=sql-server-2017">Smallint</a>
                                 </div>
                                 <div class="t2-cells t2-col2">"</div>
                                 <div class="t2-cells t2-col3">-2^15 (-32,768) to 2^15-1 (32,767)</div>
@@ -991,7 +1023,8 @@
                             </div>
                             <div class="t2-rows">
                                 <div class="t2-cells t2-col1">
-                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql?view=sql-server-2017">Int</a>
+                                    <a target="_blank"
+                                        href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql?view=sql-server-2017">Int</a>
                                 </div>
                                 <div class="t2-cells t2-col2">" </div>
                                 <div class="t2-cells t2-col3">-2^31 (-2,147,483,648) to 2^31-1
@@ -1000,7 +1033,8 @@
                             </div>
                             <div class="t2-rows">
                                 <div class="t2-cells t2-col1">
-                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql?view=sql-server-2017">Bigint</a>
+                                    <a target="_blank"
+                                        href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql?view=sql-server-2017">Bigint</a>
                                 </div>
                                 <div class="t2-cells t2-col2">" </div>
                                 <div class="t2-cells t2-col3">-2^63 (-9,223,372,036,854,775,808) to
@@ -1011,7 +1045,8 @@
 
                             <div class="t2-rows">
                                 <div class="t2-cells t2-col1">
-                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/decimal-and-numeric-transact-sql?view=sql-server-2017">Numeric</a>
+                                    <a target="_blank"
+                                        href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/decimal-and-numeric-transact-sql?view=sql-server-2017">Numeric</a>
                                 </div>
                                 <div class="t2-cells t2-col2">Numeric data types that have fixed
                                     precision and scale.
@@ -1022,7 +1057,8 @@
 
                             <div class="t2-rows">
                                 <div class="t2-cells t2-col1">
-                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/decimal-and-numeric-transact-sql?view=sql-server-2017">Decimal</a>
+                                    <a target="_blank"
+                                        href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/decimal-and-numeric-transact-sql?view=sql-server-2017">Decimal</a>
                                 </div>
 
                                 <div class="t2-cells t2-col2">
@@ -1058,7 +1094,8 @@
 
                             <div class="t2-rows">
                                 <div class="t2-cells t2-col1">
-                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/bit-transact-sql?view=sql-server-2017">Bit</a>
+                                    <a target="_blank"
+                                        href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/bit-transact-sql?view=sql-server-2017">Bit</a>
                                 </div>
                                 <div class="t2-cells t2-col2">The SQL Server Database Engine optimizes
                                     storage of bit
@@ -1089,7 +1126,8 @@
                             </div>
                             <div class="t2-rows">
                                 <div class="t2-cells t2-col1">
-                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/float-and-real-transact-sql?view=sql-server-2017">Float</a>
+                                    <a target="_blank"
+                                        href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/float-and-real-transact-sql?view=sql-server-2017">Float</a>
                                 </div>
                                 <div class="t2-cells t2-col2">
                                     The ISO synonym for real is float(24).
@@ -1099,7 +1137,8 @@
                             </div>
                             <div class="t2-rows">
                                 <div class="t2-cells t2-col1">
-                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/float-and-real-transact-sql?view=sql-server-2017">Real</a>
+                                    <a target="_blank"
+                                        href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/float-and-real-transact-sql?view=sql-server-2017">Real</a>
                                 </div>
                                 <div class="t2-cells t2-col2">
                                     float [ (n) ] Where n is the number of bits that are used to store
@@ -1137,7 +1176,8 @@
 
                             <div class="t2-rows">
                                 <div class="t2-cells t2-col1">
-                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/char-and-varchar-transact-sql?view=sql-server-2017">Char</a>
+                                    <a target="_blank"
+                                        href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/char-and-varchar-transact-sql?view=sql-server-2017">Char</a>
                                 </div>
                                 <div class="t2-cells t2-col2">
                                     char [ ( n ) ] Fixed-length string data. n defines the
@@ -1148,7 +1188,8 @@
 
                             <div class="t2-rows">
                                 <div class="t2-cells t2-col1">
-                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/char-and-varchar-transact-sql?view=sql-server-2017">varchar</a>
+                                    <a target="_blank"
+                                        href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/char-and-varchar-transact-sql?view=sql-server-2017">varchar</a>
                                 </div>
                                 <div class="t2-cells t2-col2">Varchar [ ( n | max ) ] Variable-length
                                     string data n
@@ -1159,7 +1200,8 @@
 
                             <div class="t2-rows">
                                 <div class="t2-cells t2-col1">
-                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/ntext-text-and-image-transact-sql?view=sql-server-2017">Text</a>
+                                    <a target="_blank"
+                                        href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/ntext-text-and-image-transact-sql?view=sql-server-2017">Text</a>
                                 </div>
                                 <div class="t2-cells t2-col2">Variable-length non-Unicode data in the
                                     code page of the
@@ -1232,7 +1274,8 @@
 
                             <div class="t2-rows">
                                 <div class="t2-cells t2-col1">
-                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/date-transact-sql?view=sql-server-2017">Date</a>
+                                    <a target="_blank"
+                                        href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/date-transact-sql?view=sql-server-2017">Date</a>
                                 </div>
                                 <div class="t2-cells t2-col2">
                                     Defines a date in SQL Server.
@@ -1246,7 +1289,8 @@
 
                             <div class="t2-rows">
                                 <div class="t2-cells t2-col1">
-                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/datetime2-transact-sql?view=sql-server-2017">Datetime2</a>
+                                    <a target="_blank"
+                                        href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/datetime2-transact-sql?view=sql-server-2017">Datetime2</a>
                                 </div>
                                 <div class="t2-cells t2-col2">
                                     Defines a date that is combined with a time of day that
@@ -1260,7 +1304,8 @@
 
                             <div class="t2-rows">
                                 <div class="t2-cells t2-col1">
-                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/datetime-transact-sql?view=sql-server-2017">datetime</a>
+                                    <a target="_blank"
+                                        href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/datetime-transact-sql?view=sql-server-2017">datetime</a>
                                 </div>
                                 <div class="t2-cells t2-col2">Defines a date that is combined with a
                                     time of day with
@@ -1272,7 +1317,8 @@
 
                             <div class="t2-rows">
                                 <div class="t2-cells t2-col1">
-                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/datetimeoffset-transact-sql?view=sql-server-2017">datetimeoffset</a>
+                                    <a target="_blank"
+                                        href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/datetimeoffset-transact-sql?view=sql-server-2017">datetimeoffset</a>
                                 </div>
                                 <div class="t2-cells t2-col2">Defines a date that is combined with a
                                     time of a day that
@@ -1284,7 +1330,8 @@
 
                             <div class="t2-rows">
                                 <div class="t2-cells t2-col1">
-                                    <a target="_blank" href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/smalldatetime-transact-sql?view=sql-server-2017">smalldatetime</a>
+                                    <a target="_blank"
+                                        href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/smalldatetime-transact-sql?view=sql-server-2017">smalldatetime</a>
                                 </div>
                                 <div class="t2-cells t2-col2">Defines a date that is combined with a
                                     time of day. The
@@ -1313,7 +1360,7 @@
                     </article>
                 </section>
 
-                <section id="Data_query_language" class="main-section ">
+                <section id="Data_query_language" class="main-section">
                     <header>
                         <h1>Data query language</h1>
                     </header>
@@ -1425,7 +1472,8 @@
                                 are
                                 not getting the correct results or is experiencing an error. Troubleshooting is not in
                                 the
-                                scope of this document so we encourage you to use <a id="readsearchask" href="https://medium.freecodecamp.org/read-search-dont-be-afraid-to-ask-743a23c411b4"
+                                scope of this document so we encourage you to use <a id="readsearchask"
+                                    href="https://medium.freecodecamp.org/read-search-dont-be-afraid-to-ask-743a23c411b4"
                                     target="_blank">Read, Search, Ask</a>.
                             </p>
 
@@ -1626,7 +1674,8 @@
                         <div class="sub-section">
                             <p class="content-paragraph dql-p">
                                 Aliasing in the context of a relational database can have different functions depending
-                                on what type of database object the alias is applied to. Aliasing is used when <a href="#Joining_tables">joining
+                                on what type of database object the alias is applied to. Aliasing is used when <a
+                                    href="#Joining_tables">joining
                                     tables</a>, in this context the table names are given a different and often
                                 shortened name for simpler referencing regarding the query that is being
                                 scripted. Similarly, <a href="Sub-queries">sub-queries</a> can be aliased when
@@ -1712,9 +1761,11 @@
                             </p>
 
                             <p class="content-paragraph dql-p">
-                                Aliasing in the context of column names is probably most useful when creating <b>Computed
+                                Aliasing in the context of column names is probably most useful when creating
+                                <b>Computed
                                     Columns</b> sometime also referred to as <i>computed fields</i> or <i>derived
-                                    columns</i> which will be explained in the section <a href="#Computation_and_Functions">Computation
+                                    columns</i> which will be explained in the section <a
+                                    href="#Computation_and_Functions">Computation
                                     and Functions</a>.
                             </p>
 
@@ -1727,7 +1778,8 @@
                                 The ORDER BY clause is an optional clause that when used, is almost exclusively always
                                 the final clause of a query. This clause is used to sort data in a desired format to
                                 make it more readable for display, manual analysis etc. The ORDER BY clause can be used
-                                to order a single or a combination of columns in either <i>ascending</i> or <i>descending</i>
+                                to order a single or a combination of columns in either <i>ascending</i> or
+                                <i>descending</i>
                                 direction or a mix of directions for multiple columns. If the order direction is not
                                 specified, the default is direction will always be <i>ascending</i>.
                             </p>
@@ -1830,7 +1882,7 @@
 
                 </section>
 
-                <section id="Data_manipulation_language" class="main-section drafted">
+                <section id="Data_manipulation_language" class="main-section">
                     <header>
                         <h1>Data manipulation language</h1>
                     </header>
@@ -1959,13 +2011,15 @@
             </main>
 
         </div>
-        <script src="./demo_sql.js"></script>
-        <script src="./populate.js"></script>
-        <script src="./clipboard.js"></script>
+        <script src="./scripts/demo_sql.js"></script>
+        <script src="./scripts/populate.js"></script>
+        <script src="./scripts/clipboard.js"></script>
+        <script src="./scripts/_devscr.js"></script>
         <!--
         <script src="./other_items.js"></script>
         <script src="./content.js"></script>
         <script src="./populate.js"></script>-->
+        <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
     </body>
 
 </html>
