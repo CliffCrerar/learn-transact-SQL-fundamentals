@@ -1,4 +1,4 @@
-@font-face{
-    font-family: open_sans_regular;
-    src:url('../font/open-sans/OpenSans-Regular.ttf');
+@font-face {
+  font-family: open_sans_regular;
+  src: url('./OpenSans-Regular.ttf');
 }
