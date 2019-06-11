@@ -2,15 +2,23 @@
 <html>
 
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141918749-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <title></title>
+</head>
 
-  gtag('config', 'UA-141918749-1');
-</script>
+<body>
+    <!-- @font-face { font-family: open_sans_regular; src: url("../font/open-sans/OpenSans-Regular.ttf"); }head&gt; -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141918749-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-141918749-1');
+    </script>
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <title>ffc Technical Document</title>
@@ -26,9 +34,6 @@
         var prodMode = true;
         var newOrigin = 'https://s3-eu-west-1.amazonaws.com/ffc.tech.doc'
     </script>
-</head>
-
-<body>
     <header class="page-header">
         <div class="page-header-left">
             <h1>T-SQL Fundamentals</h1>
@@ -1209,6 +1214,39 @@
             </section>
         </main>
     </div>
+    <div class="inform-wip animate">
+        <div>
+            <h4>IMPORTANT NOTICE:</h4>This site is still under construction, please feel free to go ahead and see what is published already. It is being improved on everyday so check back often and you will find more content <a onclick="dismissClick()">Dismiss</a>
+        </div>
+        <script>
+            var fadeEl = document.getElementsByClassName('inform-wip')[0];
+            var dismissed = document.cookie.indexOf('dismissed') > -1
+            console.log('dismissed: ', dismissed);
+            dismissed && fadeEl.remove();
+
+
+            function setCookie(cname, cvalue, exdays) {
+                var d = new Date();
+                d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                var expires = "expires=" + d.toUTCString();
+                document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+            }
+
+            setTimeout(() => {
+
+                console.log('fadeEl: ', fadeEl);
+                fadeEl.style.opacity = 1
+            }, 3000);
+            console.log('document.cookie(): ', );
+
+            function dismissClick() {
+                fadeEl.style.display = 'none'
+                console.log('fadeEl: ', );
+                console.log('this: ', this);
+                setCookie('dismissed', 'true', 6)
+            }
+        </script>
+    </div>
     <script src="./scripts/demo_sql.js"></script>
     <script src="./scripts/populate.js"></script>
     <script src="./scripts/clipboard.js"></script>
@@ -1219,6 +1257,7 @@
         <script src="./content.js"></script>
         <script src="./populate.js"></script>-->
     <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    )
 </body>
 
 </html>

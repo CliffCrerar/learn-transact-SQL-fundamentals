@@ -493,3 +493,45 @@ code i {
 .nav-link:target {
     color: blue;
 }
+
+.inform-wip {
+    position: absolute;
+    height: 100px;
+    width: 100vw;
+    z-index: 1100;
+    bottom: 0;
+    text-align: center;
+    margin: auto;
+    opacity: 0;
+}
+
+.inform-wip div {
+    background: rgb(1, 5, 17);
+    color: rgb(189, 189, 189) !important;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    border-radius: 3px;
+}
+
+.inform-wip div a {
+    color: rgba(194, 87, 87, 0.979);
+    padding: 0;
+    margin: 5px 0;
+}
+
+.inform-wip div a:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.animate {}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
