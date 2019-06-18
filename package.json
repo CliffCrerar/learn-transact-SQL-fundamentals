@@ -1,19 +1,28 @@
 {
-  "name": "ffc_technical_doc",
-  "version": "1.0.0",
-  "description": "freeCodeCamp project as well as a document for ST product team to leverage off for SQL.",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CliffCrerar/ffc_technical_document.git"
-  },
-  "author": "Cliff Crerar",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CliffCrerar/ffc_technical_document/issues"
-  },
-  "homepage": "https://github.com/CliffCrerar/ffc_technical_document#readme"
+    "name": "learn-tsql-fundamentals",
+    "version": "1.0.0",
+    "description": "freeCodeCamp project as well as a document for ST product team to leverage off for SQL.",
+    "main": "index.html",
+    "scripts": {
+        "dev": "docz dev",
+        "build": "docz build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CliffCrerar/ffc_technical_document.git"
+    },
+    "author": "Cliff Crerar",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/CliffCrerar/ffc_technical_document/issues"
+    },
+    "homepage": "https://github.com/CliffCrerar/ffc_technical_document#readme",
+    "dependencies": {
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6"
+    },
+    "devDependencies": {
+        "docz": "^1.2.0",
+        "docz-theme-default": "^1.2.0"
+    }
 }
