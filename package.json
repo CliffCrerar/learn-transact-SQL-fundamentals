@@ -1,0 +1,34 @@
+{
+    "name": "learn-tsql-fundamentals",
+    "version": "0.1.5",
+    "description": "Learn Transact-SQL tech docs version 2",
+    "main": "index.js",
+    "scripts": {
+        "docz:dev": "docz dev",
+        "docz:build": "docz build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CliffCrerar/ffc_technical_document.git"
+    },
+    "keywords": [
+        "SQL",
+        "TransactSQL",
+        "learn",
+        "MS",
+        "SQL",
+        "Server",
+        "learn",
+        "freecodecamp"
+    ],
+    "author": "Cliff Crerar",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/CliffCrerar/ffc_technical_document/issues"
+    },
+    "homepage": "https://github.com/CliffCrerar/ffc_technical_document#readme",
+    "devDependencies": {
+        "docz": "^1.2.0",
+        "docz-theme-default": "^1.2.0"
+    }
+}
