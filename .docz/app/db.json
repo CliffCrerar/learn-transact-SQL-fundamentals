@@ -1,0 +1,54 @@
+{
+  "config": {
+    "title": "Learn Tsql Fundamentals",
+    "description": "freeCodeCamp project as well as a document for ST product team to leverage off for SQL.",
+    "menu": [],
+    "version": "1.0.0",
+    "repository": "https://github.com/CliffCrerar/ffc_technical_document",
+    "native": false,
+    "codeSandbox": true,
+    "themeConfig": {},
+    "separator": "-"
+  },
+  "entries": [
+    {
+      "key": "src/index.md",
+      "value": {
+        "name": "This is where we land",
+        "route": "/",
+        "id": "ae0d42ddf601b3888ce0b68aebaf8348",
+        "filepath": "src/index.md",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/index.md",
+        "slug": "src-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "this-should-be-the-landing",
+            "depth": 1,
+            "value": "This should be the landing"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/page2.mdx",
+      "value": {
+        "name": "Introduction",
+        "id": "cfc96c9692a7ff395f98f7fe3358d73a",
+        "filepath": "src/page2.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/page2.mdx",
+        "slug": "src-page2",
+        "route": "/src-page2",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "docs-1",
+            "depth": 1,
+            "value": "Docs 1"
+          }
+        ]
+      }
+    }
+  ],
+  "props": []
+}
