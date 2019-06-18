@@ -4,7 +4,8 @@
   "description": "freeCodeCamp project as well as a document for ST product team to leverage off for SQL.",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+        "docz:dev": "docz dev",
+    "docz:build": "docz build"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/CliffCrerar/ffc_technical_document/issues"
   },
-  "homepage": "https://github.com/CliffCrerar/ffc_technical_document#readme"
+  "homepage": "https://github.com/CliffCrerar/ffc_technical_document#readme",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "docz": "^1.2.0",
+    "docz-theme-default": "^1.2.0"
+  }
 }
