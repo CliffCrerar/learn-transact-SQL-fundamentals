@@ -1,7 +1,10 @@
 import { myCoolPlugin } from 'docz-plugin-mycoolplugin'
 
 export default {
-    public: '/public',
+  menu:  [
+    ["Introduction",["About"]]
+],
+  public: '/public',
   title: 'Learn TSQL fundamentals',
   description: 'Learn the fundamental principles of relational databases using Transact SQL in Microsoft SQL Express',
   theme: 'my-coolest-theme',
@@ -14,7 +17,7 @@ export default {
     /* do your magic here */
   },
   plugins: [
-    myCoolPlugin()
+    // myCoolPlugin()
   ],
   files: '**/*.{md,markdown,mdx}'
 }

@@ -12,39 +12,39 @@
   },
   "entries": [
     {
-      "key": "src/index.md",
+      "key": "src/About.mdx",
       "value": {
-        "name": "This is where we land",
-        "route": "/",
-        "id": "ae0d42ddf601b3888ce0b68aebaf8348",
-        "filepath": "src/index.md",
-        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/index.md",
-        "slug": "src-index",
+        "name": "2. About",
+        "route": "/about",
+        "id": "96d8af9f5aaa62b30e8fb63755b26d83",
+        "filepath": "src/About.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/About.mdx",
+        "slug": "src-about",
         "menu": "",
         "headings": [
           {
-            "slug": "this-should-be-the-landing",
+            "slug": "page-2",
             "depth": 1,
-            "value": "This should be the landing"
+            "value": "Page 2"
           }
         ]
       }
     },
     {
-      "key": "src/page2.mdx",
+      "key": "src/Introduction.mdx",
       "value": {
-        "name": "Introduction",
-        "id": "cfc96c9692a7ff395f98f7fe3358d73a",
-        "filepath": "src/page2.mdx",
-        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/page2.mdx",
-        "slug": "src-page2",
-        "route": "/src-page2",
+        "name": "1. Introduction",
+        "route": "/",
+        "id": "7f9b1171d3fc3a898f76ea7ec90d672e",
+        "filepath": "src/Introduction.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/Introduction.mdx",
+        "slug": "src-introduction",
         "menu": "",
         "headings": [
           {
-            "slug": "docs-1",
+            "slug": "",
             "depth": 1,
-            "value": "Docs 1"
+            "value": ""
           }
         ]
       }
