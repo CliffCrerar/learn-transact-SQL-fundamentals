@@ -19,5 +19,6 @@ export default {
   plugins: [
     // myCoolPlugin()
   ],
-  files: '**/*.{markdown,mdx}'
+  files: '**/*.{markdown,mdx}',
+  dest: '/dist'
 }
