@@ -1,5 +1,5 @@
 {
-    "name": "learn-tsql-fundamentals",
+    "name": "transact-sql",
     "version": "1.0.0",
     "description": "freeCodeCamp project as well as a document for ST product team to leverage off for SQL.",
     "main": "index.html",

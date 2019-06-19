@@ -1,10 +1,10 @@
 export const imports = {
-  'src/About.mdx': () =>
+  'src/1-Landing.mdx': () =>
     import(
-      /* webpackPrefetch: true, webpackChunkName: "src-about" */ 'src/About.mdx'
+      /* webpackPrefetch: true, webpackChunkName: "src-1-landing" */ 'src/1-Landing.mdx'
     ),
-  'src/Introduction.mdx': () =>
+  'src/2-About.mdx': () =>
     import(
-      /* webpackPrefetch: true, webpackChunkName: "src-introduction" */ 'src/Introduction.mdx'
+      /* webpackPrefetch: true, webpackChunkName: "src-2-about" */ 'src/2-About.mdx'
     ),
 }

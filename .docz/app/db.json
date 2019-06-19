@@ -12,43 +12,61 @@
   },
   "entries": [
     {
-      "key": "src/About.mdx",
+      "key": "src/1-Landing.mdx",
       "value": {
-        "name": "2. About",
-        "route": "/about",
-        "id": "96d8af9f5aaa62b30e8fb63755b26d83",
-        "filepath": "src/About.mdx",
-        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/About.mdx",
-        "slug": "src-about",
+        "name": "1. Landing",
+        "route": "/",
+        "id": "6f6acedc09ccd81dc95e49a018ba929c",
+        "filepath": "src/1-Landing.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/1-Landing.mdx",
+        "slug": "src-1-landing",
         "menu": "",
         "headings": [
           {
-            "slug": "page-2",
+            "slug": "learn-transact-sql-fundamentals",
             "depth": 1,
-            "value": "Page 2"
+            "value": "Learn Transact SQL Fundamentals"
           }
         ]
       }
     },
     {
-      "key": "src/Introduction.mdx",
+      "key": "src/2-About.mdx",
       "value": {
-        "name": "1. Introduction",
-        "route": "/",
-        "id": "7f9b1171d3fc3a898f76ea7ec90d672e",
-        "filepath": "src/Introduction.mdx",
-        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/Introduction.mdx",
-        "slug": "src-introduction",
+        "name": "2. Introduction",
+        "route": "/introduction",
+        "id": "77dc5d871f9f2c7ca08e90533e4d49f0",
+        "filepath": "src/2-About.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/2-About.mdx",
+        "slug": "src-2-about",
         "menu": "",
         "headings": [
           {
-            "slug": "",
+            "slug": "introduction",
             "depth": 1,
-            "value": ""
+            "value": "Introduction"
           }
         ]
       }
     }
   ],
-  "props": []
+  "props": [
+    {
+      "key": "src/components/landing/index.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "LandingTest",
+          "methods": [],
+          "actualName": "LandingTest"
+        },
+        {
+          "description": "",
+          "displayName": "LandSubHeading",
+          "methods": [],
+          "actualName": "LandSubHeading"
+        }
+      ]
+    }
+  ]
 }
