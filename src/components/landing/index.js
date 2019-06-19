@@ -1,7 +1,7 @@
 
 
-import React from 'react'
-import  MnextMarkdown from '../../services/mnext-martkdown'
+import React from 'react';
+import MnextMarkdown from '../../services/mnext-martkdown';
 
 
 function LandingTest(){

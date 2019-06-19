@@ -1,6 +1,6 @@
 {
   "config": {
-    "title": "Learn Tsql Fundamentals",
+    "title": "Transact Sql",
     "description": "freeCodeCamp project as well as a document for ST product team to leverage off for SQL.",
     "menu": [],
     "version": "1.0.0",
@@ -12,14 +12,14 @@
   },
   "entries": [
     {
-      "key": "src/1-Landing.mdx",
+      "key": "src/pages/1-Landing.mdx",
       "value": {
         "name": "1. Landing",
         "route": "/",
-        "id": "6f6acedc09ccd81dc95e49a018ba929c",
-        "filepath": "src/1-Landing.mdx",
-        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/1-Landing.mdx",
-        "slug": "src-1-landing",
+        "id": "11615e9325502a53f41ece2cc2ea82cd",
+        "filepath": "src/pages/1-Landing.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/1-Landing.mdx",
+        "slug": "src-pages-1-landing",
         "menu": "",
         "headings": [
           {
@@ -31,14 +31,14 @@
       }
     },
     {
-      "key": "src/2-About.mdx",
+      "key": "src/pages/2-Instroduction.mdx",
       "value": {
         "name": "2. Introduction",
         "route": "/introduction",
-        "id": "77dc5d871f9f2c7ca08e90533e4d49f0",
-        "filepath": "src/2-About.mdx",
-        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/2-About.mdx",
-        "slug": "src-2-about",
+        "id": "ea8cbb0950085784e628c3ebe0b7d20f",
+        "filepath": "src/pages/2-Instroduction.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/2-Instroduction.mdx",
+        "slug": "src-pages-2-instroduction",
         "menu": "",
         "headings": [
           {
@@ -48,25 +48,54 @@
           }
         ]
       }
+    },
+    {
+      "key": "src/pages/3-About.mdx",
+      "value": {
+        "name": "3. About-this-page",
+        "route": "/about",
+        "id": "cc3b53dc26b430151fa33c9678018c63",
+        "filepath": "src/pages/3-About.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/3-About.mdx",
+        "slug": "src-pages-3-about",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "about-this-document-stylecolorblue",
+            "depth": 1,
+            "value": "About this document{: style=\"color:blue\"}"
+          },
+          {
+            "slug": "what-is-t-sql",
+            "depth": 3,
+            "value": "What is T-SQL?"
+          },
+          {
+            "slug": "what-are-the-basics",
+            "depth": 3,
+            "value": "What are “The Basics”?"
+          },
+          {
+            "slug": "what-is-covered-in-this-document",
+            "depth": 3,
+            "value": "What is covered in this document?"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/5-Demo.mdx",
+      "value": {
+        "id": "545b9adc1450282eae3d905900abbc59",
+        "filepath": "src/pages/5-Demo.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/5-Demo.mdx",
+        "slug": "src-pages-5-demo",
+        "route": "/src-pages-5-demo",
+        "name": "5 demo",
+        "menu": "",
+        "headings": []
+      }
     }
   ],
-  "props": [
-    {
-      "key": "src/components/landing/index.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "LandingTest",
-          "methods": [],
-          "actualName": "LandingTest"
-        },
-        {
-          "description": "",
-          "displayName": "LandSubHeading",
-          "methods": [],
-          "actualName": "LandSubHeading"
-        }
-      ]
-    }
-  ]
+  "props": []
 }
