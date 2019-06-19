@@ -1,5 +1,5 @@
 ---
-name: This is where we land
+name: Learn Transact SQL Fundamentals
 route: /
 ---
 
