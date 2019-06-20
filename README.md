@@ -8,4 +8,6 @@
 
 - Before the content maintenance will continue, it is being migrated to another platform. Migrating from static html and css site to a docz site.
 
+## Sections
+
 
