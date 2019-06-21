@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="{{ lang }}">
+
 <head>
-  <meta charset="UTF-8">
-  <meta content="{{ description }}"
-        name="description">
-  <meta content="width=device-width, initial-scale=1.0"
-        name="viewport">
-  <meta content="ie=edge"
-        http-equiv="X-UA-Compatible">
-  <title>{{ title }}</title>
+    <meta charset="UTF-8">
+    <meta content="{{ description }}" name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>{{ title }}</title>
+    <style>
+        .CodeMirror-size {
+            border-radius: 13px !important;
+        }
+    </style>
 </head>
+
 <body>
-  {{ head }}
-  <div id="root"></div>{{ footer }}
+    {{ head }}
+    <div id="root"></div>{{ footer }}
 </body>
+
 </html>

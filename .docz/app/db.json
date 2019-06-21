@@ -93,29 +93,39 @@
             "value": "Introduction"
           },
           {
-            "slug": "--data-query-language-dql",
-            "depth": 3,
-            "value": "- Data Query Language (DQL)"
+            "slug": "relational-databases",
+            "depth": 2,
+            "value": "Relational Databases"
           },
           {
-            "slug": "--data-definition-language-ddl",
-            "depth": 3,
-            "value": "- Data Definition Language (DDL)"
+            "slug": "sql-sub-languages",
+            "depth": 2,
+            "value": "SQL Sub-languages"
           },
           {
-            "slug": "--data-manipulation-language-dml",
+            "slug": "data-query-language",
             "depth": 3,
-            "value": "- Data Manipulation Language (DML)"
+            "value": "Data Query Language"
           },
           {
-            "slug": "--data-transaction-language-dtl",
+            "slug": "data-definition-language",
             "depth": 3,
-            "value": "- Data Transaction Language (DTL)"
+            "value": "Data Definition Language"
           },
           {
-            "slug": "--data-control-language-dcl",
+            "slug": "data-transaction-language",
             "depth": 3,
-            "value": "- Data Control Language (DCL)"
+            "value": "Data Transaction Language"
+          },
+          {
+            "slug": "data-manipulation-language",
+            "depth": 3,
+            "value": "Data Manipulation Language"
+          },
+          {
+            "slug": "data-control-language",
+            "depth": 3,
+            "value": "Data Control Language"
           }
         ]
       }
@@ -139,43 +149,23 @@
           },
           {
             "slug": "what-is-t-sql",
-            "depth": 3,
+            "depth": 2,
             "value": "What is T-SQL?"
           },
           {
             "slug": "what-are-the-basics",
-            "depth": 3,
+            "depth": 2,
             "value": "What are “The Basics”?"
           },
           {
             "slug": "what-is-covered-in-this-document",
-            "depth": 3,
+            "depth": 2,
             "value": "What is covered in this document?"
-          }
-        ]
-      }
-    },
-    {
-      "key": "src/pages/004-start/getting-started.mdx",
-      "value": {
-        "name": "Getting Started",
-        "route": "/getting-started",
-        "parent": "Documentation",
-        "id": "4615e1f6a45b809ca7fb0259a364d21e",
-        "filepath": "src/pages/004-start/getting-started.mdx",
-        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/004-start/getting-started.mdx",
-        "slug": "src-pages-004-start-getting-started",
-        "menu": "",
-        "headings": [
-          {
-            "slug": "getting-started",
-            "depth": 1,
-            "value": "Getting Started"
           },
           {
-            "slug": "by-the-end-of-this-section-you-need-to",
-            "depth": 4,
-            "value": "By the end of this section you need to:"
+            "slug": "material-not-yet-covered",
+            "depth": 2,
+            "value": "Material not yet covered"
           }
         ]
       }
@@ -221,26 +211,6 @@
       }
     },
     {
-      "key": "src/pages/007-types/data-types.mdx",
-      "value": {
-        "name": "Data Types",
-        "route": "/data-types",
-        "parent": "Documentation",
-        "id": "515c6ef980c197d37b99b60a09bc7622",
-        "filepath": "src/pages/007-types/data-types.mdx",
-        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/007-types/data-types.mdx",
-        "slug": "src-pages-007-types-data-types",
-        "menu": "",
-        "headings": [
-          {
-            "slug": "data-types",
-            "depth": 1,
-            "value": "Data Types"
-          }
-        ]
-      }
-    },
-    {
       "key": "src/pages/008-dql/data-query-language.mdx",
       "value": {
         "name": "Data Query Language",
@@ -256,6 +226,26 @@
             "slug": "data-query-language",
             "depth": 1,
             "value": "Data Query Language"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/007-types/data-types.mdx",
+      "value": {
+        "name": "Data Types",
+        "route": "/data-types",
+        "parent": "Documentation",
+        "id": "515c6ef980c197d37b99b60a09bc7622",
+        "filepath": "src/pages/007-types/data-types.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/007-types/data-types.mdx",
+        "slug": "src-pages-007-types-data-types",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "data-types",
+            "depth": 1,
+            "value": "Data Types"
           }
         ]
       }
@@ -281,6 +271,25 @@
       }
     },
     {
+      "key": "src/pages/z_Resources/resources.mdx",
+      "value": {
+        "name": "Resources",
+        "route": "/resources",
+        "id": "36169b878e1c92ef2211b047f104573f",
+        "filepath": "src/pages/z_Resources/resources.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/z_Resources/resources.mdx",
+        "slug": "src-pages-z-resources-resources",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "references-and-resources-page",
+            "depth": 1,
+            "value": "References and Resources page"
+          }
+        ]
+      }
+    },
+    {
       "key": "src/pages/010-logical-ops/logical-operators.mdx",
       "value": {
         "name": "Logical Operators",
@@ -301,34 +310,35 @@
       }
     },
     {
-      "key": "src/pages/z_Resources/resources.mdx",
+      "key": "src/pages/004-start/getting-started.mdx",
       "value": {
-        "name": "Resources",
-        "route": "/resources",
-        "id": "36169b878e1c92ef2211b047f104573f",
-        "filepath": "src/pages/z_Resources/resources.mdx",
-        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/z_Resources/resources.mdx",
-        "slug": "src-pages-z-resources-resources",
+        "name": "Getting Started",
+        "route": "/getting-started",
+        "parent": "Documentation",
+        "id": "4615e1f6a45b809ca7fb0259a364d21e",
+        "filepath": "src/pages/004-start/getting-started.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/004-start/getting-started.mdx",
+        "slug": "src-pages-004-start-getting-started",
         "menu": "",
         "headings": [
           {
-            "slug": "references-and-resources-page",
+            "slug": "getting-started",
             "depth": 1,
-            "value": "References and Resources page"
+            "value": "Getting Started"
+          },
+          {
+            "slug": "by-the-end-of-this-section-you-need-to",
+            "depth": 4,
+            "value": "By the end of this section you need to:"
+          },
+          {
+            "slug": "installing-and-using-ms-sql-server",
+            "depth": 2,
+            "value": "Installing and using MS SQL Server"
           }
         ]
       }
     }
   ],
-  "props": [
-    {
-      "key": "src/pages/001-landing/components/index.js",
-      "value": [
-        {
-          "description": "",
-          "methods": []
-        }
-      ]
-    }
-  ]
+  "props": []
 }
