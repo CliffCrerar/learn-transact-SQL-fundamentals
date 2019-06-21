@@ -19,14 +19,15 @@
     },
     "homepage": "https://github.com/CliffCrerar/ffc_technical_document#readme",
     "dependencies": {
-        "markdown-it": "^8.4.2",
-        "markdown-it-attrs": "^2.4.1",
+        "emotions": "0.0.1",
         "react": "^16.8.6",
         "react-dom": "^16.8.6",
         "react-markdown": "^4.0.8",
         "remark-align": "^1.2.7",
         "remark-attr": "^0.8.3",
-        "remark-emoji": "^2.0.2"
+        "remark-emoji": "^2.0.2",
+        "remark-images": "^1.0.0",
+        "styled-jsx": "^3.2.1"
     },
     "devDependencies": {
         "docz": "^1.2.0",

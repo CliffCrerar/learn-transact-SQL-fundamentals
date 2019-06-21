@@ -1,70 +1,119 @@
 {
   "config": {
-    "title": "Transact Sql",
-    "description": "freeCodeCamp project as well as a document for ST product team to leverage off for SQL.",
-    "menu": [],
+    "title": "RDBMS Fundamentals",
+    "description": "Learn the fundamental principles of relational databases using Transact SQL in Microsoft SQL Express",
+    "menu": [
+      "Landing",
+      "Introduction",
+      "About this page",
+      "Getting Started",
+      "Concepts and Semantics",
+      "Database Objects",
+      "Data Types",
+      "Data Query Language",
+      "Data Manipulation Language",
+      "Logical Operators"
+    ],
     "version": "1.0.0",
     "repository": "https://github.com/CliffCrerar/ffc_technical_document",
     "native": false,
     "codeSandbox": true,
-    "themeConfig": {},
+    "themeConfig": {
+      "colors": {
+        "primary": "tomato",
+        "secondary": "khaki",
+        "gray": "lightslategray"
+      }
+    },
     "separator": "-"
   },
-  "props": [],
   "entries": [
     {
-      "key": "src/pages/1-Landing.mdx",
+      "key": "src/pages/001-landing/landing.mdx",
       "value": {
-        "name": "1. Landing",
+        "name": "Landing",
         "route": "/",
-        "id": "11615e9325502a53f41ece2cc2ea82cd",
-        "filepath": "src/pages/1-Landing.mdx",
-        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/1-Landing.mdx",
-        "slug": "src-pages-1-landing",
+        "parent": "Pages",
+        "id": "3ddf3a2beb1c8365a0da1eba442f8373",
+        "filepath": "src/pages/001-landing/landing.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/001-landing/landing.mdx",
+        "slug": "src-pages-001-landing-landing",
         "menu": "",
         "headings": [
           {
             "slug": "learn-transact-sql-fundamentals",
             "depth": 1,
             "value": "Learn Transact SQL Fundamentals"
+          },
+          {
+            "slug": "basic-relational-database-implementation--administration",
+            "depth": 2,
+            "value": "Basic relational database implementation & administration"
           }
         ]
       }
     },
     {
-      "key": "src/pages/2-Introduction.mdx",
+      "key": "src/pages/002-intro/introduction.mdx",
       "value": {
-        "name": "2. Introduction",
+        "name": "Introduction",
         "route": "/introduction",
-        "id": "c7861dd97ac342b29d3305b3b2c95cea",
-        "filepath": "src/pages/2-Introduction.mdx",
-        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/2-Introduction.mdx",
-        "slug": "src-pages-2-introduction",
+        "parent": "Documentation",
+        "id": "9f67589a3e710018f0c0c5d16605683b",
+        "filepath": "src/pages/002-intro/introduction.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/002-intro/introduction.mdx",
+        "slug": "src-pages-002-intro-introduction",
         "menu": "",
         "headings": [
           {
             "slug": "introduction",
             "depth": 1,
             "value": "Introduction"
+          },
+          {
+            "slug": "--data-query-language-dql",
+            "depth": 3,
+            "value": "- Data Query Language (DQL)"
+          },
+          {
+            "slug": "--data-definition-language-ddl",
+            "depth": 3,
+            "value": "- Data Definition Language (DDL)"
+          },
+          {
+            "slug": "--data-manipulation-language-dml",
+            "depth": 3,
+            "value": "- Data Manipulation Language (DML)"
+          },
+          {
+            "slug": "--data-transaction-language-dtl",
+            "depth": 3,
+            "value": "- Data Transaction Language (DTL)"
+          },
+          {
+            "slug": "--data-control-language-dcl",
+            "depth": 3,
+            "value": "- Data Control Language (DCL)"
           }
         ]
       }
     },
     {
-      "key": "src/pages/3-About.mdx",
+      "key": "src/pages/003-about/about-this-page.mdx",
       "value": {
-        "name": "3. About-this-page",
+        "name": "About this page",
         "route": "/about",
-        "id": "cc3b53dc26b430151fa33c9678018c63",
-        "filepath": "src/pages/3-About.mdx",
-        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/3-About.mdx",
-        "slug": "src-pages-3-about",
+        "parent": "Documentation",
+        "id": "e0b9a02903de2be95ecf79a6a4aa4740",
+        "filepath": "src/pages/003-about/about-this-page.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/003-about/about-this-page.mdx",
+        "slug": "src-pages-003-about-about-this-page",
         "menu": "",
         "headings": [
           {
-            "slug": "about-this-document-stylecolorblue",
+            "slug": "about-this-document",
             "depth": 1,
-            "value": "About this document{: style=\"color:blue\"}"
+            "value": "About this document"
           },
           {
             "slug": "what-is-t-sql",
@@ -85,130 +134,164 @@
       }
     },
     {
-      "key": "src/pages/4-Start.mdx",
+      "key": "src/pages/004-start/getting-started.mdx",
       "value": {
-        "0": "n",
-        "1": "a",
-        "2": "m",
-        "3": "e",
-        "4": ":",
-        "5": "'",
-        "6": "'",
-        "7": " ",
-        "8": "r",
-        "9": "o",
-        "10": "u",
-        "11": "t",
-        "12": "e",
-        "13": ":",
-        "14": "'",
-        "15": "'",
-        "id": "7ec0bcbc4632a4e7aa12696d837b86ef",
-        "filepath": "src/pages/4-Start.mdx",
-        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/4-Start.mdx",
-        "slug": "src-pages-4-start",
-        "route": "/src-pages-4-start",
-        "name": "4 start",
+        "name": "Getting Started",
+        "route": "/getting-started",
+        "parent": "Documentation",
+        "id": "4615e1f6a45b809ca7fb0259a364d21e",
+        "filepath": "src/pages/004-start/getting-started.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/004-start/getting-started.mdx",
+        "slug": "src-pages-004-start-getting-started",
         "menu": "",
-        "headings": []
+        "headings": [
+          {
+            "slug": "getting-started",
+            "depth": 1,
+            "value": "Getting Started"
+          }
+        ]
       }
     },
     {
-      "key": "src/pages/Context.mdx",
+      "key": "src/pages/005-concepts/concepts-and-semantics.mdx",
       "value": {
-        "id": "8965495d3735aaa3879ccb2a050f626f",
-        "filepath": "src/pages/Context.mdx",
-        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/Context.mdx",
-        "slug": "src-pages-context",
-        "route": "/src-pages-context",
-        "name": "Context",
+        "name": "Concepts and Semantics",
+        "route": "/concepts",
+        "parent": "Documentation",
+        "id": "572a1404617135f71055535b9178259a",
+        "filepath": "src/pages/005-concepts/concepts-and-semantics.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/005-concepts/concepts-and-semantics.mdx",
+        "slug": "src-pages-005-concepts-concepts-and-semantics",
         "menu": "",
-        "headings": []
+        "headings": [
+          {
+            "slug": "concepts-and-semantics",
+            "depth": 1,
+            "value": "Concepts and Semantics"
+          }
+        ]
       }
     },
     {
-      "key": "src/pages/Database.mdx",
+      "key": "src/pages/007-types/data-types.mdx",
       "value": {
-        "0": "n",
-        "1": "a",
-        "2": "m",
-        "3": "e",
-        "4": ":",
-        "5": "'",
-        "6": "'",
-        "7": " ",
-        "8": "r",
-        "9": "o",
-        "10": "u",
-        "11": "t",
-        "12": "e",
-        "13": ":",
-        "14": "'",
-        "15": "'",
-        "id": "d7263674caa121b003fdd85956ed9663",
-        "filepath": "src/pages/Database.mdx",
-        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/Database.mdx",
-        "slug": "src-pages-database",
-        "route": "/src-pages-database",
-        "name": "Database",
+        "name": "Data Types",
+        "route": "/data-types",
+        "parent": "Documentation",
+        "id": "515c6ef980c197d37b99b60a09bc7622",
+        "filepath": "src/pages/007-types/data-types.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/007-types/data-types.mdx",
+        "slug": "src-pages-007-types-data-types",
         "menu": "",
-        "headings": []
+        "headings": [
+          {
+            "slug": "data-types",
+            "depth": 1,
+            "value": "Data Types"
+          }
+        ]
       }
     },
     {
-      "key": "src/pages/Demo.mdx",
+      "key": "src/pages/006-db-objects/database-objects.mdx",
       "value": {
-        "id": "6343610753295d5c60adaa7f3ab4c333",
-        "filepath": "src/pages/Demo.mdx",
-        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/Demo.mdx",
-        "slug": "src-pages-demo",
-        "route": "/src-pages-demo",
-        "name": "Demo",
+        "name": "Database Objects",
+        "route": "/database-objects",
+        "parent": "Documentation",
+        "id": "b7ec69ea0171638f03d3418025bd3b9c",
+        "filepath": "src/pages/006-db-objects/database-objects.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/006-db-objects/database-objects.mdx",
+        "slug": "src-pages-006-db-objects-database-objects",
         "menu": "",
-        "headings": []
+        "headings": [
+          {
+            "slug": "database-objects",
+            "depth": 1,
+            "value": "Database Objects"
+          }
+        ]
       }
     },
     {
-      "key": "src/pages/Types.mdx",
+      "key": "src/pages/008-dql/data-query-language.mdx",
       "value": {
-        "0": "n",
-        "1": "a",
-        "2": "m",
-        "3": "e",
-        "4": ":",
-        "5": "'",
-        "6": "'",
-        "7": " ",
-        "8": "r",
-        "9": "o",
-        "10": "u",
-        "11": "t",
-        "12": "e",
-        "13": ":",
-        "14": "'",
-        "15": "'",
-        "id": "ab39dede63b813ad56fd305dcea80361",
-        "filepath": "src/pages/Types.mdx",
-        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/Types.mdx",
-        "slug": "src-pages-types",
-        "route": "/src-pages-types",
-        "name": "Types",
+        "name": "Data Query Language",
+        "route": "/data-query-language",
+        "parent": "Documentation",
+        "id": "1f5b7ae1ab565a02813bcb5b6a3aa792",
+        "filepath": "src/pages/008-dql/data-query-language.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/008-dql/data-query-language.mdx",
+        "slug": "src-pages-008-dql-data-query-language",
         "menu": "",
-        "headings": []
+        "headings": [
+          {
+            "slug": "data-query-language",
+            "depth": 1,
+            "value": "Data Query Language"
+          }
+        ]
       }
     },
     {
-      "key": "src/pages/dql.mdx",
+      "key": "src/pages/009-dml/data-manipulation-language.mdx",
       "value": {
-        "id": "561fe1a8ca555acb7de6f6069a9992e7",
-        "filepath": "src/pages/dql.mdx",
-        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/dql.mdx",
-        "slug": "src-pages-dql",
-        "route": "/src-pages-dql",
-        "name": "Dql",
+        "name": "Data Manipulation Language",
+        "route": "/data-man-language",
+        "parent": "Documentation",
+        "id": "99d23fa58ebbb46b21d377e34216c167",
+        "filepath": "src/pages/009-dml/data-manipulation-language.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/009-dml/data-manipulation-language.mdx",
+        "slug": "src-pages-009-dml-data-manipulation-language",
         "menu": "",
-        "headings": []
+        "headings": [
+          {
+            "slug": "data-manipulation-language",
+            "depth": 1,
+            "value": "Data Manipulation language"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/z_Resources/resources.mdx",
+      "value": {
+        "name": "Resources",
+        "route": "/resources",
+        "id": "36169b878e1c92ef2211b047f104573f",
+        "filepath": "src/pages/z_Resources/resources.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/z_Resources/resources.mdx",
+        "slug": "src-pages-z-resources-resources",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "references-and-resources-page",
+            "depth": 1,
+            "value": "References and Resources page"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/010-logical-ops/logical-operators.mdx",
+      "value": {
+        "name": "Logical Operators",
+        "route": "/logical-operators",
+        "parent": "Documentation",
+        "id": "539b20a5ec26f198e27194cdaf4c669f",
+        "filepath": "src/pages/010-logical-ops/logical-operators.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/010-logical-ops/logical-operators.mdx",
+        "slug": "src-pages-010-logical-ops-logical-operators",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "logical-operators",
+            "depth": 1,
+            "value": "Logical Operators"
+          }
+        ]
       }
     }
-  ]
+  ],
+  "props": []
 }

@@ -5,7 +5,15 @@
 		},
 		{
 			"path": "/Users/cliffordcrerar/letsplay/ziet-assets"
+		},
+		{
+			"path": "../docz-website"
 		}
 	],
-    "settings": {}
+	"settings": {
+		"editor.overviewRulerBorder": false,
+		"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+		"javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+		"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false
+	}
 }

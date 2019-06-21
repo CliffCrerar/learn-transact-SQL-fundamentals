@@ -1,0 +1,38 @@
+---
+name: Getting Started
+route: /getting-started
+parent: Documentation
+---
+
+import StyledComponent form '../../components/style.component';
+import css from ''
+
+# Getting Started
+
+The previous sections of this document was just to give you some history of RDBMS, different types of RDBMS and why they are important. There was then just some items to note about this document, but now we will actually start doing something.
+
+
+
+<StyledComponent content={`
+By the end of this section you need to:
+Have SQL Server express running.
+Be able to access SQL Server express via Microsoft SQL Server Management Studio.`} className={`}>
+NOTE:if you already have SQL Server running and can access it with SQL Server Management Studio, you may skip to Creating the demo database that create the demo database and proceed to.
+
+So let’s start doing this, head over to Microsoft’s site and download MS SQL Express.
+
+While you are waiting for the download, you can head over to this GoDaddy article and start familiarizing yourself with the steps to follow for installing MS SQL Express.
+
+MS SQL Express should also install Microsoft SQL Server Management Studio, which is recommended application to use when interacting directly with your SQL server and is also referred to as the Database Client.
+
+This is because all RDBMS is built on client-server architecture. This is also the architecture of most corporate applications where many users use the same application for productivity. It is also the definitive architecture of web sites and web applications.
+
+Almost all RDMS packages that install a database server will also install a database client application to interact with the database server.
+
+Some database client applications are even build for interacting with multiple brands of RDBMS, for instance a single database client can connect to a PosgreSQL server as well as a MySQL server. An example of this is TeamSQL.
+
+But for this document we will only use Microsoft SQL Server Management Studio and will be referred to as SSMS in the rest of this document.
+
+Make sure that by the end of this step you have a running instance of Microsoft SQL Server Express and you are able to access this by means of SSMS, otherwise you will not be able to proceed.
+
+If you need to Read, Search, Ask.

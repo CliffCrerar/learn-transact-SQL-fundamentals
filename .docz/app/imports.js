@@ -1,38 +1,46 @@
 export const imports = {
-  'src/pages/1-Landing.mdx': () =>
+  'src/pages/001-landing/landing.mdx': () =>
     import(
-      /* webpackPrefetch: true, webpackChunkName: "src-pages-1-landing" */ 'src/pages/1-Landing.mdx'
+      /* webpackPrefetch: true, webpackChunkName: "src-pages-001-landing-landing" */ 'src/pages/001-landing/landing.mdx'
     ),
-  'src/pages/2-Introduction.mdx': () =>
+  'src/pages/002-intro/introduction.mdx': () =>
     import(
-      /* webpackPrefetch: true, webpackChunkName: "src-pages-2-introduction" */ 'src/pages/2-Introduction.mdx'
+      /* webpackPrefetch: true, webpackChunkName: "src-pages-002-intro-introduction" */ 'src/pages/002-intro/introduction.mdx'
     ),
-  'src/pages/3-About.mdx': () =>
+  'src/pages/003-about/about-this-page.mdx': () =>
     import(
-      /* webpackPrefetch: true, webpackChunkName: "src-pages-3-about" */ 'src/pages/3-About.mdx'
+      /* webpackPrefetch: true, webpackChunkName: "src-pages-003-about-about-this-page" */ 'src/pages/003-about/about-this-page.mdx'
     ),
-  'src/pages/4-Start.mdx': () =>
+  'src/pages/004-start/getting-started.mdx': () =>
     import(
-      /* webpackPrefetch: true, webpackChunkName: "src-pages-4-start" */ 'src/pages/4-Start.mdx'
+      /* webpackPrefetch: true, webpackChunkName: "src-pages-004-start-getting-started" */ 'src/pages/004-start/getting-started.mdx'
     ),
-  'src/pages/Context.mdx': () =>
+  'src/pages/005-concepts/concepts-and-semantics.mdx': () =>
     import(
-      /* webpackPrefetch: true, webpackChunkName: "src-pages-context" */ 'src/pages/Context.mdx'
+      /* webpackPrefetch: true, webpackChunkName: "src-pages-005-concepts-concepts-and-semantics" */ 'src/pages/005-concepts/concepts-and-semantics.mdx'
     ),
-  'src/pages/Database.mdx': () =>
+  'src/pages/007-types/data-types.mdx': () =>
     import(
-      /* webpackPrefetch: true, webpackChunkName: "src-pages-database" */ 'src/pages/Database.mdx'
+      /* webpackPrefetch: true, webpackChunkName: "src-pages-007-types-data-types" */ 'src/pages/007-types/data-types.mdx'
     ),
-  'src/pages/Demo.mdx': () =>
+  'src/pages/006-db-objects/database-objects.mdx': () =>
     import(
-      /* webpackPrefetch: true, webpackChunkName: "src-pages-demo" */ 'src/pages/Demo.mdx'
+      /* webpackPrefetch: true, webpackChunkName: "src-pages-006-db-objects-database-objects" */ 'src/pages/006-db-objects/database-objects.mdx'
     ),
-  'src/pages/Types.mdx': () =>
+  'src/pages/008-dql/data-query-language.mdx': () =>
     import(
-      /* webpackPrefetch: true, webpackChunkName: "src-pages-types" */ 'src/pages/Types.mdx'
+      /* webpackPrefetch: true, webpackChunkName: "src-pages-008-dql-data-query-language" */ 'src/pages/008-dql/data-query-language.mdx'
     ),
-  'src/pages/dql.mdx': () =>
+  'src/pages/009-dml/data-manipulation-language.mdx': () =>
     import(
-      /* webpackPrefetch: true, webpackChunkName: "src-pages-dql" */ 'src/pages/dql.mdx'
+      /* webpackPrefetch: true, webpackChunkName: "src-pages-009-dml-data-manipulation-language" */ 'src/pages/009-dml/data-manipulation-language.mdx'
+    ),
+  'src/pages/z_Resources/resources.mdx': () =>
+    import(
+      /* webpackPrefetch: true, webpackChunkName: "src-pages-z-resources-resources" */ 'src/pages/z_Resources/resources.mdx'
+    ),
+  'src/pages/010-logical-ops/logical-operators.mdx': () =>
+    import(
+      /* webpackPrefetch: true, webpackChunkName: "src-pages-010-logical-ops-logical-operators" */ 'src/pages/010-logical-ops/logical-operators.mdx'
     ),
 }
