@@ -1,32 +1,16 @@
 {
   "config": {
-    "title": "RDBMS Fundamentals",
-    "description": "Learn the fundamental principles of relational databases using Transact SQL in Microsoft SQL Express",
-    "menu": [
-      "Landing",
-      "Introduction",
-      "About this page",
-      "Getting Started",
-      "Concepts and Semantics",
-      "Database Objects",
-      "Data Types",
-      "Data Query Language",
-      "Data Manipulation Language",
-      "Logical Operators"
-    ],
+    "title": "Transact Sql",
+    "description": "freeCodeCamp project as well as a document for ST product team to leverage off for SQL.",
+    "menu": [],
     "version": "1.0.0",
     "repository": "https://github.com/CliffCrerar/ffc_technical_document",
     "native": false,
     "codeSandbox": true,
-    "themeConfig": {
-      "colors": {
-        "primary": "tomato",
-        "secondary": "khaki",
-        "gray": "lightslategray"
-      }
-    },
+    "themeConfig": {},
     "separator": "-"
   },
+  "props": [],
   "entries": [
     {
       "key": "src/pages/001-landing/landing.mdx",
@@ -34,7 +18,7 @@
         "name": "Landing",
         "route": "/",
         "parent": "Pages",
-        "id": "3ddf3a2beb1c8365a0da1eba442f8373",
+        "id": "ac09b7a434b5a203d0a36c3a8da67496",
         "filepath": "src/pages/001-landing/landing.mdx",
         "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/001-landing/landing.mdx",
         "slug": "src-pages-001-landing-landing",
@@ -59,7 +43,7 @@
         "name": "Introduction",
         "route": "/introduction",
         "parent": "Documentation",
-        "id": "9f67589a3e710018f0c0c5d16605683b",
+        "id": "2497b489e2244f6ba0eadce03ce735e0",
         "filepath": "src/pages/002-intro/introduction.mdx",
         "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/002-intro/introduction.mdx",
         "slug": "src-pages-002-intro-introduction",
@@ -99,12 +83,37 @@
       }
     },
     {
+      "key": "src/pages/004-start/getting-started.mdx",
+      "value": {
+        "name": "Getting Started",
+        "route": "/getting-started",
+        "parent": "Documentation",
+        "id": "aa6035814c873caf79570bc400056a2f",
+        "filepath": "src/pages/004-start/getting-started.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/004-start/getting-started.mdx",
+        "slug": "src-pages-004-start-getting-started",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "getting-started",
+            "depth": 1,
+            "value": "Getting Started"
+          },
+          {
+            "slug": "by-the-end-of-this-section-you-need-to",
+            "depth": 4,
+            "value": "By the end of this section you need to:"
+          }
+        ]
+      }
+    },
+    {
       "key": "src/pages/003-about/about-this-page.mdx",
       "value": {
         "name": "About this page",
         "route": "/about",
         "parent": "Documentation",
-        "id": "e0b9a02903de2be95ecf79a6a4aa4740",
+        "id": "281ae9bcda624f54c0dc6012d9b515ff",
         "filepath": "src/pages/003-about/about-this-page.mdx",
         "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/003-about/about-this-page.mdx",
         "slug": "src-pages-003-about-about-this-page",
@@ -134,32 +143,12 @@
       }
     },
     {
-      "key": "src/pages/004-start/getting-started.mdx",
-      "value": {
-        "name": "Getting Started",
-        "route": "/getting-started",
-        "parent": "Documentation",
-        "id": "4615e1f6a45b809ca7fb0259a364d21e",
-        "filepath": "src/pages/004-start/getting-started.mdx",
-        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/004-start/getting-started.mdx",
-        "slug": "src-pages-004-start-getting-started",
-        "menu": "",
-        "headings": [
-          {
-            "slug": "getting-started",
-            "depth": 1,
-            "value": "Getting Started"
-          }
-        ]
-      }
-    },
-    {
       "key": "src/pages/005-concepts/concepts-and-semantics.mdx",
       "value": {
         "name": "Concepts and Semantics",
         "route": "/concepts",
         "parent": "Documentation",
-        "id": "572a1404617135f71055535b9178259a",
+        "id": "e07dcedb46ead98e7fd2bbcaa3f94741",
         "filepath": "src/pages/005-concepts/concepts-and-semantics.mdx",
         "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/005-concepts/concepts-and-semantics.mdx",
         "slug": "src-pages-005-concepts-concepts-and-semantics",
@@ -174,52 +163,12 @@
       }
     },
     {
-      "key": "src/pages/007-types/data-types.mdx",
-      "value": {
-        "name": "Data Types",
-        "route": "/data-types",
-        "parent": "Documentation",
-        "id": "515c6ef980c197d37b99b60a09bc7622",
-        "filepath": "src/pages/007-types/data-types.mdx",
-        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/007-types/data-types.mdx",
-        "slug": "src-pages-007-types-data-types",
-        "menu": "",
-        "headings": [
-          {
-            "slug": "data-types",
-            "depth": 1,
-            "value": "Data Types"
-          }
-        ]
-      }
-    },
-    {
-      "key": "src/pages/006-db-objects/database-objects.mdx",
-      "value": {
-        "name": "Database Objects",
-        "route": "/database-objects",
-        "parent": "Documentation",
-        "id": "b7ec69ea0171638f03d3418025bd3b9c",
-        "filepath": "src/pages/006-db-objects/database-objects.mdx",
-        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/006-db-objects/database-objects.mdx",
-        "slug": "src-pages-006-db-objects-database-objects",
-        "menu": "",
-        "headings": [
-          {
-            "slug": "database-objects",
-            "depth": 1,
-            "value": "Database Objects"
-          }
-        ]
-      }
-    },
-    {
       "key": "src/pages/008-dql/data-query-language.mdx",
       "value": {
         "name": "Data Query Language",
         "route": "/data-query-language",
         "parent": "Documentation",
-        "id": "1f5b7ae1ab565a02813bcb5b6a3aa792",
+        "id": "79a1fce7fdd195ad6e22e15314594296",
         "filepath": "src/pages/008-dql/data-query-language.mdx",
         "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/008-dql/data-query-language.mdx",
         "slug": "src-pages-008-dql-data-query-language",
@@ -234,12 +183,32 @@
       }
     },
     {
+      "key": "src/pages/007-types/data-types.mdx",
+      "value": {
+        "name": "Data Types",
+        "route": "/data-types",
+        "parent": "Documentation",
+        "id": "ee6236986412b17ad0ffc077c304437a",
+        "filepath": "src/pages/007-types/data-types.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/007-types/data-types.mdx",
+        "slug": "src-pages-007-types-data-types",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "data-types",
+            "depth": 1,
+            "value": "Data Types"
+          }
+        ]
+      }
+    },
+    {
       "key": "src/pages/009-dml/data-manipulation-language.mdx",
       "value": {
         "name": "Data Manipulation Language",
         "route": "/data-man-language",
         "parent": "Documentation",
-        "id": "99d23fa58ebbb46b21d377e34216c167",
+        "id": "688fa9be9c8a74b80d53a71264d11589",
         "filepath": "src/pages/009-dml/data-manipulation-language.mdx",
         "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/009-dml/data-manipulation-language.mdx",
         "slug": "src-pages-009-dml-data-manipulation-language",
@@ -254,11 +223,31 @@
       }
     },
     {
+      "key": "src/pages/010-logical-ops/logical-operators.mdx",
+      "value": {
+        "name": "Logical Operators",
+        "route": "/logical-operators",
+        "parent": "Documentation",
+        "id": "ae610ae8133032849b4f51ead32e26e3",
+        "filepath": "src/pages/010-logical-ops/logical-operators.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/010-logical-ops/logical-operators.mdx",
+        "slug": "src-pages-010-logical-ops-logical-operators",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "logical-operators",
+            "depth": 1,
+            "value": "Logical Operators"
+          }
+        ]
+      }
+    },
+    {
       "key": "src/pages/z_Resources/resources.mdx",
       "value": {
         "name": "Resources",
         "route": "/resources",
-        "id": "36169b878e1c92ef2211b047f104573f",
+        "id": "d09432fa466133fb2017fe2004259622",
         "filepath": "src/pages/z_Resources/resources.mdx",
         "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/z_Resources/resources.mdx",
         "slug": "src-pages-z-resources-resources",
@@ -273,25 +262,24 @@
       }
     },
     {
-      "key": "src/pages/010-logical-ops/logical-operators.mdx",
+      "key": "src/pages/006-db-objects/database-objects.mdx",
       "value": {
-        "name": "Logical Operators",
-        "route": "/logical-operators",
+        "name": "Database Objects",
+        "route": "/database-objects",
         "parent": "Documentation",
-        "id": "539b20a5ec26f198e27194cdaf4c669f",
-        "filepath": "src/pages/010-logical-ops/logical-operators.mdx",
-        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/010-logical-ops/logical-operators.mdx",
-        "slug": "src-pages-010-logical-ops-logical-operators",
+        "id": "2b399e7be8882442dd174d00a3ab36b0",
+        "filepath": "src/pages/006-db-objects/database-objects.mdx",
+        "link": "https://github.com/CliffCrerar/ffc_technical_document/edit/master/src/pages/006-db-objects/database-objects.mdx",
+        "slug": "src-pages-006-db-objects-database-objects",
         "menu": "",
         "headings": [
           {
-            "slug": "logical-operators",
+            "slug": "database-objects",
             "depth": 1,
-            "value": "Logical Operators"
+            "value": "Database Objects"
           }
         ]
       }
     }
-  ],
-  "props": []
+  ]
 }
