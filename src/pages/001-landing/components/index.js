@@ -2,7 +2,7 @@ import React from 'react';
 
 export default () => (
     <React.Fragment>
-        <style jsx>
+        <style jsx={true}>
         {`
             img{
                 transform: scale(1.1)
