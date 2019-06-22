@@ -4,7 +4,7 @@
     "description": "freeCodeCamp project as well as a document for ST product team to leverage off for SQL.",
     "main": "index.html",
     "scripts": {
-        "start": "docz dev",
+        "start": "docz dev --port=env.DOCZ_PORT",
         "build": "docz build",
         "now-build": "yarn build"
     },
@@ -19,6 +19,7 @@
     },
     "homepage": "https://github.com/CliffCrerar/ffc_technical_document#readme",
     "dependencies": {
+        "dotenv": "^8.0.0",
         "emotions": "0.0.1",
         "markdown-it": "^8.4.2",
         "markdown-it-attrs": "^2.4.1",

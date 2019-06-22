@@ -1,5 +1,5 @@
 module.exports = [
-    'Landing',    
+    'Landing',
     'Introduction',
     'About this page',
     'Getting Started',
