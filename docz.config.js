@@ -2,7 +2,7 @@
 import remarkAttr from 'remark-attr';
 import remarkAlign from 'remark-align';
 import path from 'path';
-// import defaultTheme from 'docz-theme-default'
+import defaultTheme from 'docz-theme-default'
 
 const PUBLIC = path.resolve( __dirname, 'public' );
 const SRC = path.resolve( __dirname, 'src' );
@@ -32,15 +32,16 @@ export default {
   themeConfig: {
     codemirrorTheme: 'dracula',
   },
-  // theme: defaultTheme,
+  theme: defaultTheme,
 
-  // themeConfig: {
-  //   colors: {
-  //     primary: 'tomato',
-  //     secondary: 'khaki',
-  //     gray: 'lightslategray',
-  //   },
-  // },
+  themeConfig: {
+    //mode: 'dark';
+    colors: {
+      primary: 'tomato',
+      secondary: 'khaki',
+      gray: 'lightslategray',
+    },
+  },
   //modifyBundlerConfig: config => {
   /* do your magic here */
   //},
