@@ -17,9 +17,9 @@
 
 | Document item                     | Scoped | Migrated/drafted | Reviewed | Refined | Published |
 | :-------------------------------- | ------ | ---------------- | -------- | ------- | --------- |
-| About                             | 1      | 1                |          |         |           |
-| Getting Started                   | 1      | 1                |          |         |           |
-| Creating the database demo        | 1      | 1                |          |         |           |
+| About                             | 1      | 1                | 0         |         |           |
+| Getting Started                   | 1      | 1                |  0        |         |           |
+| Creating the database demo        | 1      | 1                |   0       |         |           |
 | Concepts and semantics            | 1      | 1                |          |         |           |
 | Database objects                  | 1      | 1                |          |         |           |
 | Data types                        | 1      | 1                |          |         |           |
@@ -53,5 +53,5 @@
 | Additional resources              | 0      |       0           |          |         |           |
 |                                   |        |                  |          |         |           |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1Mjc5MjQ0Nl19
+eyJoaXN0b3J5IjpbLTE5OTQzNzQ2OTJdfQ==
 -->
