@@ -5,3 +5,38 @@ parent: Documentation
 ---
 
 # Concepts and Semantics
+
+The purpose of is to briefly familiarize yourself with some of the **database jargon** that is used when talking about SQL and databases, and are usually the terms used by database designers. For example, when we normally speak about data in a tabular form, like the data stored in excel we usually refer to fields and records. Fields being the columns and records being the rows. Also in this section we will very briefly discuss how databases are modelled using business cases or use cases. The table below shows the terms that professionals use when discussing topics related to data, databases, database servers and Structured query language.
+
+## General Clossary
+
+| Familiar Term / Description                                                  | Database Term                                                  |
+| ---------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| Worksheets, Group of tables                                                  | Tablespace, Schema                                             |
+| Table, File                                                                  | Entity, Table, Relation (not to be confused with relationship) |
+| Extraction ,Sampled records                                                  | Page (Section of a table's whole)                              |
+| Field, t1-column                                                             | t1-column, Attribute                                           |
+| Facts about a certain topic                                                  | Data elements                                                  |
+| Range of values                                                              | Domain                                                         |
+| Character field or Numeric Field                                             | Data type                                                      |
+| Unique numbering                                                             | Primary key                                                    |
+| Records, t1-rows                                                             | t1-rows, Tuples                                                |
+| Amount of unique values compared to row count                                | Cardinality                                                    |
+| t1-column A is before t1-column B                                            | Ordinal Position                                               |
+| Field 1 combined with Field 2 to become unique not related to another source | Candidate Key                                                  |
+| Field 1 combined with Field 2 to become unique but related to another source | Compound / Composite Key                                       |
+| A unique number that exist in the real world                                 | Natural Key (Number plates of cars, barcodes on products)      |
+| Value that cannot be split any further                                       | Atomic value                                                   |
+| Row 1 t1-col 1                                                               | Row 1 t1-col 2                                                 |
+
+## Data modelling and table Relationships
+
+These technique described here will be a basic demonstration of how the relational model is conceptualized. Although data modelling is no part of this document scope, it will be used to give you an understanding of how relationships are formed between tables. These type of relationships are important to understand for [Joining tables](http://www.learn-transact-sql.tk/#Joining_tables).
+
+### *There are 3 main types of table relationships:
+
+    1 to 1 / one to one
+    1 to many / one to many / 1 to *
+    many to many / * to *
+
+> There is also a 4th type of relationship, it is the recursive relationship and the reason it is not part of the main 3 is because these 3 are usually between different tables and the recursive relationship occurs when a table has a relationship with itself in a kind of parent child configuration.
