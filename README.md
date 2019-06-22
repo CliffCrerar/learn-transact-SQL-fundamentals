@@ -13,6 +13,7 @@
 # Current progress of published material
 
 ## Composed not published Current Sections
+<<<<<<< HEAD
 
 
 | Document item                     | Scoped | Migrated/drafted | Reviewed | Refined | Published | 
@@ -52,3 +53,37 @@
 | Systems development life cycle    | 0       |                  |          |         |           |
 | Additional resources              | 0       |                  |          |         |           |
 |                                   |        |                  |          |         |           |
+=======
+|:-------------------------------------|:----|
+-[x]|1. Introduction                    |  |
+|2. About this document             | -[x] |
+|3. Getting started                 | [x] |
+|4. Creating the demo database      | [x] |
+|5. Concepts and semantics          | [x] |
+|6. Database objects                | [x] |
+|7. Data types                      | [x] |
+|8. Data query language             | [x] |
+|9. Data manipulation language      | [x] |
+|10. Logical operations             | [x] |
+
+## Sections to still compose
+
+- Query execution method
+- Reserved words
+- Using comments
+- Data definition language
+- Joining tables
+- Computation and Functions
+- Sub-queries
+- Transaction concurrency
+- Transaction control language
+- Database views
+- Importing data
+- Exporting data
+- Using backups
+- Advanced topics
+- Additional resources
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTc2ODEyOTg3MF19
+-->
+>>>>>>> f555df80ea003b7b51fd03b476e3803f75d326de
