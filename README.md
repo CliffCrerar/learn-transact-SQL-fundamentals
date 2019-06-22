@@ -14,8 +14,8 @@
 
 ## Composed not published Current Sections
 |:-------------------------------------|:----|
-|1. Introduction                    | [x] |
-|2. About this document             | [x] |
+-[x]|1. Introduction                    |  |
+|2. About this document             | -[x] |
 |3. Getting started                 | [x] |
 |4. Creating the demo database      | [x] |
 |5. Concepts and semantics          | [x] |
