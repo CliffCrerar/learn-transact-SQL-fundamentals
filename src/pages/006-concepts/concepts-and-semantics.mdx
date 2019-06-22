@@ -4,6 +4,12 @@ route: /concepts
 parent: Documentation
 ---
 
+<style>{`
+    .user-story{
+        background-color: yellow;
+    }
+    `}</style>
+
 # Concepts and Semantics
 
 The purpose of is to briefly familiarize yourself with some of the **database jargon** that is used when talking about SQL and databases, and are usually the terms used by database designers. For example, when we normally speak about data in a tabular form, like the data stored in excel we usually refer to fields and records. Fields being the columns and records being the rows. Also in this section we will very briefly discuss how databases are modelled using business cases or use cases. The table below shows the terms that professionals use when discussing topics related to data, databases, database servers and Structured query language.
@@ -31,7 +37,7 @@ The purpose of is to briefly familiarize yourself with some of the **database ja
 
 ## Data modelling and table Relationships
 
-These technique described here will be a basic demonstration of how the relational model is conceptualized. Although data modelling is no part of this document scope, it will be used to give you an understanding of how relationships are formed between tables. These type of relationships are important to understand for [Joining tables](http://www.learn-transact-sql.tk/#Joining_tables).
+These technique described here will be a basic demonstration of how the relational model is conceptualized. Data modelling is an advanced topic of database design but it will be discussed briefly, for the purpose of an understanding of how relationships are formed between tables. These type of relationships are important to understand for [Joining tables](http://www.learn-transact-sql.tk/#Joining_tables).
 
 ### *There are 3 main types of table relationships:
 
@@ -40,3 +46,31 @@ These technique described here will be a basic demonstration of how the relation
     many to many / * to *
 
 > There is also a 4th type of relationship, it is the recursive relationship and the reason it is not part of the main 3 is because these 3 are usually between different tables and the recursive relationship occurs when a table has a relationship with itself in a kind of parent child configuration.
+
+These relationships might seem simple but they also have a more advanced aspect when considering the concept of participation, furthermore complecated by sheer number. Usually in theory only a few tables are required to explain certain concepts. Enterprise systems can have hundreds of tables in only one schema like accounts payable, and the total number of tables in an enterprise system very easily have thousands of tables each with a relationship with hundreds of other tables. This problem is not relevant to our discussion though.
+
+## Modelling data from a User story
+
+In almost all cases, the theory of data modeling will start with a user story as the main objective of data modelling is to convert business rules into a data structure which will now be demostrated.
+
+Stricter terms would merely call these requirements, but I have chosen, from a purely bias perspective to use the [Agile Methodology](https://luis-goncalves.com/what-is-agile-methodology/) term of user story as opposed to requirements.
+
+### The User Story
+
+<div className="user-story">
+
+    # Motor Vehicle Traders Ltd
+
+A used car sales business named 123 Sold (pty) ltd, has many departments. Each department is managed by one person, this person appointed as manager can only be in charge of one department.
+
+In the sales department, a salesman can advertise and market any car. Any car may also be advertised by any salesman.
+
+123 Sold is the holding company of a body shop next door named So Custom Body and Aftermarket Parts (pty) Ltd. The body shop uses many different t1-colours and shades, in many cases cars are painted with different t1-colours.
+
+A car always will have a base t1-color, but its panels can be painted in different t1-colors, for example. The bonnet car be yellow, the roof can be green and trunk lid can be orange.
+
+So Custom Body and Aftermarket Parts must keep track of which t1-colors are associated with which cars.
+
+</div>
+
+
