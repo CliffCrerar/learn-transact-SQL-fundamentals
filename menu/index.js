@@ -3,6 +3,7 @@ module.exports = [
     'Introduction',
     'About this page',
     'Getting Started',
+    'Creating the Demo Database',
     'Concepts and Semantics',
     'Database Objects',
     'Data Types',

@@ -1,3 +1,3 @@
-import React from 'react';
+//import React from 'react';
 
-export default ()=> <img src="https://zeit-optipng-server-01.c1i44.now.sh/learnsql/cloudsql-server.png" alt="tsql image"/>
+//export default ()=> <img src="https://zeit-optipng-server-01.c1i44.now.sh/learnsql/cloudsql-server.png" alt="tsql image"/>
