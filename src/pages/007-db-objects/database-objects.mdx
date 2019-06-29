@@ -5,3 +5,35 @@ parent: Documentation
 ---
 
 # Database Objects
+
+A database object is basically anything that can exist within a RDBMS environment. So it can be a lot of things like:
+
+- Table
+- Column
+- Data Type
+- Domain
+- Index
+- Relationship
+- View
+- Stored procedure
+- Built in function
+
+### ANYTHING that can be created inside a RDBMS.
+
+All of these database objects are recorded and their life cycle tracked in the [data dictionary](https://www.techopedia.com/definition/27752/data-dictionary) many cases also referred to as the database catalogue.
+
+## Data dictionary
+
+The data dictionary is one of the most important parts of a RDBMS, apart from keeping track of all the objects it also keeps track of state of the database.
+
+As the database processes transactions, the state is constantly changing after each transaction has been completed. But this is only a high level explanation. In detail it keeps track of each query that must be processed, is being processed and has completed processing. It keeps track of what data has been locked for processing (locking will eventually be covered in this document). Meaning which queries can continue and which queries must wait. Although this explanation was detailed, it was only focussed on the part of query processing. The data dictionary is definitively the brain of the database engine.
+
+If you would like to know more about how the database functions under the hood in terms of MS SQL Server you are free to read this article.
+
+[What are the system databases in a SQL server?](https://www.quora.com/What-are-the-system-databases-in-an-SQL-server)
+
+![Quora.com](https://zeit-optipng-server-01.c1i44.now.sh/online-media-logo/Quora-logo-small.png)
+
+
+
+> Short and sweet lets move on

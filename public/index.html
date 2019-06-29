@@ -6,10 +6,18 @@
     <meta content="{{ description }}" name="description">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <!-- <script src="services/clipboard.min.js"></script> -->
+
     <title>{{ title }}</title>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <!-- <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script> -->
     <style>
         .CodeMirror-size {
             border-radius: 13px !important;
+        }
+        
+        p {
+            text-align: justify !important;
         }
     </style>
 </head>
@@ -17,6 +25,7 @@
 <body>
     {{ head }}
     <div id="root"></div>{{ footer }}
+    <script src="services/replaceindexhead.js"></script>
 </body>
 
 </html>

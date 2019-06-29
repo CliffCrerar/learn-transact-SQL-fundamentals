@@ -17,11 +17,11 @@ md.use( markdownItAttrs, {
     // optional, these are default options
     leftDelimiter: '{',
     rightDelimiter: '}',
-    allowedAttributes: []  // empty array = all attributes are allowed
+    allowedAttributes: [] // empty array = all attributes are allowed
 } );
 
-function MnextMarkdown( { source } ) {
-    return <ReactMarkdown source={ md.render( source ) } escapeHtml={ false } />
+function MnextMarkdown ( { source } ) {
+    return <ReactMarkdown source={md.render( source )} escapeHtml={true} />
 }
 
 export default MnextMarkdown;

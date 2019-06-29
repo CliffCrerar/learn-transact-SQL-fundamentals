@@ -4,8 +4,9 @@ route: /creating-the-demo-database
 parent: Documentation
 ---
 
-import Button from '../../components/button';
-import { Playground ,Props} from 'docz'
+import { Buttons, Frame } from '../../components/SqlSnippet'
+import {downLoadLink} from '../../components/js';
+
 
 # Creating the Demo Database
 
@@ -39,13 +40,13 @@ Click on File>New>Query with Current Connection. You can also look for a button 
 ## Step 3: Get the database definition script
 Click on the copy to clipboard button at the bottom of the snippet below.
 
-<Props of={Playground}/>
+> <Frame 
+        downloadLink={downLoadLink}
+        h3Heading="Demo Database SQL Snippet"
+        h5subNote="The snippet has many lines so either download it for use later or copy the code to your clipboard to paste in MSSQL, do not try to copy from the snippet above, its just a nice to show, use either of the two buttons shown below."
+    />
 
-<Playground>
-	<div>LOLOLO</div>
-</Playground>
-
-<Button>Copy to clipboard</Button>
+<Buttons downloadLink={downLoadLink}/>
 
 ## Step 4: Place data definition script in a new query
 Go to SSMS click inside the query window then right click *(or left click depending on your mouse config)* and then click on paste. Instead of right clicking you can also use the shortcut key for paste which is **ctrl+v**.

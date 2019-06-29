@@ -4,4 +4,59 @@ route: /data-types
 parent: Documentation
 ---
 
-# Data Types
+# Data Types (WIP)
+
+Just one last section and then we start coding. This is not as much a theory section as is it a reference, and what it refers to is the data types (or the most important ones) that you could encounter and possibly use while using MS SQL server. Although you can can only scan through this section right now, know that if you are going to be using a lot of SQL this section of the document will come in handy many times as you hone your SQL skills.
+
+---
+
+> a **DATA TYPE** is the attribute of a data object, like a column that defines the type of "stuff" it can handle. 
+
+In the context of databases mostly columns or fields are associated with data types. These are usually [primitive types](https://en.wikibooks.org/wiki/Java_Programming/Primitive_Types) also referred to as [value types](https://www.tutorialsteacher.com/csharp/csharp-value-type-and-reference-type). 
+
+In the case of databases you need not be concerned with other forms of data types / value types or simply types. (the other form of types being [reference types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/reference-types), and relate to the programming principles of object orientation, and these are not related to database objects.). 
+
+> It is important to understand that when speaking in the domain of programming, value types and objects are not the same thing. However; when speaking in terms of databases and database objects. Data types or value types are in-fact objects, but they are objects of the database. This is related to ownership not to be confused with objects in the domain of object oriented programming.
+
+These are the only important points to note in this section. You may scan over the rest of this section or move straight on to [Data Query Language]() and let us start coding in SQL.
+
+---
+
+## Exact Numbers
+
+| Data type | Description | Range/Precision | Storage |
+|-----------|-------------|-----------------|---------|
+|
+
+
+## Approximate numbers
+
+Approximate-number data types for use with floating point numeric data. Floating point data is approximate; therefore, not all values in the data type range can be represented exactly.
+
+| Data type | Description | Range/Precision | Storage |
+|-----------|-------------|-----------------|---------|
+|
+
+## Character strings:
+
+Character data types that are either fixed-length, char, or variable-length, varchar. Starting with SQL Server 2019 preview, when a UTF-8 enabled collation is used, these data types store the full range of Unicode character data and use the UTF-8 character encoding. If a non-UTF-8 collation is specified, then these data types store only a subset of characters supported by the corresponding code page of that collation.
+
+| Data type | Description | Range/Precision | Storage |
+|-----------|-------------|-----------------|---------|
+|
+
+## Unicode character strings:
+
+Character data types that are either fixed-length, nchar, or variable-length, nvarchar. Starting with SQL Server 2012 (11.x), when a Supplementary Character (SC) enabled collation is used, these data types store the full range of Unicode character data and use the UTF-16 character encoding. If a non-SC collation is specified, then these data types store only the subset of character data supported by the UCS-2 character encoding.
+
+| Data type | Description | Range/Precision | Storage |
+|-----------|-------------|-----------------|---------|
+|
+
+## Date and time
+
+The only thing worth mentioning here is the difference between [user time]() and [system time]() and is a extremely important concept when working with globally distributed systems. This document will eventually cover this topic.
+
+| Data type | Description | Range/Precision | Storage |
+|-----------|-------------|-----------------|---------|
+|
