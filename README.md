@@ -12,7 +12,6 @@
 
 For existing site and for migration, once migration has been implemented and reviewed new document will be published.
 
-
 | Document item                     | Scoped | Migrated/drafted | Reviewed | Refined | Published | Improve |
 | :-------------------------------- | ------ | ---------------- | -------- | ------- | --------- | ------- |
 | About                             | 1      | 1                | 0        | 0       | 0         | 0       |
@@ -53,11 +52,11 @@ For existing site and for migration, once migration has been implemented and rev
 
 #### Parked migration tasks:
 
+- 
 
+#### To come back to later
 
-- #### To come back to later
-
-  ​	`COPY TO CLIPBOARD: Demo section copy northwind database sql snippet to clipboard, display and download implemented.`
+  ​ `COPY TO CLIPBOARD: Demo section copy northwind database sql snippet to clipboard, display and download implemented.` 
 
   
 
@@ -65,9 +64,11 @@ For existing site and for migration, once migration has been implemented and rev
 
 - On front page briefly describe what is covered and what there is to learn
 
-
-
 #### Improvement ideas:
 
 - Add a colum to data types tables to indicate  conversion possibilities.
-- Add a section to explain user time and system time.asdasdasdas  q
+- Add a section to explain user time and system time.
+- `CodeMirror-code` for bookmarking, requires login.
+- In app `Northwind` instance.
+- Query exercises. 
+
