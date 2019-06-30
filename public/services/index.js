@@ -1,3 +1,3 @@
-const MnextMarkdown = require('./mnext-markdown');
+//const MnextMarkdown = require('.mnext-markdown');
 
-module.exports = { MnextMarkdown };
+//module.exports = { MnextMarkdown };

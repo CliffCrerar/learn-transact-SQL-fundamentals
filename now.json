@@ -1,8 +1,8 @@
-{
-    "version": 2,
-    "name": "LearnTsqlFundamentals",
-    "alias": "Lean-Transact-SQL-fundamentals",
-    "builds": [
-        { "src": "package.json", "use": "@now/static-build" }
-    ]
-}
+// {
+//     "version": 2,
+//     "name": "LearnTsqlFundamentals",
+//     "alias": "Lean-Transact-SQL-fundamentals",
+//     "builds": [
+//         { "src": "package.json", "use": "@now/static-build" }
+//     ]
+// }

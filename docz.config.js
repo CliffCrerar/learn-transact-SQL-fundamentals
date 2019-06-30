@@ -17,7 +17,23 @@ const themeConfig = {
         secondary: 'khaki',
         gray: 'lightslategray',
     },
+    logo: {
+        src: 'https://now-static-cdn.c1i44.now.sh/svg/docz.logo.svg',
+        width: 150,
+    }
 };
+
+//theme: 'docz-theme-default',
+// themeConfig: {
+//         // mode: 'dark',
+//         colors: {
+//             primary: 'tomato'
+//         },
+//         logo: {
+//             src: 'https://now-static-cdn.c1i44.now.sh/svg/docz.logo.svg',
+//             width: 150,
+//         }
+//     },
 
 const config = {
     base: "/",

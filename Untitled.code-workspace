@@ -11,11 +11,11 @@
 		}
 	],
 	"settings": {
-		"editor.overviewRulerBorder": false,
-		"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
-		"javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
-		"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
-		"cSpell.enabled": true,
-		"mdx-preview.preview.useWhiteBackground": true
+		// "editor.overviewRulerBorder": false,
+		// "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+		// "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+		// "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+		// "cSpell.enabled": true,
+		// "mdx-preview.preview.useWhiteBackground": true
 	}
 }
