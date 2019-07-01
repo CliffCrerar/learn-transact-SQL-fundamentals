@@ -11,6 +11,7 @@
 		}
 	],
 	"settings": {
+		"editor.wordWrap": "bounded"
 		// "editor.overviewRulerBorder": false,
 		// "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
 		// "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,

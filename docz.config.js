@@ -18,8 +18,9 @@ const themeConfig = {
         gray: 'lightslategray',
     },
     logo: {
-        src: 'https://now-static-cdn.c1i44.now.sh/svg/docz.logo.svg',
-        width: 150,
+        src: 'https://s3-eu-west-1.amazonaws.com/cdn-aws-infinityarc.tk/files/svg/docz.logo.svg',
+
+        width: 160,
     }
 };
 

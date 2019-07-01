@@ -72,3 +72,6 @@ For existing site and for migration, once migration has been implemented and rev
 - In app `Northwind` instance.
 - Query exercises. 
 
+RESOURCES:
+https://www.dofactory.com/sql/subquery
+

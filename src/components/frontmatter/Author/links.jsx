@@ -1,11 +1,13 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import SVGInject from '@iconfu/svg-inject';
 
 class SocialLinks extends Component {
     constructor ( props ) {
         super( props )
-        this.state = {someState: 'someState'}
-        this.FSL = 'https://icons-social-fa-svq-sq.c1i44.now.sh/';
+        this.state = { someState: 'someState' }
+        this.FSL = 'https://s3-eu-west-1.amazonaws.com/cdn-aws-infinityarc.tk/files/icons-social-fa-svq-sq/';
+        //this.FSL = 'https://icons-social-fa-svq-sq.c1i44.now.sh/';
+        // https://s3-eu-west-1.amazonaws.com/cdn-aws-infinityarc.tk/files/icons-social-fa-svq-sq/facebook.svg
     }
     socialLinkClickHandle ( ev ) {
         ev.persist();
