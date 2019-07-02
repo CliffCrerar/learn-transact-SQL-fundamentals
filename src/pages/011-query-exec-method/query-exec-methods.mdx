@@ -1,0 +1,65 @@
+---
+name: Query Execution Methods
+route: /query-execution-methods
+parent: Documentation
+---
+
+# Logical Operators
+
+(WIP)
+
+As described in the introduction, SQL is a imperative language with some characteristics of a procedural. 
+
+This part is mostly just for interest sake, if you are not concerned with how a database processes queries you can skip to the next section <a href=""></a>
+
+This is because in a file with many lines of queries the execution is from top to bottom, that is what makes it procedural. This has also been demonstrated in almost every example so far. We consider the ORDER BY example from the <a href="#Data_query_language">Data query language¬</a>¬¬¬:
+
+>
+USE Northwind;
+SELECT ProductName, CategoryID, UnitPrice
+FROM Products
+ORDER BY CategoryID ASC, UnitPrice DESC;
+>
+
+It executes the queries as they are encountered when the query parser starts reading the file from line 1 until there are no more lines to execute, it will still be true no matter how many lines of queries are in a file and is only limited by the resources of the machine it is running on. And that is where the similarities with a procedural language end. 
+
+There are, however, as with all thing's exceptions to this part of the exceptions to procedural nature of SQL. But it is only accomplished if an explicit instruction is given to the parser. This instruction is the <a href="https://docs.microsoft.com/en-us/sql/t-sql/language-elements/goto-transact-sql?view=sql-server-2017">GOTO</a> command and can be triggered in normal procedural execution or if a certain condition is met. We will not elaborate further on GOTO command.
+
+The part that makes SQL an imperative language. Meaning that SQL is only telling the parser what to do, once it knows what you want it knows how to execute the instruction you do not have to give it those instructions. 
+
+We will use the following analogy to make this clear:
+
+If you go to the bank to query (pun intended) some anomalies you have noticed on your account. Once you get to the enquiries counter, you only have to give the clerk either your personal identification number or your bank account number. If he has that information, he will know how to find your records on the system. You as the customer do not need to tell him how to navigate his system, or which of his colleagues he might need to approach to resolve your query.
+
+This is one of the fundamental principles of an RDBMS. It is why they are such a powerful tool for keeping track of thousands, hundreds of thousands, millions and even billions of transactions while remaining efficient. It is also, why they are still relevant and widely used 30 years after they were invented. Just as the clerk at the enquiries counter knows what to do when you present him with your query, so does the RDBMS know everything about itself.
+
+It achieved this awareness by keeping a data-dictionary, sometimes also referred to database catalogue. You are even able to query this data-dictionary in SQL statements referred to as the INFORMATION-SCHEMA. All the data about the database or meta-data is constantly being kept up to date every time a query is processed.
+
+Now that we know what makes SQL an imperative language, we will talk about how it imperatively executes SQL. We already know that the parser runs through a file from top to bottom. But each line is critically evaluated by the parser and acts like a bouncer at the door of a night club. The strictest bouncer you have ever encountered, so strict that in a line of people trying to enter. If even one person is denied access, so are all the people waiting in line. And all the people in that were in that line already inside the club must now exit immediately as well. Because in a line of queries, if one query fails the parser evaluation, execution will cease and all previous queries that already passed the parser evaluation is rolled back. (GO command)
+
+But how does the parser evaluate each query? The query example from before will be used again. Line numbers have been added and will be used as a means of explanation.
+
+>
+1 - USE Northwind;
+2 -  SELECT ProductName, CategoryID, UnitPrice
+3 -  FROM Products
+4 - ORDER BY CategoryID ASC, UnitPrice DESC;
+>
+
+When we execute these queries, the parser looks at line 1 sees firstly that it is a USE command it then asks what you want to use, and it finds the answer syntactically by looking at what is after the space next to the USER command. It sees that the word is "Northwind". Because it is a USE command, it knows that it must lookup it does a lookup database names in the data dictionary to see if a database with the name Northwind exists? If the answer is YES then it changes the database for this session to Northwind, if not execution stops, and the RDBMS generates an error.
+
+From reading this paragraph, you will notice how amazing RDBMS's are. It sees only two words and then follows all the steps described above.
+
+Now for line 2 to 4. Next the parser looks at line 2, sees the SELECT. This tells the parser 2 things, (1) SELECT command means that it is going to display or produce data. But it does not have the full picture yet, (2) SELECT stamen means it must now look for a FROM clause. 
+
+But note that although it has seen the SELECT, when it looks for the FROM clause it has not yet nor means to evaluate the parts between the SELECT and the FROM yet. The reason for this is, remember that the FROM clause tells the parser what the table it must process. Columns are attributes or sub-objects of a table object. If it had to first evaluate the column names before the table name it would have to look through all the columns in all the tables to locate the columns stipulated in the query. Looking the FROM clause means that it can filter out all the columns for that table and only do a lookup in a much smaller list.
+
+Yet still it will now look for a WHERE clause, remember the WHERE clause stipulates the rows to be displayed. It is more efficient to first resolve a query horizontally meaning find rows first, before resolving it vertically meaning find columns. It finds no WHERE clause and since a WHERE clause is not mandatory it skips the WHERE operation, knowing that because a where is absent all the rows are going to be displayed. 
+
+Still it does not consider the column names between SELECT and FROM.  It is because the statement contains an ORDER BY clause, since you can SELECT only certain columns and are still able to sort the data for a COLUMN that will not be displayed. The parser must first resolve the sort order of the rows.
+
+Since it has resolved all the clauses, it will now look at the column names between SELECT and FROM and display to the user.
+
+Note for this example the SELECT query is written over multiple lines. Some queries are very complex and difficult to for humans to read all on 1 line. Splitting them up in different rows help us but for the query parser its all the same. Whether the query is on multiple lines or written in one line it has no bearing on the parser. This is because of how the query is structured, a SELECT statement cannot will always have a FROM clause after the select, the where clause will never be in front of the FROM. Unless you like errors a lot. Similarly, the ORDER BY clause will never be before the WHERE clause. Each of these clauses break the query up into chunks that must be syntactically appropriate for that chunk otherwise the query will fail.
+
+
