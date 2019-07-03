@@ -10,16 +10,16 @@ parent: Documentation
 
 As described in the introduction, SQL is a imperative language with some characteristics of a procedural. 
 
-This part is mostly just for interest sake, if you are not concerned with how a database processes queries you can skip to the next section <a href=""></a>
+This part is mostly just for interest sake, if you are not concerned with how a database processes queries you can skip to the next section [link]
 
-This is because in a file with many lines of queries the execution is from top to bottom, that is what makes it procedural. This has also been demonstrated in almost every example so far. We consider the ORDER BY example from the <a href="#Data_query_language">Data query language¬</a>¬¬¬:
+This is because in a file with many lines of queries the execution is from top to bottom, that is what makes it procedural. This has also been demonstrated in almost every example so far. We consider the ORDER BY example from the href="#Data_query_language">Data query language:
 
->
+```sql
 USE Northwind;
 SELECT ProductName, CategoryID, UnitPrice
 FROM Products
 ORDER BY CategoryID ASC, UnitPrice DESC;
->
+```
 
 It executes the queries as they are encountered when the query parser starts reading the file from line 1 until there are no more lines to execute, it will still be true no matter how many lines of queries are in a file and is only limited by the resources of the machine it is running on. And that is where the similarities with a procedural language end. 
 
@@ -39,12 +39,12 @@ Now that we know what makes SQL an imperative language, we will talk about how i
 
 But how does the parser evaluate each query? The query example from before will be used again. Line numbers have been added and will be used as a means of explanation.
 
->
-1 - USE Northwind;
-2 -  SELECT ProductName, CategoryID, UnitPrice
-3 -  FROM Products
-4 - ORDER BY CategoryID ASC, UnitPrice DESC;
->
+```sql
+USE Northwind;
+SELECT ProductName, CategoryID, UnitPrice
+FROM Products
+ORDER BY CategoryID ASC, UnitPrice DESC;
+```
 
 When we execute these queries, the parser looks at line 1 sees firstly that it is a USE command it then asks what you want to use, and it finds the answer syntactically by looking at what is after the space next to the USER command. It sees that the word is "Northwind". Because it is a USE command, it knows that it must lookup it does a lookup database names in the data dictionary to see if a database with the name Northwind exists? If the answer is YES then it changes the database for this session to Northwind, if not execution stops, and the RDBMS generates an error.
 

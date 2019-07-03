@@ -29,7 +29,7 @@ function LandingImgtext () {
             `}</style>
 			<img
 				style={{ width: '300px' }}
-				src="https://s3-eu-west-1.amazonaws.com/cdn-aws-infinityarc.tk/img/learnsql/database-icon-05x.png"
+				src="http://ex-online-server-01.gq/img/learnsql/database-icon-05x.png"
 				alt="Azure TSQL image" />
 			<div>
 

@@ -20,10 +20,10 @@ For existing site and for migration, once migration has been implemented and rev
 | Concepts and semantics            | 1      | 1                | 0        | 0       | 0         | 0       |
 | Database objects                  | 1      | 1                | 0        | 0       | 0         | 1       |
 | Data types                        | 1      | complete tables  | 0        | 0       | 0         | 1       |
-| Data query language               | 1      | 0                | 0        | 0       | 0         |         |
-| Data manipulation language        | 1      | 0                | 0        | 0       | 0         |         |
+| Data query language               | 1      | 1                | 0        | 0       | 0         |         |
+| Data manipulation language        | 1      | 1                | 0        | 0       | 0         |         |
 | Logical operations                | 1      | 0                | 0        | 0       | 0         |         |
-| Query execution method            | 1      | 0                | 0        | 0       | 0         |         |
+| Query execution method            | 1      | 1                | 0        | 0       | 0         |         |
 | Reserved words                    | 1      | 0                | 0        | 0       | 0         |         |
 | Using comments                    | 1      | 0                | 0        | 0       | 0         |         |
 | Data definition language          | 1      | 0                | 0        | 0       | 0         |         |
@@ -31,7 +31,6 @@ For existing site and for migration, once migration has been implemented and rev
 | Computation and Functions         | 0      | 0                | 0        | 0       | 0         |         |
 | Sub-queries                       | 0      | 0                | 0        | 0       | 0         |         |
 | Transaction concurrency           | 0      | 0                | 0        | 0       | 0         |         |
-| Transaction control language      | 0      | 0                | 0        | 0       | 0         |         |
 | Database views                    | 0      | 0                | 0        | 0       | 0         |         |
 | Merging                           | 0      | 0                | 0        | 0       | 0         |         |
 | Unions                            | 0      | 0                | 0        | 0       | 0         |         |

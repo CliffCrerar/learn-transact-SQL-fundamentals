@@ -18,7 +18,7 @@ const themeConfig = {
         gray: 'lightslategray',
     },
     logo: {
-        src: 'https://s3-eu-west-1.amazonaws.com/cdn-aws-infinityarc.tk/files/svg/docz.logo.svg',
+        src: 'http://ex-online-server-01.gq/files/svg//docz.logo.svg',
 
         width: 160,
     }

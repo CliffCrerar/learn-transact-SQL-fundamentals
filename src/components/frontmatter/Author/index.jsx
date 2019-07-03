@@ -102,37 +102,31 @@ class AboutAuthor extends Component {
 						<h2>Credentials:</h2>
 						<ul>
 							<li>
-								Data Administrator - 10 years+ <br />
-								{/* <span>Oracle | SQL Server | Visual FoxPro (when its was still cool)</span> */}
+								<h5>Data Administrator - 10 years+</h5>
+								<span>Oracle &#xb7; SQL Server &#xb7; Visual FoxPro  (when its was still cool)</span>
 							</li>
 							<li>
-								Accountant - 8 years<br />
-								{/* <span>Asset management | Reconciliation specialist | Excel Expert</span> */}
+								<h5>Accounting consultant &#xb7; specialist - 6 years</h5>
+								<span>Asset management &#xb7 Reconciliation specialist &#xb7; Excel Expert &#xb7; project based strategies &#xb7; trends identification &#xb7; reporting</span>
 							</li>
 							<li>
-								Developer / Cloud Enthusiast - 2 years hobbyist | 3 years professional<br />
-								{/* <span>HTML | CSS/SCSS | JavaScript/jQuery | React | Angular2 | webpack | markdown | NextJS | NodeJS | PostgreSQL | Material Design | Azure | Google Cloud | AWS | .NET | Serverless </span> */}
+								<h5>ERP Solutions Architect 1.5 years</h5>
+								<span>Enterprise System setup and configuration &#xb7; Oracle e-business suite &#xb7; JD Edwards &#xb7; Data design documentation &#xb7;
+								System Administration: Analytics configuration kit &#xb7; <a href="https://quick.aclessentials.com/html/">QuiCK</a></span>
+							</li>
+							<li>
+								<h5>Solutions Architect | Software development - 2 year hobbyist, 2 year professional</h5>
+								<span>ACL &#xb7; HTML &#xb7; CSS/SCSS &#xb7; JavaScript/jQuery &#xb7; React &#xb7; Angular2 &#xb7; webpack &#xb7; markdown &#xb7; NextJS &#xb7; NodeJS &#xb7; PostgreSQL &#xb7; Material Design &#xb7; Azure &#xb7; Google Cloud &#xb7; AWS &#xb7; .NET &#xb7; Serverless </span>
 							</li>
 						</ul>
 					</div>
 				</div>
 				<div className="more-links these-boxes">
 
-					{/* <div className="social-icon" onClick={ev => this.socialLinkClickHandle( ev )}>
-                        <img data-clicked="0" src={FSL + 'facebook.svg'} alt="social icon facebook" />
-                        <img data-clicked="1" src={FSL + 'twitter.svg'} alt="social icon twitter" />
-                        <img data-clicked="2" src={FSL + 'instagram.svg'} alt="social icon instagram" />
-                        <img data-clicked="3" src={FSL + 'pinterest.svg'} alt="social icon pintrest" />
-                        <img data-clicked="4" src={FSL + 'github.svg'} alt="social icon github" />
-                        <img data-clicked="5" src={FSL + 'quora.svg'} alt="social icon quora" />
-                        <img data-clicked="6" src={FSL + 'stack-overflow.svg'} alt="social icon stack overflow" />
-                        <img data-clicked="7" src={FSL + 'linkedin.svg'} alt="social icon stack linkedIn" />
-                    </div> */}
-
 					<SocialLinks />
 
 				</div>
-			</div>
+			</div >
 		)
 	}
 }
