@@ -5,7 +5,7 @@ class SocialLinks extends Component {
 	constructor ( props ) {
 		super( props )
 		this.state = { someState: 'someState' }
-		this.FSL = 'http://ex-online-server-01.gq/img/icons-social-fa-svq-sq/';
+		this.FSL = 'http://ex-online-server-01.gq/files/icons-social-fa-svq-sq/';
 		//this.FSL = 'https://icons-social-fa-svq-sq.c1i44.now.sh/';
 		// https://s3-eu-west-1.amazonaws.com/cdn-aws-infinityarc.tk/files/icons-social-fa-svq-sq/facebook.svg
 	}

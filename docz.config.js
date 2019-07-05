@@ -11,6 +11,7 @@ const emoji = require('remark-emoji');
 import images from 'remark-images';
 
 console.log(process.cwd());
+
 const themeConfig = {
     colors: {
         primary: 'tomato',
@@ -18,8 +19,7 @@ const themeConfig = {
         gray: 'lightslategray',
     },
     logo: {
-        src: 'http://ex-online-server-01.gq/files/svg//docz.logo.svg',
-
+        src: 'http://ex-online-server-01.gq/files/svg/docz.logo.svg',
         width: 160,
     }
 };
@@ -48,11 +48,10 @@ const config = {
             links: [{
                 rel: 'stylesheet',
                 href: 'https://codemirror.net/theme/dracula.css',
-            }, ],
+            }],
         },
     },
     // theme: defaultTheme,
-
     //modifyBundlerConfig: config => {
     /* do your magic here */
     //},

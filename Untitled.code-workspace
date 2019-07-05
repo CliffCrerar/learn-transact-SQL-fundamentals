@@ -8,10 +8,13 @@
 		},
 		{
 			"path": "../docz-website"
+		},
+		{
+			"path": "/Users/cliffordcrerar/letsplay/_firebase"
 		}
 	],
 	"settings": {
-		"editor.wordWrap": "bounded"
+		"editor.wordWrap": "on"
 		// "editor.overviewRulerBorder": false,
 		// "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
 		// "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
