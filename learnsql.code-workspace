@@ -4,7 +4,8 @@
 			"path": "."
 		},
 		{
-			"path": "/Users/cliffordcrerar/letsplay/ziet-assets"
+			"name":"IMG-SERVE",
+			"path": "/Users/cliffordcrerar/SERVERS/img-servers/learnsql"
 		},
 		{
 			"path": "../docz-website"

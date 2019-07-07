@@ -1,5 +1,7 @@
 # Learn Transact-SQL fundamentals
 
+[](https://storage.googleapis.com/img/)
+
 ## Where it started
 
 - This project started as a freeCodeCamp zip line for front a front end development certificate and has turned into a project to benefit the community.

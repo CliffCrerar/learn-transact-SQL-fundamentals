@@ -6,7 +6,6 @@ import path from 'path';
 
 const PUBLIC = path.resolve(__dirname, 'public');
 const SRC = path.resolve(__dirname, 'src');
-// const remark = require('remark');
 const emoji = require('remark-emoji');
 import images from 'remark-images';
 
@@ -16,25 +15,14 @@ const themeConfig = {
     colors: {
         primary: 'tomato',
         secondary: 'khaki',
-        gray: 'lightslategray',
+        gray: 'lightslategray'
     },
     logo: {
-        src: 'http://ex-online-server-01.gq/files/svg/docz.logo.svg',
-        width: 160,
+        src: 'https://cdn-learnsql.c1i44.now.sh/pg1/_pg1-compass.png',
+        width: 160
+            // https://storage.googleapis.com/cdnbucket2/files/icons-social-fa-svq-sq/facebook.svg
     }
 };
-
-//theme: 'docz-theme-default',
-// themeConfig: {
-//         // mode: 'dark',
-//         colors: {
-//             primary: 'tomato'
-//         },
-//         logo: {
-//             src: 'https://now-static-cdn.c1i44.now.sh/svg/docz.logo.svg',
-//             width: 150,
-//         }
-//     },
 
 const config = {
     base: "/",
@@ -43,14 +31,17 @@ const config = {
     public: '/public',
     title: 'RDBMS Fundamentals',
     description: 'Learn the fundamental principles of relational databases using Transact SQL in Microsoft SQL Express',
+    indexHtml: './public/index.html',
     htmlContext: {
+        favicon: '/public/images/favicon.png',
         head: {
             links: [{
                 rel: 'stylesheet',
-                href: 'https://codemirror.net/theme/dracula.css',
-            }],
-        },
+                href: 'https://codemirror.net/theme/dracula.css'
+            }]
+        }
     },
+    themeConfig,
     // theme: defaultTheme,
     //modifyBundlerConfig: config => {
     /* do your magic here */
@@ -60,14 +51,9 @@ const config = {
     // ],
     files: './src/**/*.{markdown,mdx}',
     dest: '/dist',
-    // htmlContext: {
-    //favicon: '/public/images/favicon.png',
-    // },
     ignore: ['site-map.md', 'readme.md', 'src/theme/**'],
-    mdPlugins: [emoji, images, remarkAttr, remarkAlign]
+    mdPlugins: [emoji, images]
 }
-
-config.themeConfig = themeConfig;
 
 export default config;
 
