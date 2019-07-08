@@ -9,5 +9,8 @@ module.exports = [
     'Data Types',
     'Data Query Language',
     'Data Manipulation Language',
+    'Data definition language',
+    'Reserved words',
+    'Using Comments',
     'Query Execution Methods'
 ]
