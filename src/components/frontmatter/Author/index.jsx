@@ -32,7 +32,7 @@ const Badge = ( { callBadge } ) => {
 class AboutAuthor extends Component {
 	constructor ( props ) {
 		super( props )
-		this.state = { callBadge: false }
+		this.state = { callBadge: true }
 		console.log( 'this.props.callBadge: ', this.props.callBadge );
 	}
 

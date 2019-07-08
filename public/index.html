@@ -7,13 +7,28 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <!-- <script src="services/clipboard.min.js"></script> -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141918749-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-141918749-1');
+    </script>
+
+
     <title>{{ title }}</title>
     <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
     <!-- <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script> -->
     <style>
-        @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|DM+Serif+Text|Orbitron|Playfair+Display|Raleway&display=swap');
-        @import url('https://fonts.googleapis.com/css?family=Audiowide|Baumans|Convergence|Days+One|Forum|Marcellus+SC|Metrophobic|Michroma|Reem+Kufi|Syncopate&display=swap');
-        @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Lato|Oswald&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|Lato&display=swap');
+        /* @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|DM+Serif+Text|Orbitron|Playfair+Display|Raleway&display=swap'); */
+        /* @import url('https://fonts.googleapis.com/css?family=Audiowide|Baumans|Convergence|Days+One|Forum|Marcellus+SC|Metrophobic|Michroma|Reem+Kufi|Syncopate&display=swap'); */
+        /* @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Lato|Oswald&display=swap'); */
         /*
             ### SQL LOGO ###
             Orbitron
@@ -40,12 +55,10 @@
             ## BODY ###
             Lato
             Oswald
-
-
-
         */
-        :root {
-            --heading-font: DM Serif Text;
+        
+         :root {
+            --heading-font: DM Serif Display;
             --body-fonts: Lato;
         }
         
