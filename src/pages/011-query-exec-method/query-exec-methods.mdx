@@ -4,13 +4,15 @@ route: /query-execution-methods
 parent: Documentation
 ---
 
-# Logical Operators
+# Query Execution Methods
+
+>>> Review
 
 (WIP)
 
-As described in the introduction, SQL is a imperative language with some characteristics of a procedural. 
+As described in the introduction, `SQL` is a **imperative language** with some characteristics of a **procedural**. 
 
-This part is mostly just for interest sake, if you are not concerned with how a database processes queries you can skip to the next section [link]
+This part is mostly just for interest sake, if you are not concerned with how a database processes queries you can skip to the next section [link](TODO:)
 
 This is because in a file with many lines of queries the execution is from top to bottom, that is what makes it procedural. This has also been demonstrated in almost every example so far. We consider the ORDER BY example from the href="#Data_query_language">Data query language:
 
@@ -21,9 +23,13 @@ FROM Products
 ORDER BY CategoryID ASC, UnitPrice DESC;
 ```
 
-It executes the queries as they are encountered when the query parser starts reading the file from line 1 until there are no more lines to execute, it will still be true no matter how many lines of queries are in a file and is only limited by the resources of the machine it is running on. And that is where the similarities with a procedural language end. 
+It executes the queries as they are encountered when the query parser starts reading the file from line 1 until there are no more lines to execute, it will still be true no matter how many lines of queries are in a file and is only limited by the resources of the machine it is running on. That is where the similarities with a **procedural language** end. 
 
-There are, however, as with all thing's exceptions to this part of the exceptions to procedural nature of SQL. But it is only accomplished if an explicit instruction is given to the parser. This instruction is the <a href="https://docs.microsoft.com/en-us/sql/t-sql/language-elements/goto-transact-sql?view=sql-server-2017">GOTO</a> command and can be triggered in normal procedural execution or if a certain condition is met. We will not elaborate further on GOTO command.
+There are, however, as with all things exceptions. It is possible to issue and instruction for the query parser to go to a specific line in the code and this is achieved byt the `GOTO` command. 
+
+## `GOTO` Command
+
+But it is only accomplished if an explicit instruction is given to the parser. This instruction is the [GOTO](https://docs.microsoft.com/en-us/sql/t-sql/language-elements/goto-transact-sql?view=sql-server-2017") command and can be triggered in normal procedural execution or if a certain condition is met. We will not elaborate further on GOTO command.
 
 The part that makes SQL an imperative language. Meaning that SQL is only telling the parser what to do, once it knows what you want it knows how to execute the instruction you do not have to give it those instructions. 
 

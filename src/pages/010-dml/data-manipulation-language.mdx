@@ -6,7 +6,7 @@ parent: Documentation
 
 # Data Manipulation language
 
-DML is a subset of structured query language. It consists of a collection of statements used to manipulate database objects. These commands are `INSERT`, `UPDATE`, `DELETE`, `TRUNCATE` and `SELECT INTO`. The `MERGE` command also forms part of data manipulation language and is covered at a later stage.
+`DML` is a subset of structured query language. It consists of a collection of commands or statementsq used to manipulate database objects. These commands are `INSERT`, `UPDATE`, `DELETE`, `TRUNCATE` and `SELECT INTO`. The `MERGE` command also forms part of data manipulation language and is covered at a later stage.
 
 This collection of commands, like with the `SELECT` statement, is used along with `FROM` and `WHERE` clauses to define the objects to process. The `TOP` and `ORDER BY` clauses cannot be used in data manipulation language, and this collection has some of their own unique clauses.
 
@@ -24,11 +24,11 @@ INSERT INTO Categories VALUES(9, 'Tinned Foods', 'These are all types of food th
  
 If you run a `SELECT * FROM Categories`, you will notice that the new line has been added. So how does it work? Notice that the table has three columns 
 
-`CategoryID`,`CategoryName` and `Description`. The order in which we name these columns is also the order in which they appear from left to right in the table. This is what is called [*ORDINAL POSITION*](). 
+`CategoryID`,`CategoryName` and `Description`. The order in which we name these columns is also the order in which they appear from left to right in the table. This is what is called [*ORDINAL POSITION*](TODO:). 
 
 Note that the above `INSERT` statement is how the `INSERT` command can be run using its simplest form. But there are problems with using this form.
 
-If we had run the above `INSERT` statement and switched around 'Tinned Foods' to be after 'These are all types of food that are preserved in a can' in the values clause the data would be inserted erroneously. In many instances the table ID, in this case CategoryID, has been defined to [AUTO-INCREMENT](https://www.w3schools.com/sql/sql_autoincrement.asp). This means that when you insert a row you do not have to define the value of the key field (The reason this is important as well as how it is achieved will be explained in [Data definition language section](). If you were to run the above `INSERT` statement without the `9` you would receive and error the error  Column name or number of supplied values does not match table definition. That is because your table has three columns but you are only supplying it two values and you are receiving the error because the RDBMS does not know in which columns it must insert these values into.
+If we had run the above `INSERT` statement and switched around 'Tinned Foods' to be after 'These are all types of food that are preserved in a can' in the values clause the data would be inserted erroneously. In many instances the table ID, in this case CategoryID, has been defined to [AUTO-INCREMENT](https://www.w3schools.com/sql/sql_autoincrement.asp). This means that when you insert a row you do not have to define the value of the key field (The reason this is important as well as how it is achieved will be explained in [Data definition language section](TODO:). If you were to run the above `INSERT` statement without the `9` you would receive and error the error  Column name or number of supplied values does not match table definition. That is because your table has three columns but you are only supplying it two values and you are receiving the error because the RDBMS does not know in which columns it must insert these values into.
 
 The way to work around this is to tell the RDBMS in which columns it must insert the values to and it is achieved as follows: 
 
@@ -83,16 +83,15 @@ VALUES
 (10,'Alcohol Drinks', 'These beverages require a special license to trade'),
 (9,'Tinned Foods', 'These are all types of food that are preserved in a can');
 ```
->>> review
 
 ## `INSERT INTO` with a `SELECT` statement
 
-Remember in the alluded to two forms of the insert statement. The first is using the VALUES clause, the second is using a SELECT statement. 
+Remember in the alluded to two forms of the insert statement. The first is using the `VALUES` clause, the second is using a `SELECT` statement. 
 
 #### When to use which?
 
-1.  VALUES would be used when the incoming transactions are from outside the database. For example, a user capturing a supplier invoice.
-2.	SELECT would be used when the data is already in the database but must be transformed in some way. For example a table of transactions must be summarised according to a business rule, these new entries must be appended into another table which is used for report generation.
+1.  `VALUES` would be used when the incoming transactions are from outside the database. For example, a user capturing a supplier invoice.
+2.	`SELECT` would be used when the data is already in the database but must be transformed in some way. For example a table of transactions must be summarised according to a business rule, these new entries must be appended into another table which is used for report generation.
 
 To make sense of this we will consider a scenario:
 
@@ -113,27 +112,31 @@ INSERT INTO Customers SELECT * FROM Customer_applications WHERE Status = 'approv
 But in the real world a situation like this is very rare, and even in this case if we ran the query above it would fail. So it must be modified to fit into the Customers table. The syntax is as follows and scripted according to good practice:
 
 ```sql
-INSERT INTO Customers(CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax)
-SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax
+INSERT INTO Customers(CustomerID, CompanyName, ContactName, ContactTitle, [Address], City, Region, PostalCode, Country, Phone, Fax)
+SELECT CustomerID, CompanyName, ContactName, ContactTitle, [Address], City, Region, PostalCode, Country, Phone, Fax
 FROM customer_applications
 WHERE status = 'approved';
 ```
 
-Remember that a SELECT statement is independent, it is not a clause of the INSERT command like VALUES. Because of this when scripting INSERT SELECT statement first only run the SELECT statement until you are satisfied that your SELECT statement will run with an INSERT statement.
-SELECT INTO Command
-Another way to move data around in a database is to use the SELECT INTO command. The example below will copy the entries from the products table where no units are on order;
+> Note that the Address is in brackets. [] this is because it is a [reserved word](TODO:). See the section on reserved words.
+
+Remember that a `SELECT` statement is independent, it is not a clause of the `INSERT` command like `VALUES`. Because of this when scripting `INSERT-SELECT` statement first only run the `SELECT` statement until you are satisfied that your `SELECT` statement will run with an INSERT statement.
+
+## `SELECT INTO` Command
+
+Another way to move data around in a database is to use the `SELECT INTO` command. The example below will copy the entries from the products table where no units are on order;
 
 ```sql
 SELECT * INTO noProductsOnOrder FROM Products WHERE UnitsOnOrder = 0;
 ```
 
-Explanation:
+### Explanation:
 
-This command, except for the INTO part is identical to a SELECT statement. How it differs from INSERT INTO is, INSERT INTO inserts records into existing database table objects, SELECT INTO does exactly the same, except SELECT INTO will be used when the table object the of the records to be inserted does not exist yet. SELECT INTO uses the SELECT part to retrieve data just like a normal SELECT. The INTO part instructs the SELECT statement to make an exact structural copy of the table where data is being selected from, then inserts the data that was selected. 
+This command, except for the `INTO` part is identical to a `SELECT` statement. How it differs from `INSERT INTO` is, I`NSERT INTO` inserts records into existing database table objects, `SELECT INTO` does exactly the same, except `SELECT INTO` will be used when the table object the of the records to be inserted does not exist yet. `SELECT INTO` uses the SELECT part to retrieve data just like a normal `SELECT`. The `INTO` part instructs the `SELECT` statement to make an exact structural copy of the table where data is being selected from, then inserts the data that was selected. 
 
 In the example above, the query is selecting all the columns from the products table, creating a table with all **(*)** the columns from the product table then INSERTS only the entries where the UnitsOnOrder are 0.
 
-As the SELECT into follows the rules of a SELECT query, the * can be replaced with column names that are valid according to the FROM clause, in this cause the table created by the INTO part will only have the columns defined after the SELECT. The TOP clause can be used to limit entries. If column ALIASING is applied the table CREATED by the INTO will have the Column ALIAS as column names. If ORDER BY is used the new table will assume that order in the new table.
+As the `SELECT` into follows the rules of a `SELECT` query, the * can be replaced with column names that are valid according to the FROM clause, in this cause the table created by the INTO part will only have the columns defined after the `SELECT`. The TOP clause can be used to limit entries. If column ALIASING is applied the table CREATED by the INTO will have the Column ALIAS as column names. If ORDER BY is used the new table will assume that order in the new table.
 
 This example we will copy the top 5 products with only the ProductName aliased as Product and the UnitsInStock ALIASED as Stock Level columns of the products where no units are currently on order:
 
@@ -142,9 +145,9 @@ SELECT TOP 5 ProductName as Product, UnitsInStock as [Stock Level] INTO Products
 SELECT * FROM ProductsHighStock;
 ```
 
-UPDATE Command
+## `UPDATE` Command
 
-The INSERT INTO command is used to create new data in the database while the UPDATE command is used to modify existing data. In a UPDATE statement the WHERE clause is used to target the data that is to be updated. The example below updates the region column in the suppliers table, and the SupplierID is used to target the record to be updated:
+The `INSERT INTO` command is used to create new data in the database while the `UPDATE` command is used to modify existing data. In a `UPDATE` statement the `WHERE` clause is used to target the data that is to be updated. The example below updates the region column in the suppliers table, and the SupplierID is used to target the record to be updated:
 
 *Once again make sure that `USE Northwind;` is at the top of your query window.*
 
@@ -152,27 +155,29 @@ The INSERT INTO command is used to create new data in the database while the UPD
 UPDATE Suppliers SET Region = 'Kongers' WHERE SupplierID = 21;
 ```
 
-From the example above you will note that the UPDATE statement does not have a FROM clause. Tthis is because the table object is specified right after the UPDATE keyword. The SET clause defines the part of the query that determines what is to be updated, in this case the Region is modified. As stated before the WHERE clause determines the rows to be updated. 
+From the example above you will note that the `UPDATE` statement does not have a `FROM` clause. Tthis is because the table object is specified right after the `UPDATE` keyword. The `SET` clause defines the part of the query that determines what is to be updated, in this case the Region is modified. As stated before the `WHERE` clause determines the rows to be updated. 
 
-Also in the WHERE clause the SupplierID is not encapsulated in quotes like in the WHERE clauses of previous queries. This is because the column objects from all the previous queries were of type *string* where the SupplierID of the suppliers table is of type *integer*. However, if we were to encapsulate the SupplierID as such '21', the query would not fail because strings that are number only (no alphabetical characters, no spaces) are compatible with type *integer*.
+Also in the `WHERE` clause the SupplierID is not encapsulated in quotes like in the `WHERE` clauses of previous queries. This is because the column objects from all the previous queries were of type *string* where the SupplierID of the suppliers table is of type *integer*. However, if we were to encapsulate the SupplierID as such '21', the query would not fail because strings that are number only (no alphabetical characters, no spaces) are compatible with type *integer*.
 
-Considering the UPDATE example it is important to note that if the where clause were to be omitted all rows will be updated for the SET criteria. 
+Considering the `UPDATE` example it is important to note that if the where clause were to be omitted all rows will be updated for the `SET` criteria. 
 
-The UPDATE command can also be used to SET one column equal to another. In such a case instead of using a value on the right hand side equal sign in the SET clause, a column name would be used. These type of updates become useful when [joining tables](TODO:) as well as when using [sub-queries](TODO:). This will be demonstrated in the mentioned sections.
+The `UPDATE` command can also be used to `SET` one column equal to another. In such a case instead of using a value on the right hand side equal sign in the `SET` clause, a column name would be used. These type of updates become useful when [joining tables](TODO:) as well as when using [sub-queries](TODO:). This will be demonstrated in the mentioned sections.
 
->ATTENTION: The update command is the most volatile command in SQL. If this command is used recklessly it could potentially compromise the integrity of very important data, and if there are no appropriate disaster recovery controls in place the damage could be catastrophic. In a professional environment a corruption of data described here places your own job as well as the jobs of the custodians of the data at risk, it is important to take great care when you have database credentials with UPDATE privileges.
+> ### ATTENTION: 
+> The update command is the most volatile command in SQL. If this command is used recklessly it could potentially compromise the integrity of very important data, and if there are no appropriate disaster recovery controls in place the damage could be catastrophic. 
+> In a professional environment a corruption of data described here places your own job as well as the jobs of the custodians of the data at risk, it is important to take great care when you have database credentials with UPDATE privileges.
 
-WARNING: If you ever find yourself in a situation where you have access to a production database with UPDATE privileges and you are not the DBA, please refrain from using the UPDATE command. if you must run the UPDATE command always do it under supervision of the DBA. It is for your own safety.
+WARNING: If you ever find yourself in a situation where you have access to a production database with `UPDATE` privileges and you are not the DBA, please refrain from using the `UPDATE` command. if you must run the `UPDATE` command always do it under supervision of the DBA. It is for your own safety.
 
-#### There is no such thing as UNDO where scripting
+#### There is no such thing as `UNDO` when scripting `SQL`
 
-If you are administering your own personal database as a productivity tool you will most likely use the UPDATE command often. Although the consequence of a mishap is far less. For yourself a UPDATE command mishap could mean a loss of hours of work. 
+If you are administering your own personal database as a productivity tool you will most likely use the `UPDATE` command often. Although the consequence of a mishap is far less. For yourself a `UPDATE` command mishap could mean a loss of hours of work. It can even lead to loss of employment if severe enough.
 
-The examples will follow a process that minimizes the risk of using the UPDATE command, and after the examples a few measures you can take to recover your data if an UPDATE command query goes wrong.
+The examples will follow a process that minimizes the risk of using the `UPDATE` command, and after the examples a few measures you can take to recover your data if an `UPDATE` command query goes wrong.
 
-A good preventative measure you can take when using he UPDATE command is to first use a SELECT statement to target the data you wish to update. 
+A good preventative measure you can take when using he `UPDATE` command is to first use a `SELECT` statement to target the data you wish to update. 
 
-The example below is the a SELECT statement which determines the WHERE part for the subsequent UPDATE statement.
+The example below is the a `SELECT` statement which determines the `WHERE` part for the subsequent `UPDATE` statement.
 
 Scenario: According to latest professional practice it no longer appropriate to distinguish female titles according to their marital status and all woman will be given the title of Mrs.
 
@@ -182,7 +187,7 @@ Run the following `SELECT` to inspect the target data for `UDPATE`:
 SELECT * FROM Employees WHERE TitleOfCourtesy = 'Ms.';
 ```
 
-Looking at the result firstly note that all the TitleOfCourtesy columns state Ms. Also that there are four rows returned by the select query. Using the select statement we have confirmed that criteria is correct and that when we do our updated the completion message must read **4 rows affected**. We know that something is wrong with our update statement if any other number appears except four.
+Looking at the result firstly note that all the TitleOfCourtesy columns state Ms. Also that there are four rows returned by the `SELECT` query. Using the select statement we have confirmed that criteria is correct and that when we do our updated the completion message must read **4 rows affected**. We know that something is wrong with our update statement if any other number appears except four.
 
 Now run the update and use the same WHERE clause as per the select example above.
 
@@ -190,29 +195,31 @@ Now run the update and use the same WHERE clause as per the select example above
 UPDATE Employees SET TitleOfCourtesy = 'Mrs.' WHERE TitleOfCourtesy = 'Ms.';
 ```
 
-Another good preventative measure when using UPDATE is to either remove your query from the query window, or if you might want to use it at a latest stage place the double-dash(--) in front of it. This converts a line to a comment rendering that line invisible to the RDMS query engine. More on comments on the section [using comments]().
+Another good preventative measure when using `UPDATE` is to either remove your query from the query window, or if you might want to use it at a latest stage place the double-dash(--) in front of it. This converts a line to a comment rendering that line invisible to the `RDMS` query engine. More on comments on the section [using comments](TODO:).
 
-UPDATE Command disaster Recovery measures
+## `UPDATE` Command disaster Recovery measures
+
 Reading this, you might think that disaster is a strong word but we will consider a scenario, one recovery measures were neglected one where they were not. But first about the measures, there are two very good methods that you can use to recover data that has been corrupted by your own hand.
 
-NOTE: These methods are for you, using RDMS as a productivity tools and can also be appropriate and effective for production database with few users and a low transaction rate. Disaster recovery on its own have dedicated technical documents and is much more complex in a corporate environment transaction counted per second, the methods described here are not appropriate for this types of situations.
+>NOTE: These methods are for you, using RDMS as a productivity tools and can also be appropriate and effective for production database with few users and a low transaction rate. Disaster recovery on its own have dedicated technical documents and is much more complex in a corporate environment transaction counted per second, the methods described here are not appropriate for this types of situations.
 
-•	Making backups with MS SQL Server and SQL Server Express. You can use schedule backups to ensure that when disaster strikes your you are only set back a couple of hours. You are also able to make manual backups at any time. The problem with this method is that if you have large volumes of data, and you are running a SQL server on your own machine you can quickly run out of hard drive space because these types of backups backs up of all the objects in the database, when you only want to protect the table you are updating from disaster. This method of making backups will be explained in using backups.
+Making backups with MS SQL Server and SQL Server Express. You can use schedule backups to ensure that when disaster strikes your you are only set back a couple of hours. You are also able to make manual backups at any time. The problem with this method is that if you have large volumes of data, and you are running a SQL server on your own machine you can quickly run out of hard drive space because these types of backups backs up of all the objects in the database, when you only want to protect the table you are updating from disaster. This method of making backups will be explained in using backups.
 
-•	Using the SELECT INTO command as disaster recovery measure is a way faster method with a very low disk space overhead than backing up a whole database. This is because the SELECT INTO makes a table copy that has a lower disk storage cost, can be made from the query window and the processing time is way faster than making a database backup and can literally give a type of undo functionality. We will demonstrate this method in a scenario in the section joining tables.
+Using the `SELECT INTO` command as disaster recovery measure is a way faster method with a very low disk space overhead than backing up a whole database. This is because the `SELECT INTO` makes a table copy that has a lower disk storage cost, can be made from the query window and the processing time is way faster than making a database backup and can literally give a type of undo functionality. We will demonstrate this method in a scenario in the section joining tables.
 
 ## `DELETE` and `TRUNCATE`
-So far in this section we have covered, data creation with INSERT INTO and SELECT INTO, we covered modifying data with the UPDATE command and we are concluding with how to destroy data.
+
+So far in this section we have covered, data creation with `INSERT INTO` and `SELECT INTO`, we covered modifying data with the UPDATE command and we are concluding with how to destroy data.
 
 >TIP: Deleting data completely is never a great idea, when you decide to remove data from your database at least archive it in an appropriately if it is cluttering up your workspace.
 
 `DELETE` and `TRUNCATE` commands have the same purpose but different roles.
 
-•	The DELETE command is used when the task of destroying data is related to specific records and is used in conjunction with the FROM and WHERE clause.
+The `DELETE` command is used when the task of destroying data is related to specific records and is used in conjunction with the FROM and WHERE clause.
 
-•	The TRUNCATE command is when you want to clear out all the rows from a table and does not uses neither FROM nor WHERE. The DELETE command has the same capability as the TRUNCATE command, and we will demonstrate this as well, but the executing methods of DELETE and TRUNCATE are very different.
+The `TRUNCATE` command is when you want to clear out all the rows from a table and does not uses neither `FROM` nor `WHERE`. The DELETE command has the same capability as the `TRUNCATE` command, and we will demonstrate this as well, but the executing methods of DELETE and `TRUNCATE` are very different.
 
-Let us first use the SELECT INTO command to copy the tables we are going to run TRUNCATE and DELETE on. We will still need the data in these tables for later so please do not neglect this step.
+Let us first use the `SELECT INTO` command to copy the tables we are going to run `TRUNCATE` and `DELETE` on. We will still need the data in these tables for later so please do not neglect this step.
 
 To backup run:
 
@@ -228,9 +235,9 @@ DELETE FROM Employees WHERE Country = 'USA';
 SELECT * FROM employees;
 ```
 
-Next, we use the TRUNCATE command to simulate a disaster. 
+Next, we use the `TRUNCATE` command to simulate a disaster. 
 
-NORTHWIND HAS BEEN HACKED, the malicious attacker removed all records of the products Northwind trades with.
+***NORTHWIND HAS BEEN HACKED***, the malicious attacker removed all records of the products Northwind trades with.
 
 ```sql
 TRUNCATE TABLE Products;
@@ -258,5 +265,5 @@ Now check that the data has indeed been restored by running select statements on
 > ### NOTE: That no one really lost their jobs and no families were affected during the process of this exercise.
 
 
->To properly understand the difference between DELETE and TRUNCATE first requires  you to grasp the concept of [transaction concurrency]() that is not in the scope of this document. You can find information in this in the additional resources section.
+>To properly understand the difference between DELETE and TRUNCATE first requires  you to grasp the concept of [transaction concurrency](TODO:) that is not in the scope of this document. You can find information in this in the additional resources section.
 
