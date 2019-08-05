@@ -15,7 +15,12 @@
 		}
 	],
 	"settings": {
-		"editor.wordWrap": "on"
+		"editor.wordWrap": "on",
+		"workbench.colorCustomizations": {
+			"activityBar.background": "#053334",
+			"titleBar.activeBackground": "#074849",
+			"titleBar.activeForeground": "#ECFDFD"
+		}
 		// "editor.overviewRulerBorder": false,
 		// "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
 		// "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,

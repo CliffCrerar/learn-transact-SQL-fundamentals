@@ -18,6 +18,20 @@ const GlobalCustom = () => {
                 :root{
                     --btn-color2: ${colorSecondary};
                 }
+
+                body{
+                    box-sizing: border-box;
+                    min-width: 100vw;
+                    min-height: 100vh;
+                    word-break: break-word;
+                    font-kerning: auto;
+                    font-variant: normal;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    text-rendering: optimizeLegibility;
+                    hyphens: auto;
+                    text-align: center;
+                }
                 
                 .btn-container-normal{
                     width: 100%;

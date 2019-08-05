@@ -16,12 +16,12 @@ const themeConfig = {
         primary: 'tomato',
         secondary: 'khaki',
         gray: 'lightslategray'
-    },
-    logo: {
-        src: 'https://cdn-learnsql.c1i44.now.sh/pg1/_pg1-compass.png',
-        width: 160
-            // https://storage.googleapis.com/cdnbucket2/files/icons-social-fa-svq-sq/facebook.svg
     }
+    // logo: {
+    //     src: 'https://cdn-learnsql.c1i44.now.sh/pg1/_pg1-compass.png',
+    //     width: 160
+    //         // https://storage.googleapis.com/cdnbucket2/files/icons-social-fa-svq-sq/facebook.svg
+    // }
 };
 
 const config = {
