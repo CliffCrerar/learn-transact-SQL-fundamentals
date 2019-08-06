@@ -26,7 +26,7 @@ const themeConfig = {
 
 const config = {
     base: "/",
-    indexHtml: 'index.html',
+    indexHtml: 'public/index.html',
     menu: require('./menu'),
     public: '/public',
     title: 'RDBMS Fundamentals',
