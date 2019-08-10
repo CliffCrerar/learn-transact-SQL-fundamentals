@@ -105,5 +105,8 @@
   "typescript.suggestionActions.enabled": false,
   "typescript.suggest.paths": false,
   "typescript.suggest.autoImports": false,
-  "typescript.suggest.completeJSDocs": false
+  "typescript.suggest.completeJSDocs": false,
+  "workbench.colorCustomizations": {
+    "tab.unfocusedActiveBorder": "#fff0"
+  }
 }
