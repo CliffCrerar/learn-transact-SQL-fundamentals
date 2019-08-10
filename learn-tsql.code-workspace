@@ -1,0 +1,15 @@
+{
+    "folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "/Users/cliff/git/now-cdn"
+		}
+	],
+    "settings": {
+        "workbench.colorCustomizations": {
+			"tab.unfocusedActiveBorder": "#fff0"
+		}
+    }
+}

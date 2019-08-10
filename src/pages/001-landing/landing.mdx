@@ -4,39 +4,59 @@ route: /
 parent: Pages
 ---
 
-import {LandingImgtext,AboutAuthor,SubTitle} from '../../components/frontmatter'
+import {SubTitle} from '../../components/frontmatter'
 
-<style jsx="true" global="true">{`
-    .author-creds h2{
-        margin: 0;
-    }
-    [alt="fpimage"]:parent{
-        align-text: center;
-    }
-    .btn{
-        font-size: 1.5em;
-        padding: 10px 5px;
-    }
-    [alt="unlock-sql"]:parent{
+<style jsx="true">{`
+    .img-div{
         display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
-    [alt="unlock-sql"] {
+
+    [alt="Learn-SQL"]{
         position: relative;
-        width: 100%;
-        height: 10%;
+        width: 40%;
+        
+        
     }
-    li{
-        list-style-position: outside;
-    }
-    li h5{
-        margin: 0;
-    }
-    li span{
-        color: black;
-        font-size: 0.75em;
-    }
+    
+.myButton {
+	-moz-box-shadow:inset 0px 34px 0px -15px #b54b3a;
+	-webkit-box-shadow:inset 0px 34px 0px -15px #b54b3a;
+	box-shadow:inset 0px 34px 0px -15px #b54b3a;
+	background-color:#a73f2d;
+	cursor:pointer;
+	color:#ffffff;
+	
+	font-size:15px;
+	
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #7a2a1d;
+	border: 0px Solid transparent;
+	border-radius: 5px;
+}
+.myButton:hover {
+	background-color:#b34332;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+        
+
 `}</style>
 
 # Learn Transact SQL Fundamentals
 
 <SubTitle/>
+<div class="img-div">
+
+<a href="/introduction">
+    <button class="myButton">GET STARTED</button>
+</a>
+
+<img src="https://misc-webassets.c1i44.now.sh/learnsql.png" alt="Learn-SQL"/>
+
+</div>
+
