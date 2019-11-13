@@ -4,7 +4,8 @@
     "description": "freeCodeCamp project as well as a document for ST product team to leverage off for SQL.",
     "main": "index.html",
     "scripts": {
-        "start": "docz dev --port 3050",
+        "start": "docz",
+        "dev": "docz dev --port 3050",
         "build": "docz build",
         "now-build": "yarn build"
     },

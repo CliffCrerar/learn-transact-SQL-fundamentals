@@ -4,39 +4,16 @@ route: /concepts
 parent: Documentation
 ---
 
-import {themeConfig} from '../../../docz.config.js'
-import LearningImg from './components/LearningImg.jsx'
 
-<style jsx="true">{`
-    .user-story{
-        background-color: ${themeConfig.colors.secondary};
-        padding: 3vw;
-        font-size: 1.2em;
-    }
-    .user-story hr{
-        margin: 0px;
-        border-bottom: 1px solid black;
-    }
-    .user-story span {
-        text-align: justify !important;
-    }
-    .user-story li{
-        font-size: 0.7em;
-    }
-    .user-story-heading{
-        font-weight: bolder;
-        font-size: 1.5em;
-    }
-    blockquote h3 {
-        margin: 0 !important;
-    }
-`}</style>
+import LearningImg from './components/LearningImg.jsx'
+import Image from '../../components/img'
+import UserStory from './components/UserStory'
 
 # Concepts and Semantics
 
 The purpose of is to briefly familiarize yourself with some of the **database jargon** that is used when talking about SQL and databases, and are usually the terms used by database designers. For example, when we normally speak about data in a tabular form, like the data stored in excel we usually refer to fields and records. Fields being the columns and records being the rows. Also in this section we will very briefly discuss how databases are modelled using business cases or use cases. The table below shows the terms that professionals use when discussing topics related to data, databases, database servers and Structured query language.
 
-<LearningImg/>
+<Image src={require('../../assets/pg6/dev-learning.png')} alt='learning sql'/>
 
 ---
 
@@ -83,41 +60,7 @@ In almost all cases, the theory of data modeling will start with a user story as
 
 Stricter terms would merely call these requirements, but I have chosen, from a purely bias perspective to use the [Agile Methodology](https://luis-goncalves.com/what-is-agile-methodology/) term of user story as opposed to requirements.
 
-<div className="user-story">
-
-    <span className="user-story-heading">Motor Vehicle Traders Ltd</span><br/>
-    <hr/>
-
-    <span>
-        A used car sales business named <b>123 Sold (pty) ltd</b>, has many departments. Each department is managed by one person, this person, appointed as manager can only be in charge of one department. 
-        <sup className="circ-num">&#10112;</sup>
-    </span><br/><br/>
-
-    <span>
-        In the sales department, a salesman can advertise, and market any car. Any car may also be advertised by any salesman.
-        <sup className="circ-num">&#10113;</sup>
-    </span><br/><br/>
-
-    <span>
-        <b>123 Sold (pty) ltd</b> is the holding company of a body shop next door, named <b>So Custom Body and Aftermarket Parts (pty) Ltd</b>. The body shop uses many different colours and shades, and in many cases cars are painted with different colours.
-        <sup className="circ-num">&#10114;</sup>
-    </span><br/><br/>
-
-    <span>
-        A car always will have a base t1-color, but its panels can be painted in different colors, for example. The bonnet of the car be yellow, the roof can be green and trunk lid can be orange.
-        <sup className="circ-num">&#10115;</sup>
-    </span><br/><br/>
-
-    <span>
-        So Custom Body and Aftermarket Parts must keep track of which colors are associated with which cars.
-        <sup className="circ-num"></sup>
-    </span><br/><br/>
-
-    <li>
-    NOTE that the paragraphs are each numbered, this is for a reason which will become clear further down.
-    </li>
-
-</div>
+<UserStory/>
 
 User stories like this one, are what set the requirements for a data structure. But how do you create a data structure from the above?
 

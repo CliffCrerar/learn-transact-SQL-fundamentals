@@ -4,7 +4,10 @@
 			"path": "."
 		},
 		{
-			"path": "/Users/cliff/git/now-cdn"
+			"path": "../cdn-png-repo"
+		},
+		{
+			"path": "/Volumes/cdn-cloudflare.ga"
 		}
 	],
     "settings": {
