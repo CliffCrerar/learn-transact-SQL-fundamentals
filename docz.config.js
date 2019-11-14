@@ -40,9 +40,12 @@ const config = {
     // theme: defaultTheme,
     modifyBundlerConfig: config => {
         /* do your magic here */
+        const ownerShipFnPath = path.resolve(process.cwd(), 'public/ownership');
+        const ownerShipFn = require('fs').readdirSync(ownerShipFnPath)[0];
+        [0];
         const copyPlugin = new CopyPlugin([{
-                from: path.resolve(process.cwd(), 'public/QYHcroLbMJapKtlHCGovXoZeFtQPfI.html'),
-                to: path.resolve(process.cwd(), 'dist/QYHcroLbMJapKtlHCGovXoZeFtQPfI.html')
+                from: path.resolve(process.cwd(), ownerShipFnPath, ownerShipFn),
+                to: path.resolve(process.cwd(), 'dist', ownerShipFn)
             },
             {
                 from: path.resolve(process.cwd(), 'public/sitemap.xml'),
