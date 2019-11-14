@@ -97,7 +97,7 @@ class AboutAuthor extends Component {
                     }
                 `}</style>
 				<div className="profile-some-creds">
-					<Badge callBadge={this.state.callBadge} />
+					{/* <Badge callBadge={this.state.callBadge} /> */}
 					<div className="author-creds these-boxes">
 						<h2>Credentials:</h2>
 						<ul>

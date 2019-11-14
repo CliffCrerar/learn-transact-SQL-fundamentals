@@ -1,63 +1,95 @@
 import React, { Component } from 'react'
-import SVGInject from '@iconfu/svg-inject';
-
+import socialLinks, {
+	Facebook,
+	Twitter,
+	Instagram,
+	Pintrest,
+	Github,
+	StackOverflow,
+	LinkedIn,
+	Quora
+} from '../../social-buttons'
 class SocialLinks extends Component {
-	constructor ( props ) {
-		super( props )
-		this.state = { someState: 'someState' }
-		this.FSL = 'https://cdn-learnsql.c1i44.now.sh/pg1/';
-		//this.FSL = 'https://icons-social-fa-svq-sq.c1i44.now.sh/';
-		// https://s3-eu-west-1.amazonaws.com/cdn-aws-infinityarc.tk/files/icons-social-fa-svq-sq/facebook.svg
+	constructor(props) {
+		super(props)
+		this.state = { height: 'auto', width: '30px' }
+
+
 	}
-	socialLinkClickHandle ( ev ) {
-		ev.persist();
-		const targetClicked = ev.target.dataset.clicked === undefined ? ev.target.parentElement.dataset.clicked : ev.target.dataset.clicked;
-		const socialSelection = require( './sociallinks' )[targetClicked];
-		const anchorEl = document.createElement( 'a' );
-		anchorEl.setAttribute( 'href', socialSelection.link );
-		anchorEl.setAttribute( 'target', '_blank' );
-		anchorEl.click();
+	componentDidMount() {
 	}
-	componentDidMount () {
-		( function () {
-			document.querySelectorAll( '.social-icon img' ).forEach( e => {
-				e.classList.add( 'social-svg' );
-				e.onClick = ( ev => this.socialLinkClickHandle( ev ) )
-				SVGInject( e );
-			} );
-		}() )
-	}
-	render () {
-		const FSL = this.FSL;
+	getLink = (sMediaName) => socialLinks.filter(link => link.name === sMediaName)[0].link;
+	render() {
+
 		return (
-			<div className="social-icon" onClick={ev => this.socialLinkClickHandle( ev )}>
+			<div className="social-icons">
 				<style>{`
-                .social-svg{
-                    height: 30px;
-                    animate: 1s linear;
-                }
-                .social-svg:hover{
-                    transform: scale(1.2);
-                    color: #3890C5;
-                }
-                .social-svg:visited{
-                    color: #3890C5;
-                }
-                .social-icon{
-                    display: flex;
-                    flex-flow: row wrap;
-                    justify-content: space-around;
-                    padding: 15px 0 !important;
-                }
-            `}</style>
-				<img data-clicked="0" src={FSL + 'facebook.svg'} alt="social icon facebook" />
-				<img data-clicked="1" src={FSL + 'twitter.svg'} alt="social icon twitter" />
-				<img data-clicked="2" src={FSL + 'instagram.svg'} alt="social icon instagram" />
-				<img data-clicked="3" src={FSL + 'pinterest.svg'} alt="social icon pintrest" />
-				<img data-clicked="4" src={FSL + 'github.svg'} alt="social icon github" />
-				<img data-clicked="5" src={FSL + 'quora.svg'} alt="social icon quora" />
-				<img data-clicked="6" src={FSL + 'stack-overflow.svg'} alt="social icon stack overflow" />
-				<img data-clicked="7" src={FSL + 'linkedin.svg'} alt="social icon stack linkedIn" />
+					.social-icons{
+						display: flex;
+						padding: 20px;
+						justify-content: space-between;
+						align-items: center;
+					}
+					.social-link{
+						color:white;
+					}
+					.social-link:hover{
+						color: tomato;
+						transform: scale(1.2);
+					}
+					.social-link:visited{
+						color: #FAFAFA;
+					}
+				`}</style>
+				<div>
+					<a className="social-link" target="_blank" href={this.getLink('facebook')}>
+						<Facebook height={this.state.height} width={this.state.width} />
+					</a>
+				</div>
+				<div>
+					<a className="social-link" target="_blank" href={this.getLink('twitter')}>
+						<Twitter height={this.state.height} width={this.state.width} />
+					</a>
+				</div>
+				<div>
+					<a className="social-link" target="_blank" href={this.getLink('instagram')}>
+						<Instagram height={this.state.height} width={this.state.width} />
+					</a>
+				</div>
+				<div>
+					<a className="social-link" target="_blank" href={this.getLink('pintrest')}>
+						<Pintrest height={this.state.height} width={this.state.width} />
+					</a>
+				</div>
+				<div>
+					<a className="social-link" target="_blank" href={this.getLink('github')}>
+						<Github height={this.state.height} width={this.state.width} />
+					</a>
+				</div>
+				<div>
+					<a className="social-link" target="_blank" href={this.getLink('quora')}>
+						<Quora height={this.state.height} width={this.state.width} />
+					</a>
+				</div>
+				<div>
+					<a className="social-link" target="_blank" href={this.getLink('stack-overflow')}>
+						<StackOverflow height={this.state.height} width={this.state.width} />
+					</a>
+				</div>
+				<div>
+					<a className="social-link" target="_blank" href={this.getLink('linkedIn')}>
+						<LinkedIn height={this.state.height} width={this.state.width} />
+					</a>
+				</div>
+
+				{/* <img data-clicked="0" src={FSL + 'facebook.svg'} alt="social-icon facebook" />
+				<img data-clicked="1" src={FSL + 'twitter.svg'} alt="social-icon twitter" />
+				<img data-clicked="2" src={FSL + 'instagram.svg'} alt="social-icon instagram" />
+				<img data-clicked="3" src={FSL + 'pinterest.svg'} alt="social-icon pintrest" />
+				<img data-clicked="4" src={FSL + 'github.svg'} alt="social-icon github" />
+				<img data-clicked="5" src={FSL + 'quora.svg'} alt="social-icon quora" />
+				<img data-clicked="6" src={FSL + 'stack-overflow.svg'} alt="social-icon stack overflow" />
+				<img data-clicked="7" src={FSL + 'linkedin.svg'} alt="social-icon stack linkedIn" /> */}
 			</div>
 		)
 	}
