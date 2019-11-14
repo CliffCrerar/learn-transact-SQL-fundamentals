@@ -43,8 +43,11 @@ const config = {
         const copyPlugin = new CopyPlugin([{
                 from: path.resolve(process.cwd(), 'public/QYHcroLbMJapKtlHCGovXoZeFtQPfI.html'),
                 to: path.resolve(process.cwd(), 'dist/QYHcroLbMJapKtlHCGovXoZeFtQPfI.html')
+            },
+            {
+                from: path.resolve(process.cwd(), 'public/sitemap.xml'),
+                to: path.resolve(process.cwd(), 'dist/sitemap.xml')
             }
-            // { from: 'other', to: 'public' },
         ])
         config.plugins.push(copyPlugin);
         // require('./src/copyfile');
