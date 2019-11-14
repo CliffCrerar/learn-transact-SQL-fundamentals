@@ -6,7 +6,8 @@
     "scripts": {
         "start": "docz",
         "dev": "docz dev --port 3050",
-        "build": "docz build"
+        "build": "docz build",
+        "now-build": "yarn build"
     },
     "repository": {
         "type": "git",
