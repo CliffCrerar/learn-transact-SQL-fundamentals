@@ -1,6 +1,6 @@
 import React from 'react';
-import config from '../../../../docz.config.js';
-console.log( 'config: ', config );
+// import config from '../../../../docz.config.js';
+// console.log( 'config: ', config );
 //src="https://zeit-optipng-server-01.c1i44.now.sh/learnsql/cloudsql-server.png"
 
 function LandingImgtext () {

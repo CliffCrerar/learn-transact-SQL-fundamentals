@@ -1,14 +1,13 @@
 //import { myCoolPlugin } from 'docz-plugin-mycoolplugin'
-import remarkAttr from 'remark-attr';
-import remarkAlign from 'remark-align';
 import path from 'path';
-const CopyPlugin = require('copy-webpack-plugin');
-// import defaultTheme from 'docz-theme-default'
+import CopyPlugin from 'copy-webpack-plugin';
+import defaultTheme from 'docz-theme-default'
+import images from 'remark-images';
 
 const PUBLIC = path.resolve(__dirname, 'public');
 const SRC = path.resolve(__dirname, 'src');
 const emoji = require('remark-emoji');
-import images from 'remark-images';
+
 
 console.log(process.cwd());
 
@@ -18,23 +17,18 @@ const themeConfig = {
         secondary: 'khaki',
         gray: 'lightslategray'
     }
-    // logo: {
-    //     src: 'https://cdn-learnsql.c1i44.now.sh/pg1/_pg1-compass.png',
-    //     width: 160
-    //         // https://storage.googleapis.com/cdnbucket2/files/icons-social-fa-svq-sq/facebook.svg
-    // }
 };
 
 const config = {
     base: "/",
     indexHtml: 'public/index.html',
     menu: require('./menu'),
-    public: '/public',
+    public: PUBLIC,
     title: 'RDBMS Fundamentals',
     description: 'Learn the fundamental principles of relational databases using Transact SQL in Microsoft SQL Express',
-    indexHtml: './public/index.html',
+    indexHtml: path.join(PUBLIC, 'index.html'),
     htmlContext: {
-        favicon: '/public/images/favicon.png',
+        favicon: path.join(PUBLIC, 'favicon.png'),
         head: {
             links: [{
                 rel: 'stylesheet',
@@ -45,7 +39,6 @@ const config = {
     themeConfig,
     // theme: defaultTheme,
     modifyBundlerConfig: config => {
-        console.log('config: ', config.plugins.push);
         /* do your magic here */
         const copyPlugin = new CopyPlugin([{
                 from: path.resolve(process.cwd(), 'public/QYHcroLbMJapKtlHCGovXoZeFtQPfI.html'),
@@ -68,4 +61,4 @@ const config = {
 
 export default config;
 
-export { themeConfig }
+// export { themeConfig }

@@ -1,5 +1,5 @@
 import React from 'react';
-import {themeConfig} from '../../../../docz.config'
+// import { themeConfig } from '../../../../docz.config'
 export default () => {
 	return (
 		<React.Fragment>
@@ -8,7 +8,7 @@ export default () => {
 			<div className="user-story">
 				<style jsx='true'>{`
     .user-story{
-        background-color: ${themeConfig.colors.secondary};
+        background-color: #FFEE75;
         padding: 3vw;
         font-size: 1.2em;
     }
