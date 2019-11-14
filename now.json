@@ -1,8 +1,0 @@
-{
-    "version": 2,
-    "name": "learn-transact-sql",
-    "alias": "learn-transact-sql",
-    "builds": [
-        { "src": "package.json", "use": "@now/static-build" }
-    ]
-}

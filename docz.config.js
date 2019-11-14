@@ -2,6 +2,7 @@
 import remarkAttr from 'remark-attr';
 import remarkAlign from 'remark-align';
 import path from 'path';
+const CopyPlugin = require('copy-webpack-plugin');
 // import defaultTheme from 'docz-theme-default'
 
 const PUBLIC = path.resolve(__dirname, 'public');
@@ -43,9 +44,19 @@ const config = {
     },
     themeConfig,
     // theme: defaultTheme,
-    //modifyBundlerConfig: config => {
-    /* do your magic here */
-    //},
+    modifyBundlerConfig: config => {
+        console.log('config: ', config.plugins.push);
+        /* do your magic here */
+        const copyPlugin = new CopyPlugin([{
+                from: path.resolve(process.cwd(), 'public/QYHcroLbMJapKtlHCGovXoZeFtQPfI.html'),
+                to: path.resolve(process.cwd(), 'dist/QYHcroLbMJapKtlHCGovXoZeFtQPfI.html')
+            }
+            // { from: 'other', to: 'public' },
+        ])
+        config.plugins.push(copyPlugin);
+        // require('./src/copyfile');
+        return config;
+    },
     // plugins: [
     //   myCoolPlugin()
     // ],
