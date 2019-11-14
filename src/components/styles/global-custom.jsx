@@ -1,22 +1,16 @@
 import React from 'react';
 
-import { themeConfig } from '../../../docz.config'
-
 
 const GlobalCustom = () => {
-    const colorPrimary = themeConfig.colors.primary;
-
-    const colorSecondary = themeConfig.colors.secondary;
-
     return (
         <React.Fragment>
             <style jsx="true">{`
                 :root{
-                    --btn-color1: ${colorPrimary};
+                    --btn-color1: tomato;
                 }
                  
                 :root{
-                    --btn-color2: ${colorSecondary};
+                    --btn-color2: khaki;
                 }
 
                 body{

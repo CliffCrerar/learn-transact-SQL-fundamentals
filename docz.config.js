@@ -21,7 +21,7 @@ const themeConfig = {
 
 const config = {
     base: "/",
-    indexHtml: 'public/index.html',
+    indexHtml: path.join(PUBLIC, 'index.html'),
     menu: require('./menu'),
     public: PUBLIC,
     title: 'RDBMS Fundamentals',
@@ -67,4 +67,4 @@ const config = {
 
 export default config;
 
-// export { themeConfig }
+export { themeConfig }
