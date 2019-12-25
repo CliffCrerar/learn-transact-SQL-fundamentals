@@ -80,10 +80,10 @@
             });
         </script>
         <title>{{ title }}</title>
-        <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+        
         <!-- <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script> -->
         <style>
-            @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|Lato&display=swap');
+            @import url('https://fonts.googleapis.com/css?family=Exo|Lato&display=swap');
             /* @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|DM+Serif+Text|Orbitron|Playfair+Display|Raleway&display=swap'); */
             /* @import url('https://fonts.googleapis.com/css?family=Audiowide|Baumans|Convergence|Days+One|Forum|Marcellus+SC|Metrophobic|Michroma|Reem+Kufi|Syncopate&display=swap'); */
             /* @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Lato|Oswald&display=swap'); */
@@ -116,7 +116,7 @@
         */
             
              :root {
-                --heading-font: DM Serif Display;
+                --heading-font: Exo;
                 --body-fonts: Lato;
             }
             
@@ -151,6 +151,9 @@
     <body>
         {{ head }}
         <div id="root">{{ footer }}</div>
+        <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+        <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
+        <!-- <script type="module" src="x-frame-bypass.js"></script> -->
     </body>
 
 </html>
