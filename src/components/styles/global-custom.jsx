@@ -32,6 +32,7 @@ const GlobalCustom = () => {
                     display: flex;
                     flex-flow: row wrap;
                     justify-content: space-between;
+                    margin-bottom: 20px;
                 }
                 .btn {
                     font-size: 1em;

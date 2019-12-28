@@ -1,9 +1,11 @@
+process.env.NODE_ENV='development';
 module.exports = {
 	base: '/',
 	source: './',
-	files: 'src/**/*.mdx',
-	ignore: [ 'src/theme/**', 'components/**', '../_old-app' ],
+	files: 'src/**/*.{md,markdown,mdx}',
 	dest: 'docs',
+	public: './public',
+	editBranch: 'stage',
 	menu: [
 		'Home',
 		'Introduction',
@@ -22,20 +24,21 @@ module.exports = {
 			]
 		},
 		{
-			name: 'Writing SQL - Part 1', menu: [
+			name: 'Writing SQL Part 1', menu: [
 				'Data Query Language',
 				'Data Definition Language',
-				'Data Manipulation Language' ]
+				'Data Manipulation Language'
+			]
 		},
 		{
-			name: 'Extend your knowledge', menu:[
+			name: 'Extend your knowledge', menu: [
 				'Query Execution Methods',
 				'Using Comments'
 			]
 		},
-		{
-			name: 'Writing SQL - Part 2', menu:[]
-		},
+		// {
+		// 	name: 'Writing SQL Part 2', menu: []
+		// },
 		{
 			name: 'Find out more', menu: [ 'Why Learn SQL?', 'What is a RDBMS?' ]
 		},
@@ -44,9 +47,9 @@ module.exports = {
 		},
 		{
 			name: 'About the Author'
-		}, 
-		{ 
-			name: 'Resources' 
+		},
+		{
+			name: 'Resources'
 		}
 	]
 }
