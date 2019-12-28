@@ -1,3 +1,4 @@
+process.env.NODE_ENV='development';
 module.exports = {
 	base: '/',
 	source: './',
