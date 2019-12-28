@@ -1,0 +1,76 @@
+---
+name: Creating the Demo Database
+route: /creating-the-demo-database
+menu: SQL Setup Guide
+---
+
+import { Buttons, Frame } from '../components/SqlSnippet';
+import Image from '../components/img';
+
+<style jsx='true'>{`
+	body{
+		text-align: left !important;
+	}
+`}</style>
+
+# Creating the Demo Database
+
+In this section define the steps to create a demo database named **Northwind**. Having this database created on your on computer, will allow you to practically complete the examples. If you do not yet have a running instance of a SQL server express going you will not be able to practically keep up with the upcoming examples.
+
+<Image divClass={{
+	display: 'flex',
+	justifyContent: 'center'
+}} src={require('../assets/pg5/sql_logo_3.png')} alt='Creating the demo database'/>
+
+>NOTE: If you at this point do cannot access your own instance of Microsoft SQL Server Express through Microsoft SQL Server Management Studio please go back to [Getting started](/getting-started)
+>
+> ---
+>By the end of this section you need to:
+>
+>   * **Have created a database in Microsoft SQL Server Management Studio
+(SSMS) named Northwind from the SQL Snippet provided in this section.**
+
+The snippet below contains some the SQL you will be learning while working your way through this document. You are welcome to look at the code provided in the snippet but it is not important for you to know what the code in the snippet is doing.
+
+All you need to do for this section is run the snippet to create the data required as described in first paragraph of this section.
+
+## Step1: Login with SQL Management studio
+
+Open SSMS, logon to your instance of the SQL Server. If you have done this you should see the following:
+
+<Image src={require('../assets/ssms.png')} alt='sql server management studio'/>
+
+This part of SSMS is called the [Object Explorer](https://docs.microsoft.com/en-us/sql/ssms/object/object-explorer?view=sql-server-2017) and allows you to explore all the objects created in your SQL Server but more on this in the next section [Concepts and Semantics](/concepts-and-semantics).
+
+>NOTE: This document is using version 17.3 of Microsoft SQL Server Management Studio, your version might be slightly different but the functionality remains the same.
+
+## Step 2: Create a new query
+Click on File>New>Query with Current Connection. You can also look for a button on the toolbar that reads "New Query". You can also simply use the shortcut keys ctrl+n.
+
+## Step 3: Get the database definition script
+Click on the copy to clipboard button at the bottom of the snippet below.
+
+<Frame 
+        downloadLink={"https://express-micro-serverless.c1i44.now.sh/api/sqltechdocsnippet"}
+        h3Heading="Demo Database SQL Snippet"
+        h5subNote="The snippet has many lines so either download it for use later or copy the code to your clipboard to paste in MSSQL, do not try to copy from the snippet above, its just a nice to show, use either of the two buttons shown below."
+    />
+
+<Buttons downloadLink={"https://express-micro-serverless.c1i44.now.sh/api/sqltechdocsnippet"}/>
+
+## Step 4: Place data definition script in a new query
+Go to SSMS click inside the query window then right click *(or left click depending on your mouse config)* and then click on paste. Instead of right clicking you can also use the shortcut key for paste which is **ctrl+v**.
+
+## Step 5: Execute the query
+Once the SQL snippet has been pasted inside the query window, look at the menu bar for an option named query, clicking on this will display a menu, look for the option named Execute and click on it.
+
+If you want to skip this procedure you may also use the **F5 keyQ** which is the shortcut for run.
+
+If you encounter an error, read what the error says. Use [Read, Search, Ask](https://www.freecodecamp.org/forum/t/the-read-search-ask-methodology-for-getting-unstuck/137307) to attempt to resolve this error.
+
+If there is no error, a message will appear in the bottom of the query window stating the snippet executed successfully.
+
+## Step 6: Check if query ran without problems
+Look in the object explorer for a folder named **Databases**, expanding this folder will reveal an item named **Northwind**.
+
+This means that you have now successfully created the demo database and can now move on to the next section.
