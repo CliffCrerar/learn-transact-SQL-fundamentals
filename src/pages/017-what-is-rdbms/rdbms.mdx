@@ -1,0 +1,105 @@
+---
+name: What is a RDBMS?
+route: /rdbms
+parent: Documentation
+---
+# RDBMS
+## Relational Database Management System
+
+> Posted by: Margaret Rouse 
+Contributor(s): Kate Brush
+
+A [relational database management system](https://searchdatamanagement.techtarget.com/definition/relational-database) (RDBMS) is a collection of programs and capabilities that enable IT teams and others to create, update, administer and otherwise interact with a relational database. RDBMS store data in the form of tables, with most commercial relational database management systems using [Structured Query Language](https://searchsqlserver.techtarget.com/definition/SQL) (SQL) to access the database. However, since SQL was invented after the initial development of the relational model, it is not necessary for RDBMS use.
+
+The RDBMS is the most popular database system among organizations across the world. It provides a dependable method of storing and retrieving large amounts of data while offering a combination of system performance and ease of implementation.
+
+## RDBMS vs. DBMS
+
+In general, databases store sets of data that can be queried for use in other applications. A database management system supports the development, administration and use of database platforms.
+
+An RDBMS is a type of [database management system](https://searchsqlserver.techtarget.com/definition/database-management-system) (DBMS) that stores data in a row-based table structure which connects related data elements. An RDBMS includes functions that maintain the security, accuracy, integrity and consistency of the data. This is different than the file storage used in a DBMS.
+
+Other differences between database management systems and relational database management systems include:
+
+- **Number of allowed users.** While a DBMS can only accept one user at a time, an RDBMS can operate with multiple users.
+- **Hardware and software requirements.** A DBMS needs less software and hardware than an RDBMS.
+-  **Amount of data.** RDBMSes can handle any amount of data, from small to large, while a DBMS can only manage small amounts.
+Database structure. In a DBMS, data is kept in a hierarchical form, whereas an RDBMS utilizes a table where the headers are used as column names and the rows contain the corresponding values.
+-  **ACID implementation.** DBMSes do not use the atomicity, consistency, isolation and durability (ACID) model for storing data. On the other hand, RDBMSes base the structure of their data on the ACID model to ensure consistency.
+-  **Distributed databases.** While an RDBMS offers complete support for distributed databases, a DBMS will not provide support.
+-  **Types of programs managed.** While an RDBMS helps manage the relationships between its incorporated tables of data, a DBMS focuses on maintaining databases that are present within the computer network and system hard disks.
+-  **Support of database normalization.** An RDBMS can be normalized, but a DBMS cannot.
+
+## Features of relational database management systems
+
+The most basic RDBMS functions are related to create, read, update and delete operations -- collectively known as [CRUD](https://searchdatamanagement.techtarget.com/definition/CRUD-cycle). They form the foundation of a well-organized system that promotes consistent treatment of data.
+
+The RDBMS typically provides [data dictionaries](https://searchapparchitecture.techtarget.com/definition/data-dictionary) and [metadata](https://whatis.techtarget.com/definition/metadata) collections that are useful in data handling. These programmatically support well-defined data structures and relationships. Data storage management is a common capability of the RDBMS, and this has come to be defined by data objects that range from binary large object -- or [blob](https://searchsqlserver.techtarget.com/definition/BLOB) -- strings to [stored procedures](https://searchoracle.techtarget.com/definition/stored-procedure). Data objects like this extend the scope of basic relational database operations and can be handled in a variety of ways in different RDBMS.
+
+The most common means of data access for the RDBMS is SQL. Its main language components comprise data manipulation language and data definition language statements. Extensions are available for development efforts that pair SQL use with common programming languages, such as the [Common Business-Oriented Language](https://searchitoperations.techtarget.com/definition/COBOL-Common-Business-Oriented-Language) (COBOL), [Java](https://www.theserverside.com/definition/Java) and [.NET](https://searchwindevelopment.techtarget.com/definition/NET).
+
+RDBMS use complex [algorithms](https://whatis.techtarget.com/definition/algorithm) that support multiple [concurrent](https://searchoracle.techtarget.com/definition/concurrent-processing) user access to the database while maintaining data integrity. Security management, which enforces policy-based access, is yet another overlay service that the RDBMS provides for the basic database as it is used in enterprise settings.
+
+RDBMS support the work of [database administrators](https://searchsqlserver.techtarget.com/definition/database-administrator) (DBA) who must manage and monitor database activity. Utilities help automate data loading and database backup. RDBMS manage log files that track system performance based on selected operational parameters. This enables measurement of database usage, capacity and performance, particularly query performance. RDBMS provide graphical interfaces that help DBA visualize database activity.
+
+While not limited solely to the RDBMS, ACID compliance is an attribute of relational technology that has proved important in enterprise computing. These capabilities have particularly suited RDBMS for handling business transactions.
+
+As RDBMS have matured, they have achieved increasingly higher levels of query optimization, and they have become key parts of reporting, analytics and [data warehousing](https://searchdatamanagement.techtarget.com/definition/data-warehouse) applications for businesses as well. RDBMS are intrinsic to operations of a variety of enterprise applications and are at the center of most [master data management](https://searchdatamanagement.techtarget.com/definition/master-data-management) systems.
+
+## How RDBMS works
+
+As mentioned before, an RDBMS will store data in the form of a table. Each system will have varying numbers of tables with each table possessing its own unique primary key. The primary key is then used to identify each table.
+
+Within the table are rows and columns. The rows are known as records or horizontal entities; they contain the information for the individual entry. The columns are known as vertical entities and possess information about the specific field.
+
+### Before creating these tables, the RDBMS must check the following constraints:
+
+- **Primary keys**: this identifies each row in the table. One table can only contain one primary key. The key must be unique and without null values.
+- **Foreign keys**:  this is used to link two tables. The foreign key is kept in one table and refers to the primary key associated with another table.
+- **Not null**: this ensures that every column does not have a null value, such as an empty cell.
+Check; this confirms that each entry in a column or row satisfies a precise condition and that every column holds unique data.
+- **Data integrity**: the integrity of the data must be confirmed before the data is created.
+
+Assuring the integrity of data includes several specific tests, including entity, domain, referential and user-defined integrity. Entity integrity confirms that the rows are not duplicated in the table. - Domain integrity makes sure that data is entered into the table based on specific conditions, such as [file format](https://whatis.techtarget.com/definition/file-format) or range of values. Referential integrity ensures that any row that is re-linked to a different table cannot be deleted. Finally, user-defined integrity confirms that the table will satisfy all user-defined conditions.
+
+## Advantages of relational database management system
+
+The use of an RDBMS can be beneficial to most organizations; the systematic view of raw data helps companies better understand and execute the information while enhancing the decision-making process. The use of tables to store data also improves the security of information stored in the databases. Users are able to customize access and set barriers to limit the content that is made available. This feature makes the RDBMS particularly useful to companies in which the manager decides what data is provided to employees and customers.
+
+Furthermore, RDBMSes make it easy to add new data to the system or alter existing tables while ensuring consistency with the previously available content.
+
+## Other advantages of the RDBMS include:
+
+- **Flexibility:** updating data is more efficient since the changes only need to be made in one place.
+- **Maintenance:** database administrators can easily maintain, control and update data in the database. Backups also become easier since automation tools included in the RDBMS automate these tasks.
+- **Data Structured:** the table format used in RDBMSes is easy to understand and provides an organized and structural manner through which entries are matched by firing queries.
+
+On the other hand, relational database management systems do not come without their disadvantages. For example, in order to implement an RDBMS, special software must be purchased. This introduces an additional cost for execution. Once the software is obtained, the setup process can be tedious since it requires millions of lines of content to be transferred into the RDBMS tables. This process may require the additional help of a programmer or a team of data entry specialists. Special attention must be paid to the data during entry to ensure sensitive information is not placed into the wrong hands.
+
+Some other drawbacks of the RDBMS include the character limit placed on certain fields in the tables and the inability to fully understand new forms of data -- such as complex numbers, designs and images.
+
+Furthermore, while isolated databases can be created using an RDBMS, the process requires large chunks of information to be separated from each other. Connecting these large amounts of data to form the isolated database can be very complicated.
+
+## Uses of RDBMS
+
+Relational database management systems are frequently used in disciplines such as manufacturing, human resources and banking. The system is also useful for airlines that need to store ticket service and passenger documentation information as well as universities maintaining student databases.
+
+Some examples of specific systems that use RDBMS include IBM, Oracle, MySQL, Microsoft SQLServer and PostgreSQL.
+
+## RDBMS product history
+
+Many vying relational database management systems arose as news spread in the early 1970s of the relational [data model](https://searchdatamanagement.techtarget.com/definition/data-modeling). This and related methods were originally theorized by IBM researcher E.F. Codd, who proposed a database [schema](https://searchsqlserver.techtarget.com/definition/schema), or logical organization, that was not directly associated with physical organization, as was common at the time.
+
+
+Codd's work was based around a concept of[ data normalization](https://searchsqlserver.techtarget.com/definition/normalization), which saved file space on storage disk drives at a time when such machinery could be prohibitively expensive for businesses.
+
+File systems and database management systems preceded what could be called the RDBMS era. Such systems ran primarily on mainframe computers. While RDBMSes also ran on mainframes -- IBM's [DB2](https://searchdatacenter.techtarget.com/definition/DB2) being a pointed example -- much of their ascendance in the enterprise was in UNIX midrange computer deployments. The RDBMS was a linchpin in the distributed architecture of [client-server computing](https://searchnetworking.techtarget.com/definition/client-server), which connected pools of stand-alone personal computers to file and database servers.
+
+Numerous RDBMSes arose along with the use of client-server computing. Among the competitors were Oracle, Ingres, Informix, Sybase, Unify, Progress and others. Over time, three RDBMSes came to dominate in commercial implementations. Oracle, IBM's DB2 and [Microsoft's SQL Server](https://searchsqlserver.techtarget.com/definition/SQL-Server), which was based on a design originally licensed from Sybase, found considerable favor throughout the client-server computing era, despite repeated challenges by competing technologies.
+
+As the 20th century drew to an end, lower-cost, open source versions of RDBMSes began to find use, particularly in web applications.
+
+Eventually, as distributed computing took greater hold, and as cloud architecture became more prominently employed, RDBMSes met competition in the form of [NoSQL](https://searchdatamanagement.techtarget.com/definition/NoSQL-Not-Only-SQL) systems. Such systems were often specifically designed for massive distribution and high scalability in the cloud, sometimes forgoing SQL-style full consistency for so-called eventual consistency of data. But, even in the most diverse and complex cloud systems, the need for some guaranteed data consistency requires RDBMSes to appear in some way, shape or form. Moreover, versions of RDBMSes have been significantly restructured for cloud parallelization and replication.
+
+### REFERENCE
+2019, Rouse M, Brush K, RDBMS (relational database management system), viewed 28 Dev 2019, <https://searchdatamanagement.techtarget.com/definition/RDBMS-relational-database-management-system>. 

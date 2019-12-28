@@ -1,21 +1,19 @@
 //import { myCoolPlugin } from 'docz-plugin-mycoolplugin'
-import path from 'path';
-import CopyPlugin from 'copy-webpack-plugin';
-import defaultTheme from 'docz-theme-default'
-import images from 'remark-images';
-
+const path= require('path');
+// const  CopyPlugin =  require('copy-webpack-plugin');
+const defaultTheme = require( 'docz-theme-default');
+const images = require('remark-images');
 const PUBLIC = path.resolve(__dirname, 'public');
 const SRC = path.resolve(__dirname, 'src');
 const emoji = require('remark-emoji');
-
-
 console.log(process.cwd());
-
+// console.log(defaultTheme);
 const themeConfig = {
+    // mode: 'dark',
     colors: {
-        primary: 'tomato',
-        secondary: 'khaki',
-        gray: 'lightslategray'
+        primary: 'dodgerBlue',
+        secondary: 'red',
+        gray: 'white'
     }
 };
 
@@ -26,7 +24,7 @@ const config = {
     public: PUBLIC,
     title: 'RDBMS Fundamentals',
     description: 'Learn the fundamental principles of relational databases using Transact SQL in Microsoft SQL Express',
-    indexHtml: path.join(PUBLIC, 'index.html'),
+    // indexHtml: path.join(PUBLIC, 'index.html'),
     htmlContext: {
         favicon: path.join(PUBLIC, 'favicon.png'),
         head: {
@@ -37,27 +35,27 @@ const config = {
         }
     },
     themeConfig,
-    // theme: defaultTheme,
-    modifyBundlerConfig: config => {
-        /* do your magic here */
-        const ownerShipFnPath = path.resolve(process.cwd(), 'public/ownership');
-        const ownerShipFn = require('fs').readdirSync(ownerShipFnPath)[0];
-        [0];
-        const copyPlugin = new CopyPlugin([{
-                from: path.resolve(process.cwd(), ownerShipFnPath, ownerShipFn),
-                to: path.resolve(process.cwd(), 'dist', ownerShipFn)
-            },
-            {
-                from: path.resolve(process.cwd(), 'public/sitemap.xml'),
-                to: path.resolve(process.cwd(), 'dist/sitemap.xml')
-            }
-        ])
-        config.plugins.push(copyPlugin);
-        // require('./src/copyfile');
-        return config;
-    },
+    theme: defaultTheme,
+    // modifyBundlerConfig: config => {
+    //     /* do your magic here */
+    //     const ownerShipFnPath = path.resolve(process.cwd(), 'public/ownership');
+    //     const ownerShipFn = require('fs').readdirSync(ownerShipFnPath)[0];
+    //     [0];
+    //     const copyPlugin = new CopyPlugin([{
+    //             from: path.resolve(process.cwd(), ownerShipFnPath, ownerShipFn),
+    //             to: path.resolve(process.cwd(), 'dist', ownerShipFn)
+    //         },
+    //         {
+    //             from: path.resolve(process.cwd(), 'public/sitemap.xml'),
+    //             to: path.resolve(process.cwd(), 'dist/sitemap.xml')
+    //         }
+    //     ])
+    //     config.plugins.push(copyPlugin);
+    //     // require('./src/copyfile');
+    //     return config;
+    // },
     // plugins: [
-    //   myCoolPlugin()
+    // //   myCoolPlugin()
     // ],
     files: './src/**/*.{markdown,mdx}',
     dest: '/dist',
@@ -65,6 +63,6 @@ const config = {
     mdPlugins: [emoji, images]
 }
 
-export default config;
+// export default config;
 
-export { themeConfig }
+module.exports = config;

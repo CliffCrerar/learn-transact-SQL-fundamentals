@@ -1,6 +1,7 @@
 module.exports = [
     'Landing',
     'Introduction',
+    'What is a RDBMS?',
     'About this page',
     'Getting Started',
     'Creating the Demo Database',
