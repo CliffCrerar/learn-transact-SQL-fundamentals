@@ -1,6 +1,6 @@
 {
     "name": "learn-transact-sql",
-    "version": "2.1.0",
+    "version": "2.2.0",
     "description": "freeCodeCamp project as well as a document for ST product team to leverage off for SQL.",
     "main": "index.html",
     "scripts": {
