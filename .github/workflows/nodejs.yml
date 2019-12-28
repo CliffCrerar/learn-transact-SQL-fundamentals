@@ -2,7 +2,7 @@ name: Push to Githup pages
 on:
   push:
     branches:
-      - stage
+      - staging
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
