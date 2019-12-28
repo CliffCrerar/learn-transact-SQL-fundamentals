@@ -6,13 +6,16 @@
     "docz:dev": "docz dev",
     "docz:build": "docz build",
     "docz:serve": "docz build && docz serve",
-    "dev": "npm run docz:dev",
-    "start":"npm run docz:serve",
-    "deploy":"now --prod"
+    "build":"sudo rm -rd .docz docs;npm run docz:build",
+    "dev": "sudo rm -rd .docz;npm run docz:dev",
+    "start": "sudo rm -rd .docz docs; npm run docz:serve",
+    "deploy": "now --prod"
   },
   "dependencies": {
-    "docz": "latest",
+    "docz": "^2.3.0-alpha.5",
+    "gatsby": "^2.18.17",
     "gatsby-plugin-sass": "^2.1.26",
+    "gatsby-theme-docz": "^2.3.0-alpha.5",
     "node-sass": "^4.13.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
