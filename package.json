@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "name": "learn-transact-sql",
   "version": "2.4.0",
@@ -7,9 +6,9 @@
     "docz:dev": "docz dev",
     "docz:build": "docz build",
     "docz:serve": "docz build && docz serve",
-    "build":"sudo rm -rd .docz docs;npm run docz:build",
-    "dev": "sudo rm -rd .docz;npm run docz:dev",
-    "start": "sudo rm -rd .docz docs; npm run docz:serve",
+    "build": "npm run docz:build",
+    "dev": "npm run docz:dev",
+    "start": "npm run docz:serve",
     "deploy": "now --prod"
   },
   "dependencies": {
@@ -25,49 +24,8 @@
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.17.0"
+  },
+  "engines": {
+    "node": ">=10.0.0 <12.0.0"
   }
 }
-=======
-{
-    "name": "learn-transact-sql",
-    "version": "2.4.0",
-    "description": "freeCodeCamp project as well as a document for ST product team to leverage off for SQL.",
-    "main": "index.html",
-    "scripts": {
-        "start": "docz",
-        "dev": "docz dev --port 3050",
-        "build": "docz build",
-        "now-build": "yarn build"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/CliffCrerar/ffc_technical_document.git"
-    },
-    "author": "Cliff Crerar",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/CliffCrerar/ffc_technical_document/issues"
-    },
-    "homepage": "https://github.com/CliffCrerar/ffc_technical_document#readme",
-    "dependencies": {
-        "@iconfu/svg-inject": "^1.2.3",
-        "dotenv": "^8.2.0",
-        "emotions": "0.0.1",
-        "markdown-it": "^10.0.0",
-        "markdown-it-attrs": "^2.4.1",
-        "react": "^16.11.0",
-        "react-dom": "^16.11.0",
-        "react-markdown": "^4.2.2",
-        "remark-align": "^1.2.9",
-        "remark-attr": "^0.8.4",
-        "remark-emoji": "^2.0.2",
-        "remark-images": "^1.0.0",
-        "styled-jsx": "^3.2.4"
-    },
-    "devDependencies": {
-        "copy-webpack-plugin": "^5.0.5",
-        "docz": "^1.3.2",
-        "docz-theme-default": "^1.2.0"
-    }
-}
->>>>>>> origin/CliffCrerar-patch-1
