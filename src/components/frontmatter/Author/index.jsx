@@ -126,7 +126,7 @@ class AboutAuthor extends Component {
 					<SocialLinks />
 
 				</div>
-			</div >
+			</div>
 		)
 	}
 }

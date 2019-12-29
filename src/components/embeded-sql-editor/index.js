@@ -7,7 +7,7 @@ class SQLEditor extends Component {
 
 	render() {
 		return (
-			<div style={ { height: '1000px' } }>
+			<div style={ { height: '800px' } }>
 				<iframe style={ this.state }
 					src-doc="https://www.jdoodle.com/embed/v0/1M5O"
 					src="https://www.jdoodle.com/embed/v0/1M5O"
