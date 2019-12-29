@@ -6,9 +6,9 @@
     "docz:dev": "docz dev",
     "docz:build": "docz build",
     "docz:serve": "docz build && docz serve",
-    "build":"sudo rm -rd .docz docs;npm run docz:build",
+    "build": "sudo rm -rd .docz docs; npm run docz:build",
     "dev": "sudo rm -rd .docz;npm run docz:dev",
-    "start": "sudo rm -rd .docz docs; npm run docz:serve",
+    "start": "npm run docz:serve",
     "deploy": "now --prod"
   },
   "dependencies": {

@@ -6,6 +6,7 @@ module.exports = {
 	dest: 'docs',
 	public: './public',
 	editBranch: 'stage',
+	ignore: ['../src/pages/_parked/_author.mdx'],
 	menu: [
 		'Home',
 		'Introduction',
@@ -42,9 +43,9 @@ module.exports = {
 		{
 			name: 'Find out more', menu: [ 'Why Learn SQL?', 'What is a RDBMS?' ]
 		},
-		{
-			name: '-Pages-under-construction'
-		},
+		// {
+		// 	name: '-Pages-under-construction'
+		// },
 		{
 			name: 'About the Author'
 		},

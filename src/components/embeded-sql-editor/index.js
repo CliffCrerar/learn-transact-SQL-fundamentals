@@ -11,8 +11,7 @@ class SQLEditor extends Component {
 				<iframe style={ this.state }
 					src-doc="https://www.jdoodle.com/embed/v0/1M5O"
 					src="https://www.jdoodle.com/embed/v0/1M5O"
-					contentEditable="true"
-					frameborder="0"></iframe>
+					contentEditable="true"></iframe>
 			</div>
 		)
 	}

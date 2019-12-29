@@ -13,10 +13,6 @@ class SocialLinks extends Component {
 	constructor(props) {
 		super(props)
 		this.state = { height: 'auto', width: '30px' }
-
-
-	}
-	componentDidMount() {
 	}
 	getLink = (sMediaName) => socialLinks.filter(link => link.name === sMediaName)[0].link;
 	render() {
