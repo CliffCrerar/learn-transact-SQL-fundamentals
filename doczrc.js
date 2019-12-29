@@ -1,9 +1,9 @@
-process.env.NODE_ENV='development';
+process.env.NODE_ENV='staging';
 module.exports = {
 	base: '/',
 	source: './',
 	files: 'src/**/*.{md,markdown,mdx}',
-	dest: 'docs',
+	dest: 'ghpages',
 	public: './public',
 	editBranch: 'stage',
 	menu: [
