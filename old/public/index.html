@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+
+    <head>
+        <!-- COMMON TAGS -->
+        <meta charset="UTF-8">
+        <meta content="Explaining and demonstrating fundamental sql and database concepts" name="description">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="ie=edge" http-equiv="X-UA-Compatible">
+        <!-- Search Engine -->
+        <link rel="icon" href="public/favicon.png" type="image/png">
+        <!-- COMMON TAGS -->
+        <meta charset="utf-8">
+        <title>Learn Transact-SQL</title>
+        <!-- Search Engine -->
+        <meta name="description" content="A page for referencing and learning about Relational databases and how to use them effectively with SQL.">
+        <meta name="image" content="http://www.learn-transact-sql.tk/sitemap">
+        <!-- Schema.org for Google -->
+        <meta itemprop="name" content="Learn Transact-SQL">
+        <meta itemprop="description" content="A page for referencing and learning about Relational databases and how to use them effectively with SQL.">
+        <meta itemprop="image" content="https://learntransactsql.now.sh/sitemap">
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Learn Transact-SQL">
+        <meta name="twitter:description" content="A page for referencing and learning about Relational databases and how to use them effectively with SQL.">
+        <meta name="twitter:site" content="@Cliffenator">
+        <meta name="twitter:creator" content="@Cliffenator">
+        <meta name="twitter:image:src" content="https://cdn-learnsql.c1i44.now.sh/pg1/_pg1-db.png">
+        <!-- Twitter - Article -->
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+        <meta name="og:title" content="Learn Transact-SQL">
+        <meta name="og:description" content="A page for referencing and learning about Relational databases and how to use them effectively with SQL.">
+        <meta name="og:image" content="https://https://learntransactsql.now.sh/pg1/_pg1-db.png">
+        <meta name="og:url" content="http://www.learn-transact-sql.tk/">
+        <meta name="og:site_name" content="Learn Transact SQL Fundamentals">
+        <meta name="fb:admins" content="774427249417343">
+        <meta name="fb:app_id" content="2384583425197908">
+        <meta name="og:type" content="article">
+        <!-- Open Graph - Article -->
+        <meta name="article:section" content="SQL Relational databases">
+        <meta name="article:author" content="Cliff Crerar">
+        <meta name="article:tag" content="sql learn sql structured query language dml dql ">
+        <!-- <script src="services/clipboard.min.js"></script> -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- Primary Meta Tags -->
+        <title>Learn Transact SQL Fundamentals</title>
+        <meta name="title" content="Learn Transact SQL Fundamentals">
+        <meta name="description" content="Open-source tech documents for anyone who wants to learn Relational databases and how to use them with SQL.">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://metatags.io/">
+        <meta property="og:title" content="Learn Transact SQL Fundamentals">
+        <meta property="og:description" content="Open-source tech documents for anyone who wants to learn Relational databases and how to use them with SQL.">
+        <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://metatags.io/">
+        <meta property="twitter:title" content="Learn Transact SQL Fundamentals">
+        <meta property="twitter:description" content="Open-source tech documents for anyone who wants to learn Relational databases and how to use them with SQL.">
+        <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141918749-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-141918749-1');
+        </script>
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-8086536878743537",
+                enable_page_level_ads: true
+            });
+        </script>
+        <title>{{ title }}</title>
+        
+        <!-- <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script> -->
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Exo|Lato&display=swap');
+            /* @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|DM+Serif+Text|Orbitron|Playfair+Display|Raleway&display=swap'); */
+            /* @import url('https://fonts.googleapis.com/css?family=Audiowide|Baumans|Convergence|Days+One|Forum|Marcellus+SC|Metrophobic|Michroma|Reem+Kufi|Syncopate&display=swap'); */
+            /* @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Lato|Oswald&display=swap'); */
+            /*
+            ### SQL LOGO ###
+            Orbitron
+            Audiowide
+            Baumans
+            Convergence
+            Days One
+            [?] Forum
+            Marcellus SC
+            Metrophobic
+            Metrophobic
+            Michroma
+            Reem Kufi
+            Syncopate
+            Josefin Sans
+
+
+            ### heading candidates###
+            [?] DM Serif Display
+            [?] DM Serif Text
+            [?] Playfair Display
+            [x] Raleway Display
+
+            ## BODY ###
+            Lato
+            Oswald
+        */
+            
+             :root {
+                --heading-font: Exo;
+                --body-fonts: Lato;
+            }
+            
+            html {
+                font-family: var(--body-fonts) !important;
+            }
+            
+            h1,
+            h2,
+            h3,
+            h4 {
+                font-family: var(--heading-font) !important;
+            }
+            
+            p,
+            a,
+            ul,
+            li {
+                font-family: var(--body-fonts) !important;
+            }
+            
+            .CodeMirror-size {
+                border-radius: 13px !important;
+            }
+            
+            p {
+                text-align: justify !important;
+            }
+            iframe{
+                border: transparent;
+            }
+        </style>
+    </head>
+
+    <body>
+        {{ head }}
+        <div id="root">{{ footer }}</div>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script> -->
+        <!-- <script type="module" src="https://unpkg.com/x-frame-bypass"></script> -->
+        <!-- <script type="module" src="x-frame-bypass.js"></script> -->
+    </body>
+
+</html>

@@ -1,0 +1,5 @@
+/node_modules
+/_ignore
+/.vscode
+/localhost Session.sql
+/sql2.sql

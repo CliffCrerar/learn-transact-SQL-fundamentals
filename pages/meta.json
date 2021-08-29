@@ -1,0 +1,19 @@
+{
+    "index": "Welcome",
+    "intro":"Introduction",
+    "about": "About This Tutorial",
+    "getting-started": "Getting Started",
+    "demo-database":"Creating the Demo Database",
+    "concepts-and-semantics":"Concepts and Semantics",
+    "data-objects":"Database Objects",
+    "data-types":"Data Types",
+    "data-query-language":"Data Query Language",
+    "data-manipulation-language":"Data Manipulation language",
+    "data-definition-language":"Data definition language",
+    "reserved-words":"Reserved Words",
+    "using-comments":"Using Comments",
+    "execution-methods":"Query Execution Methods (first draft)",
+    "resources":"Resources and References",
+    "rdbms":"What is RDBMS?",
+    "whysql":"Why learn SQL?"
+}
