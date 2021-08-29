@@ -13,7 +13,7 @@ export default {
     footerEditLink: `Edit this page on GitHub`,
     logo: (
       <>
-        <svg>...</svg>
+        <svg>POES</svg>
         <span>Next.js Static Site Generator</span>
       </>
     ),
