@@ -1,7 +1,0 @@
-# Index
-
-## Index
-
-### Index
-
-#### Index
