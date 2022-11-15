@@ -34,7 +34,7 @@
     "remark-attr": "^0.8.4",
     "remark-emoji": "^2.0.2",
     "remark-images": "^1.0.0",
-    "styled-jsx": "^3.2.4",
+    "styled-jsx": "^5.0.0",
     "snyk": "^1.316.1"
   },
   "devDependencies": {
